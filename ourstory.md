@@ -34,10 +34,11 @@ quote_author: "Benjamin Franklin"
 <div class="story-reach">
   <p class="story-label"><i class="ph ph-map-pin"></i> Our Reach</p>
   <h2 class="story-section-h">Across India, city by city.</h2>
-  <p class="story-reach-desc">Faculty reached through CBPAI and GuruSetu programs — {{ site.data.reach_cities | size }} cities across 28 states and union territories.</p>
+  <p class="story-reach-desc">Faculty and students reached through our programmes — {{ site.data.reach_cities | size }} cities across 30 states and union territories.</p>
   <div class="story-reach-legend">
     <span class="reach-legend-item"><span class="reach-dot reach-dot-faculty"></span> Faculty</span>
     <span class="reach-legend-item"><span class="reach-dot reach-dot-student"></span> Students</span>
+    <span class="reach-legend-item"><span class="reach-dot reach-dot-both"></span> Both</span>
   </div>
   <div id="reach-map"></div>
 </div>
@@ -163,11 +164,18 @@ cities.forEach(function(c) {
       <div class="tl-desc">The lab's flagship summer internship programme launched with <strong>Samagama</strong> and <strong>Yaksha</strong> — bringing students into the work of education design hands-on.</div>
     </div>
 
+    <div class="tl-item">
+      <div class="tl-icon">🌧️</div>
+      <div class="tl-date">July 2026</div>
+      <div class="tl-title">Monsoonship Begins</div>
+      <div class="tl-desc">From 15 July, a part-time internship track opened alongside the lab's work — students contributing through the semester, not only over the summer.</div>
+    </div>
+
     <div class="tl-item tl-next">
       <div class="tl-icon tl-next-icon"><span class="tl-pulse-ring"></span>→</div>
-      <div class="tl-date">Up Next</div>
+      <div class="tl-date">August–September 2026</div>
       <div class="tl-title">What's Next?</div>
-      <div class="tl-desc">The lab keeps growing — new courses, new tools, new partnerships. The story is still being written.</div>
+      <div class="tl-desc">Three things are taking shape — <strong>Guru Vaani</strong>, a faculty development programme reaching educators across the country; <strong>Samagra</strong>, a credited internship; and <strong>Teacharcha</strong>, a community space for teachers. The story is still being written.</div>
     </div>
 
   </div>

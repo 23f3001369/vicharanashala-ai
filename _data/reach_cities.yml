@@ -1,5 +1,9 @@
-# Reach map data — faculty locations from CBPAI FDP cohorts 1–16
+# Reach map data
+# Faculty locations: CBPAI FDP cohorts 1–16
+# Student locations: Samagama registered students, top 30 cities (Student_Origins, Aug 2026)
+#   — these are college addresses parsed from applications, not verified hometowns
 # To add a city: add name, state, lat, lng, and type (faculty / student / both)
+# Use "both" when a city has been reached by faculty AND student programmes
 # Coordinates are city centre approximations
 
 # ── Andhra Pradesh ──
@@ -25,7 +29,7 @@
   state: Andhra Pradesh
   lat: 16.3067
   lng: 80.4365
-  type: faculty
+  type: both
 
 - city: Kurnool
   state: Andhra Pradesh
@@ -88,7 +92,7 @@
   state: Bihar
   lat: 25.5941
   lng: 85.1376
-  type: faculty
+  type: both
 
 - city: Gaya
   state: Bihar
@@ -119,7 +123,7 @@
   state: Chandigarh
   lat: 30.7333
   lng: 76.7794
-  type: faculty
+  type: both
 
 # ── Chhattisgarh ──
 - city: Raipur
@@ -145,13 +149,13 @@
   state: Delhi
   lat: 28.6139
   lng: 77.2090
-  type: faculty
+  type: both
 
 - city: Noida
   state: Delhi
   lat: 28.5355
   lng: 77.3910
-  type: faculty
+  type: both
 
 - city: Ghaziabad
   state: Delhi
@@ -361,7 +365,7 @@
   state: Jharkhand
   lat: 23.3441
   lng: 85.3096
-  type: faculty
+  type: both
 
 - city: Dumka
   state: Jharkhand
@@ -380,13 +384,13 @@
   state: Karnataka
   lat: 12.9716
   lng: 77.5946
-  type: faculty
+  type: both
 
 - city: Mysuru
   state: Karnataka
   lat: 12.2958
   lng: 76.6394
-  type: faculty
+  type: both
 
 - city: Hubballi
   state: Karnataka
@@ -410,7 +414,7 @@
   state: Karnataka
   lat: 14.4644
   lng: 75.9218
-  type: faculty
+  type: both
 
 - city: Kalaburagi
   state: Karnataka
@@ -544,13 +548,13 @@
   state: Madhya Pradesh
   lat: 23.2599
   lng: 77.4126
-  type: faculty
+  type: both
 
 - city: Indore
   state: Madhya Pradesh
   lat: 22.7196
   lng: 75.8577
-  type: faculty
+  type: both
 
 - city: Jabalpur
   state: Madhya Pradesh
@@ -587,19 +591,19 @@
   state: Maharashtra
   lat: 19.0760
   lng: 72.8777
-  type: faculty
+  type: both
 
 - city: Pune
   state: Maharashtra
   lat: 18.5204
   lng: 73.8567
-  type: faculty
+  type: both
 
 - city: Nagpur
   state: Maharashtra
   lat: 21.1458
   lng: 79.0882
-  type: faculty
+  type: both
 
 - city: Nashik
   state: Maharashtra
@@ -717,7 +721,7 @@
   state: Odisha
   lat: 20.2961
   lng: 85.8245
-  type: faculty
+  type: both
 
 - city: Cuttack
   state: Odisha
@@ -773,7 +777,7 @@
   state: Punjab
   lat: 30.3398
   lng: 76.3869
-  type: faculty
+  type: both
 
 - city: Bathinda
   state: Punjab
@@ -797,7 +801,7 @@
   state: Punjab
   lat: 30.7046
   lng: 76.7179
-  type: faculty
+  type: both
 
 - city: Hoshiarpur
   state: Punjab
@@ -828,7 +832,7 @@
   state: Rajasthan
   lat: 26.9124
   lng: 75.7873
-  type: faculty
+  type: both
 
 - city: Kota
   state: Rajasthan
@@ -872,13 +876,13 @@
   state: Tamil Nadu
   lat: 13.0827
   lng: 80.2707
-  type: faculty
+  type: both
 
 - city: Coimbatore
   state: Tamil Nadu
   lat: 11.0168
   lng: 76.9558
-  type: faculty
+  type: both
 
 - city: Madurai
   state: Tamil Nadu
@@ -920,7 +924,7 @@
   state: Tamil Nadu
   lat: 10.7870
   lng: 79.1378
-  type: faculty
+  type: both
 
 - city: Namakkal
   state: Tamil Nadu
@@ -950,7 +954,7 @@
   state: Tamil Nadu
   lat: 12.6921
   lng: 79.9768
-  type: faculty
+  type: both
 
 - city: Tiruppur
   state: Tamil Nadu
@@ -975,13 +979,13 @@
   state: Telangana
   lat: 17.3850
   lng: 78.4867
-  type: faculty
+  type: both
 
 - city: Warangal
   state: Telangana
   lat: 17.9784
   lng: 79.5941
-  type: faculty
+  type: both
 
 - city: Karimnagar
   state: Telangana
@@ -1018,7 +1022,7 @@
   state: Uttar Pradesh
   lat: 26.8467
   lng: 80.9462
-  type: faculty
+  type: both
 
 - city: Kanpur
   state: Uttar Pradesh
@@ -1078,7 +1082,7 @@
   state: Uttar Pradesh
   lat: 27.4924
   lng: 77.6737
-  type: faculty
+  type: both
 
 - city: Sultanpur
   state: Uttar Pradesh
@@ -1097,13 +1101,13 @@
   state: Uttarakhand
   lat: 30.3165
   lng: 78.0322
-  type: faculty
+  type: both
 
 - city: Haridwar
   state: Uttarakhand
   lat: 29.9457
   lng: 78.1642
-  type: faculty
+  type: both
 
 - city: Roorkee
   state: Uttarakhand
@@ -1128,13 +1132,13 @@
   state: West Bengal
   lat: 22.5726
   lng: 88.3639
-  type: faculty
+  type: both
 
 - city: Howrah
   state: West Bengal
   lat: 22.5958
   lng: 88.2636
-  type: faculty
+  type: both
 
 - city: Asansol
   state: West Bengal
