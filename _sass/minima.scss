@@ -1376,11 +1376,15 @@ table {
 
 #reach-map {
   width: 100%;
-  height: 480px;
+  // India is very slightly taller than it is wide on a Mercator projection.
+  // Matching that ratio means the frame is filled by India itself instead of
+  // by Iran, China and the Indian Ocean. Do not make this wide — a wide box
+  // forces the map to zoom out until the neighbours fill the empty sides.
+  aspect-ratio: 19 / 20;
+  max-width: 540px;
+  margin: 0 auto;
   border-radius: 6px;
   border: 1px solid #e2e2de;
-
-  @include media-query($on-palm) { height: 320px; }
 }
 
 // Hero logo

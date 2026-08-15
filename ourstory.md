@@ -73,8 +73,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
   subdomains: 'abcd',
   maxZoom: 19,
-  noWrap: true,
-  bounds: INDIA_BOUNDS.pad(0.3)
+  noWrap: true
 }).addTo(map);
 
 var facultyStyle = { radius: 4, fillColor: '#e07020', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.85 };
