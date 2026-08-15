@@ -1,5 +1,8 @@
 # Reach map data
-# Faculty locations: CBPAI FDP cohorts 1–16
+# Faculty locations: CBPAI FDP cohorts 1–16, plus the Aug 2026 participant sheet.
+#   District names in that sheet (Gautam Buddha Nagar, Bengaluru Urban, Mumbai
+#   Suburban, the four Delhi districts, etc.) are folded into their parent city
+#   rather than plotted separately — one dot per place, not per administrative unit.
 # Student locations: Samagama registered students, all 115 matched cities
 #   (Student_Origins, Aug 2026 — 8,517 application records, 6,135 with a city)
 #   — these are college addresses parsed from applications, not verified hometowns
@@ -74,6 +77,18 @@
   lng: 77.6006
   type: student
 
+- city: Chintalapudi
+  state: Andhra Pradesh
+  lat: 17.0667
+  lng: 80.9667
+  type: faculty
+
+- city: Srikakulam
+  state: Andhra Pradesh
+  lat: 18.2969
+  lng: 83.8938
+  type: faculty
+
 # ── Arunachal Pradesh ──
 - city: Nirjuli
   state: Arunachal Pradesh
@@ -143,6 +158,12 @@
   lng: 85.3647
   type: student
 
+- city: Begusarai
+  state: Bihar
+  lat: 25.4182
+  lng: 86.1272
+  type: faculty
+
 # ── Chandigarh ──
 - city: Chandigarh
   state: Chandigarh
@@ -180,6 +201,12 @@
   lat: 21.1904
   lng: 81.2849
   type: student
+
+- city: Dhamtari
+  state: Chhattisgarh
+  lat: 20.7073
+  lng: 81.5497
+  type: faculty
 
 # ── Delhi ──
 - city: New Delhi
@@ -262,6 +289,24 @@
   lng: 70.0577
   type: faculty
 
+- city: Dahod
+  state: Gujarat
+  lat: 22.8344
+  lng: 74.2599
+  type: faculty
+
+- city: Valsad
+  state: Gujarat
+  lat: 20.5992
+  lng: 72.9342
+  type: faculty
+
+- city: Kheda
+  state: Gujarat
+  lat: 22.7507
+  lng: 72.6847
+  type: faculty
+
 # ── Haryana ──
 - city: Gurugram
   state: Haryana
@@ -334,6 +379,12 @@
   lat: 29.6857
   lng: 76.9905
   type: student
+
+- city: Rohtak
+  state: Haryana
+  lat: 28.8955
+  lng: 76.6066
+  type: faculty
 
 # ── Himachal Pradesh ──
 - city: Shimla
@@ -409,6 +460,12 @@
   lng: 74.8984
   type: faculty
 
+- city: Kulgam
+  state: Jammu & Kashmir
+  lat: 33.6400
+  lng: 75.0197
+  type: faculty
+
 # ── Jharkhand ──
 - city: Ranchi
   state: Jharkhand
@@ -433,6 +490,12 @@
   lat: 23.7957
   lng: 86.4304
   type: student
+
+- city: Ramgarh
+  state: Jharkhand
+  lat: 23.6303
+  lng: 85.5600
+  type: faculty
 
 # ── Karnataka ──
 - city: Bengaluru
@@ -536,6 +599,18 @@
   lat: 13.3525
   lng: 74.7868
   type: student
+
+- city: Koppal
+  state: Karnataka
+  lat: 15.3547
+  lng: 76.1547
+  type: faculty
+
+- city: Bhatkal
+  state: Karnataka
+  lat: 13.9855
+  lng: 74.5551
+  type: faculty
 
 # ── Kerala ──
 - city: Thiruvananthapuram
@@ -653,6 +728,12 @@
   lng: 76.0534
   type: faculty
 
+- city: Hoshangabad
+  state: Madhya Pradesh
+  lat: 22.7524
+  lng: 77.7237
+  type: faculty
+
 # ── Maharashtra ──
 - city: Mumbai
   state: Maharashtra
@@ -750,6 +831,36 @@
   lng: 74.7497
   type: faculty
 
+- city: Satara
+  state: Maharashtra
+  lat: 17.6805
+  lng: 74.0183
+  type: faculty
+
+- city: Karad
+  state: Maharashtra
+  lat: 17.2896
+  lng: 74.1815
+  type: faculty
+
+- city: Akola
+  state: Maharashtra
+  lat: 20.7002
+  lng: 77.0082
+  type: faculty
+
+- city: Palghar
+  state: Maharashtra
+  lat: 19.6967
+  lng: 72.7699
+  type: faculty
+
+- city: Ahilyanagar
+  state: Maharashtra
+  lat: 19.0948
+  lng: 74.7480
+  type: faculty
+
 # ── Manipur ──
 - city: Imphal
   state: Manipur
@@ -825,6 +936,12 @@
   lat: 19.3150
   lng: 84.7941
   type: student
+
+- city: Boudh
+  state: Odisha
+  lat: 20.8379
+  lng: 84.3288
+  type: faculty
 
 # ── Puducherry ──
 - city: Puducherry
@@ -904,6 +1021,30 @@
   state: Punjab
   lat: 30.4832
   lng: 76.5893
+  type: faculty
+
+- city: Sri Muktsar Sahib
+  state: Punjab
+  lat: 30.4762
+  lng: 74.5122
+  type: faculty
+
+- city: Moga
+  state: Punjab
+  lat: 30.8165
+  lng: 75.1717
+  type: faculty
+
+- city: Sangrur
+  state: Punjab
+  lat: 30.2458
+  lng: 75.8421
+  type: faculty
+
+- city: Patran
+  state: Punjab
+  lat: 30.0333
+  lng: 76.1500
   type: faculty
 
 # ── Rajasthan ──
@@ -1065,6 +1206,18 @@
   lng: 80.0421
   type: faculty
 
+- city: Theni
+  state: Tamil Nadu
+  lat: 10.0104
+  lng: 77.4768
+  type: faculty
+
+- city: Koradacherri
+  state: Tamil Nadu
+  lat: 10.8167
+  lng: 79.5167
+  type: faculty
+
 # ── Telangana ──
 - city: Hyderabad
   state: Telangana
@@ -1193,6 +1346,30 @@
   lng: 78.0081
   type: student
 
+- city: Bagpat
+  state: Uttar Pradesh
+  lat: 28.9448
+  lng: 77.2178
+  type: faculty
+
+- city: Ghazipur
+  state: Uttar Pradesh
+  lat: 25.5880
+  lng: 83.5776
+  type: faculty
+
+- city: Etah
+  state: Uttar Pradesh
+  lat: 27.5580
+  lng: 78.6620
+  type: faculty
+
+- city: Muzaffarnagar
+  state: Uttar Pradesh
+  lat: 29.4727
+  lng: 77.7085
+  type: faculty
+
 # ── Uttarakhand ──
 - city: Dehradun
   state: Uttarakhand
@@ -1272,3 +1449,9 @@
   lat: 23.5204
   lng: 87.3119
   type: student
+
+- city: Barrackpore
+  state: West Bengal
+  lat: 22.7642
+  lng: 88.3777
+  type: faculty
