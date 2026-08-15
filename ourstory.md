@@ -53,17 +53,28 @@ var cities = [
   {% endfor %}
 ];
 
+// All our reach is within India, so the map is locked to India — you cannot
+// zoom out to the world or pan off into empty ocean.
+var INDIA_BOUNDS = L.latLngBounds([6.5, 67.0], [36.0, 97.5]);
+
 var map = L.map('reach-map', {
-  center: [22.5, 82.0],
-  zoom: 5,
   scrollWheelZoom: false,
-  zoomControl: true
+  zoomControl: true,
+  maxBounds: INDIA_BOUNDS.pad(0.15),
+  maxBoundsViscosity: 1.0
 });
+
+// Frame India, then forbid zooming out past that. Done after fitBounds so it
+// adapts to the container size — phone and desktop each get their own floor.
+map.fitBounds(INDIA_BOUNDS);
+map.setMinZoom(map.getZoom());
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
   subdomains: 'abcd',
-  maxZoom: 19
+  maxZoom: 19,
+  noWrap: true,
+  bounds: INDIA_BOUNDS.pad(0.3)
 }).addTo(map);
 
 var facultyStyle = { radius: 4, fillColor: '#e07020', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.85 };
