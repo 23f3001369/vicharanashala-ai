@@ -34,7 +34,7 @@ quote_author: "Benjamin Franklin"
 <div class="story-reach">
   <p class="story-label"><i class="ph ph-map-pin"></i> Our Reach</p>
   <h2 class="story-section-h">Across India, city by city.</h2>
-  <p class="story-reach-desc">Faculty and students reached through our programmes — {{ site.data.reach_cities | size }} cities across 30 states and union territories.</p>
+  <p class="story-reach-desc">Faculty and students reached through our programmes — {{ site.data.reach_cities | size }} cities across 31 states and union territories.</p>
   <div class="story-reach-legend">
     <span class="reach-legend-item"><span class="reach-dot reach-dot-faculty"></span> Faculty</span>
     <span class="reach-legend-item"><span class="reach-dot reach-dot-student"></span> Students</span>
@@ -58,7 +58,11 @@ var cities = [
 // Nepal or Bhutan — those countries are simply not on the page. Everything
 // outside the outline is page background.
 // Do not add a tile layer back in without solving that problem first.
+// zoomSnap: 0 must be set here, at construction. Leaflet otherwise rounds to
+// whole zoom levels, and India needs a fractional one — at zoom 4 the outline
+// sits small in the middle of the box, at zoom 5 it overflows.
 var map = L.map('reach-map', {
+  zoomSnap: 0,
   zoomControl: false, scrollWheelZoom: false, dragging: false,
   doubleClickZoom: false, touchZoom: false, boxZoom: false, keyboard: false,
   attributionControl: false
