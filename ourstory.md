@@ -53,39 +53,51 @@ var cities = [
   {% endfor %}
 ];
 
-// All our reach is within India, so the map is locked to India — you cannot
-// zoom out to the world or pan off into empty ocean.
-var INDIA_BOUNDS = L.latLngBounds([6.5, 67.0], [36.0, 97.5]);
-
+// There is NO basemap here, on purpose. We draw India's outline and nothing
+// else, so a dot near the northern border cannot be misread as sitting in
+// Nepal or Bhutan — those countries are simply not on the page. Everything
+// outside the outline is page background.
+// Do not add a tile layer back in without solving that problem first.
 var map = L.map('reach-map', {
-  scrollWheelZoom: false,
-  zoomControl: true,
-  maxBounds: INDIA_BOUNDS.pad(0.15),
-  maxBoundsViscosity: 1.0
+  zoomControl: false, scrollWheelZoom: false, dragging: false,
+  doubleClickZoom: false, touchZoom: false, boxZoom: false, keyboard: false,
+  attributionControl: false
 });
 
-// Frame India, then forbid zooming out past that. Done after fitBounds so it
-// adapts to the container size — phone and desktop each get their own floor.
-map.fitBounds(INDIA_BOUNDS);
-map.setMinZoom(map.getZoom());
+var facultyStyle = { radius: 4, fillColor: '#e07020', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
+var studentStyle = { radius: 4, fillColor: '#3ab7bf', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
+var bothStyle    = { radius: 5, fillColor: '#8a5ab7', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
-  subdomains: 'abcd',
-  maxZoom: 19,
-  noWrap: true
-}).addTo(map);
+function drawCities() {
+  cities.forEach(function(c) {
+    var style = c.type === 'student' ? studentStyle : c.type === 'both' ? bothStyle : facultyStyle;
+    L.circleMarker([c.lat, c.lng], style)
+      .bindTooltip('<strong>' + c.name + '</strong><br>' + c.state, { direction: 'top', offset: [0, -6] })
+      .addTo(map);
+  });
+}
 
-var facultyStyle = { radius: 4, fillColor: '#e07020', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.85 };
-var studentStyle = { radius: 4, fillColor: '#3ab7bf', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.85 };
-var bothStyle    = { radius: 5, fillColor: '#8a5ab7', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.85 };
+fetch('{{ site.baseurl }}/assets/data/india.geojson')
+  .then(function(r) { return r.json(); })
+  .then(function(geo) {
+    var india = L.geoJSON(geo, {
+      style: { fillColor: '#efefec', fillOpacity: 1, color: '#d6d5ce', weight: 1 },
+      interactive: false
+    }).addTo(map);
 
-cities.forEach(function(c) {
-  var style = c.type === 'student' ? studentStyle : c.type === 'both' ? bothStyle : facultyStyle;
-  L.circleMarker([c.lat, c.lng], style)
-    .bindTooltip('<strong>' + c.name + '</strong><br>' + c.state, { direction: 'top', offset: [0, -6] })
-    .addTo(map);
-});
+    // The outline itself defines the view — no hardcoded bounding box to drift
+    // out of date, and it re-fits when the window resizes.
+    function fit() { map.invalidateSize(); map.fitBounds(india.getBounds(), { padding: [6, 6] }); }
+    fit();
+    window.addEventListener('resize', fit);
+
+    drawCities();
+  })
+  .catch(function() {
+    // If the outline cannot load, still show the dots rather than an empty box.
+    map.setView([22.5, 82.0], 4);
+    drawCities();
+  });
 </script>
 
 <div class="story-timeline-intro">

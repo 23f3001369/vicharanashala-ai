@@ -1376,15 +1376,15 @@ table {
 
 #reach-map {
   width: 100%;
-  // India is very slightly taller than it is wide on a Mercator projection.
-  // Matching that ratio means the frame is filled by India itself instead of
-  // by Iran, China and the Indian Ocean. Do not make this wide — a wide box
-  // forces the map to zoom out until the neighbours fill the empty sides.
+  // Matches India's proportions on a Mercator projection, so the outline fills
+  // the box. No border or background: there is no basemap behind it, so the
+  // shape should read as sitting directly on the page.
   aspect-ratio: 19 / 20;
-  max-width: 540px;
+  max-width: 560px;
   margin: 0 auto;
-  border-radius: 6px;
-  border: 1px solid #e2e2de;
+  // Leaflet paints .leaflet-container grey by default; this ID selector
+  // outranks it, so the page background shows through instead.
+  background: transparent;
 }
 
 // Hero logo
