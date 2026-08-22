@@ -74,8 +74,11 @@ quote_author: "Arthur C. Clarke"
     <div class="product-card-name">Spurti</div>
     <div class="product-card-desc">Gamified progress tracking for self-regulated learning. Builds learner accountability over time.</div>
     <div class="product-card-bottom">
-      <span class="product-card-tag">Pilot</span>
-      <a href="https://github.com/vicharanashala/spurti" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
+      <span class="product-card-tag">Deployed</span>
+      <div class="product-card-links">
+        <a href="https://samagama.in/spurti/" target="_blank" rel="noopener" class="product-ext-link">Visit Platform ↗</a>
+        <a href="https://github.com/vicharanashala/spurti" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
+      </div>
     </div>
   </div>
 
