@@ -43,4 +43,4 @@ Explore the codebase at [FLN on GitHub ↗](https://github.com/vicharanashala/fl
 
 ## **The Vision**
 
-<!-- TODO: where this goes from here. 1 short paragraph. -->
+Our vision is to contribute to a learning system where no child's difficulty goes unnoticed. Where every answer provides evidence, every difficulty leads to the right next step, and every child gets the opportunity to build strong foundations in literacy and numeracy.
