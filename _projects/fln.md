@@ -29,7 +29,16 @@ ASER 2024 shows that among Grade 3 government-school children, 27.6% could do a 
 
 ## **The Platform**
 
-<!-- TODO: What the FLN tool/approach actually is. Subsections if needed (mirror Samagama's bold + 2-line pattern). Reference the GitHub repo and any data sources the platform depends on. Do not invent features. -->
+The journey becomes:
+
+1. Experience
+2. Explore
+3. Understand
+4. Attempt
+5. Make mistakes
+6. Receive support
+7. Improve
+8. Grow
 
 Explore the codebase at [FLN on GitHub ↗](https://github.com/vicharanashala/fln){:target="_blank"}.
 
