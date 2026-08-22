@@ -9,7 +9,8 @@ quote_author: "D. Blocher"
 ---
 
 <div class="product-page-meta">
-  <span class="product-page-status">Pilot</span>
+  <span class="product-page-status">Deployed</span>
+  <a href="https://spandan.fun/spandan" target="_blank" rel="noopener" class="product-try-link">Try it now ↗</a>
 </div>
 
 <p class="product-page-tagline">Real-time classroom engagement — the lecture is heard, questions are generated, and the teacher decides what students see.</p>
@@ -81,9 +82,9 @@ quote_author: "D. Blocher"
 
 <div class="product-page-section">
   <h2>Where It's Going</h2>
-  <p>The harder design problem in question generation is specificity. A question that draws from what the teacher specifically said in that session is more useful than one drawn from the general topic. It tests whether students were present in that class, in that hour, not whether they already knew the subject going in.</p>
-  <p>The next version of Spandan is built to work at the level of claims, finding specific statements the teacher made and writing questions that point directly at those. The approval step stays. What changes is that what reaches that screen is more targeted.</p>
-  <p>The session records feed back into this as an ongoing research effort. Every question sent, every student response contributes to a dataset the lab is actively using to study question generation for live teaching contexts.</p>
+  <p>The harder design problem in question generation is specificity. A question drawn from what the teacher said in that session is more useful than one drawn from the general topic. The next version is built to work at the level of claims, finding specific statements the teacher made and writing from those. The approval step stays — what changes is that what reaches that screen is more targeted.</p>
+  <p>The next feature on the roadmap is co-hosting. Right now a session has one teacher and one stream. Co-hosting will let multiple instructors run a session together, each contributing to the question pool — relevant for panel sessions, team-taught courses, and faculty development programmes where more than one expert is in the room.</p>
+  <p>Underlying both is a research effort the lab is actively running. What makes a question genuinely useful in a live classroom — novel enough to reward attention, precise enough to be tied to this session, difficult enough that it matters whether you were there — is the question the lab is building Spandan around.</p>
 </div>
 
 <script>

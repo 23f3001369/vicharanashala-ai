@@ -1609,6 +1609,17 @@ table {
   border-radius: 2px;
   padding: 0.15rem 0.4rem;
 }
+.product-try-link {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: #1a1a1a;
+  color: #f9f9f7 !important;
+  text-decoration: none !important;
+  padding: 0.15rem 0.6rem;
+  border-radius: 2px;
+  &:hover { background: #333; color: #f9f9f7 !important; }
+}
 .product-page-tagline {
   font-style: italic;
   color: $grey-color;
