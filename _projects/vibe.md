@@ -23,6 +23,7 @@ order: 1
 *Like Vikram with Betaal at every stride,*
 *ViBe questions you–till trust and confidence walk by your side.*
 
+**[Try ViBe ↗](https://vibe.vicharanashala.ai){:target="_blank"}**
 
 ViBe launched on 29th July 2025, when Education Minister Shri Dharmendra Pradhan unveiled it at the Akhil Bharatiya Shiksha Samagam. It's open-source and free to use, built and kept running by a community of developers and educators. You can look at the code or help build it on our [GitHub Repository](https://github.com/vicharanashala/vibe).
 

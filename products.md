@@ -91,9 +91,9 @@ quote_author: "Arthur C. Clarke"
     <a href="{{ site.baseurl }}/projects/pybe/" class="product-card-stretch" aria-label="Learn more about PyBe"></a>
     <div class="product-card-icon-wrap"><i class="ph ph-code product-card-icon"></i></div>
     <div class="product-card-name">PyBe</div>
-    <div class="product-card-desc">A case study oriented Python tutor that helps you talk to machines, in human language.</div>
+    <div class="product-card-desc">A scenario-driven Python tutor — learners reason their way to the problem before they reach for the syntax.</div>
     <div class="product-card-bottom">
-      <span class="product-card-tag">Coming Soon</span>
+      <span class="product-card-tag">In Development</span>
       <a href="https://github.com/vicharanashala/pybe" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
     </div>
   </div>

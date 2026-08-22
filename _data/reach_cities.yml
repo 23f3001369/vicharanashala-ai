@@ -1,5 +1,13 @@
-# Reach map data — faculty locations from CBPAI FDP cohorts 1–16
+# Reach map data
+# Faculty locations: CBPAI FDP cohorts 1–16, plus the Aug 2026 participant sheet.
+#   District names in that sheet (Gautam Buddha Nagar, Bengaluru Urban, Mumbai
+#   Suburban, the four Delhi districts, etc.) are folded into their parent city
+#   rather than plotted separately — one dot per place, not per administrative unit.
+# Student locations: Samagama registered students, all 115 matched cities
+#   (Student_Origins, Aug 2026 — 8,517 application records, 6,135 with a city)
+#   — these are college addresses parsed from applications, not verified hometowns
 # To add a city: add name, state, lat, lng, and type (faculty / student / both)
+# Use "both" when a city has been reached by faculty AND student programmes
 # Coordinates are city centre approximations
 
 # ── Andhra Pradesh ──
@@ -7,48 +15,114 @@
   state: Andhra Pradesh
   lat: 16.5062
   lng: 80.6480
-  type: faculty
+  type: both
 
 - city: Visakhapatnam
   state: Andhra Pradesh
   lat: 17.6868
   lng: 83.2185
-  type: faculty
+  type: both
 
 - city: Tirupati
   state: Andhra Pradesh
   lat: 13.6288
   lng: 79.4192
-  type: faculty
+  type: both
 
 - city: Guntur
   state: Andhra Pradesh
   lat: 16.3067
   lng: 80.4365
-  type: faculty
+  type: both
 
 - city: Kurnool
   state: Andhra Pradesh
   lat: 15.8281
   lng: 78.0373
-  type: faculty
+  type: both
 
 - city: Nellore
   state: Andhra Pradesh
   lat: 14.4426
   lng: 79.9865
-  type: faculty
+  type: both
 
 - city: Vizianagaram
   state: Andhra Pradesh
   lat: 18.1067
   lng: 83.3956
-  type: faculty
+  type: both
 
 - city: Bhimavaram
   state: Andhra Pradesh
   lat: 16.5443
   lng: 81.5212
+  type: faculty
+
+- city: Rajahmundry
+  state: Andhra Pradesh
+  lat: 17.0005
+  lng: 81.8040
+  type: student
+
+- city: Kakinada
+  state: Andhra Pradesh
+  lat: 16.9891
+  lng: 82.2475
+  type: student
+
+- city: Anantapur
+  state: Andhra Pradesh
+  lat: 14.6819
+  lng: 77.6006
+  type: student
+
+- city: Chintalapudi
+  state: Andhra Pradesh
+  lat: 17.0667
+  lng: 80.9667
+  type: faculty
+
+- city: Srikakulam
+  state: Andhra Pradesh
+  lat: 18.2969
+  lng: 83.8938
+  type: faculty
+
+- city: Krishna
+  state: Andhra Pradesh
+  lat: 16.2135
+  lng: 81.0278
+  type: faculty
+
+- city: Chittoor
+  state: Andhra Pradesh
+  lat: 13.2161
+  lng: 79.0973
+  type: faculty
+
+- city: Prakasam
+  state: Andhra Pradesh
+  lat: 15.5642
+  lng: 80.0067
+  type: faculty
+
+- city: Nandyal
+  state: Andhra Pradesh
+  lat: 15.4736
+  lng: 78.4807
+  type: faculty
+
+- city: Bapatla
+  state: Andhra Pradesh
+  lat: 15.9053
+  lng: 80.4681
+  type: faculty
+
+- city: Anakapalli
+  state: Andhra Pradesh
+  lat: 17.6715
+  lng: 82.7748
   type: faculty
 
 # ── Arunachal Pradesh ──
@@ -63,7 +137,7 @@
   state: Assam
   lat: 26.1445
   lng: 91.7362
-  type: faculty
+  type: both
 
 - city: Jorhat
   state: Assam
@@ -83,24 +157,66 @@
   lng: 94.6333
   type: faculty
 
+- city: Baksa
+  state: Assam
+  lat: 26.6276
+  lng: 91.3389
+  type: faculty
+
+- city: Nagaon
+  state: Assam
+  lat: 26.3482
+  lng: 92.6858
+  type: faculty
+
+- city: Chirang
+  state: Assam
+  lat: 26.6464
+  lng: 90.6242
+  type: faculty
+
+- city: Dhubri
+  state: Assam
+  lat: 26.0196
+  lng: 89.9914
+  type: faculty
+
+- city: Dibrugarh
+  state: Assam
+  lat: 27.4845
+  lng: 94.9019
+  type: faculty
+
+- city: Biswanath
+  state: Assam
+  lat: 26.7939
+  lng: 93.3592
+  type: faculty
+
+- city: Lakhimpur
+  state: Assam
+  lat: 27.1763
+  lng: 94.1993
+  type: faculty
+
 # ── Bihar ──
 - city: Patna
   state: Bihar
   lat: 25.5941
   lng: 85.1376
-  type: faculty
+  type: both
 
 - city: Gaya
   state: Bihar
   lat: 24.7955
   lng: 85.0002
-  type: faculty
+  type: both
 
 - city: Bhagalpur
   state: Bihar
   lat: 25.2425
   lng: 86.9842
-  type: faculty
+  type: both
 
 - city: Samastipur
   state: Bihar
@@ -114,25 +230,55 @@
   lng: 85.4919
   type: faculty
 
+- city: Muzaffarpur
+  state: Bihar
+  lat: 26.1209
+  lng: 85.3647
+  type: student
+
+- city: Begusarai
+  state: Bihar
+  lat: 25.4182
+  lng: 86.1272
+  type: faculty
+
+- city: Vaishali
+  state: Bihar
+  lat: 25.7492
+  lng: 85.3972
+  type: faculty
+
+- city: West Champaran
+  state: Bihar
+  lat: 27.0518
+  lng: 84.3351
+  type: faculty
+
+- city: Kaimur
+  state: Bihar
+  lat: 24.9755
+  lng: 83.5768
+  type: faculty
+
 # ── Chandigarh ──
 - city: Chandigarh
   state: Chandigarh
   lat: 30.7333
   lng: 76.7794
-  type: faculty
+  type: both
 
 # ── Chhattisgarh ──
 - city: Raipur
   state: Chhattisgarh
   lat: 21.2514
   lng: 81.6296
-  type: faculty
+  type: both
 
 - city: Bilaspur
   state: Chhattisgarh
   lat: 22.0796
   lng: 82.1391
-  type: faculty
+  type: both
 
 - city: Raigarh
   state: Chhattisgarh
@@ -140,24 +286,48 @@
   lng: 83.3950
   type: faculty
 
+- city: Bhilai
+  state: Chhattisgarh
+  lat: 21.1938
+  lng: 81.3509
+  type: student
+
+- city: Durg
+  state: Chhattisgarh
+  lat: 21.1904
+  lng: 81.2849
+  type: student
+
+- city: Dhamtari
+  state: Chhattisgarh
+  lat: 20.7073
+  lng: 81.5497
+  type: faculty
+
+- city: Gariaband
+  state: Chhattisgarh
+  lat: 20.4292
+  lng: 82.2526
+  type: faculty
+
 # ── Delhi ──
 - city: New Delhi
   state: Delhi
   lat: 28.6139
   lng: 77.2090
-  type: faculty
+  type: both
 
 - city: Noida
   state: Delhi
   lat: 28.5355
   lng: 77.3910
-  type: faculty
+  type: both
 
 - city: Ghaziabad
   state: Delhi
   lat: 28.6692
   lng: 77.4538
-  type: faculty
+  type: both
 
 # ── Goa ──
 - city: Panaji
@@ -171,31 +341,31 @@
   state: Gujarat
   lat: 23.0225
   lng: 72.5714
-  type: faculty
+  type: both
 
 - city: Surat
   state: Gujarat
   lat: 21.1702
   lng: 72.8311
-  type: faculty
+  type: both
 
 - city: Vadodara
   state: Gujarat
   lat: 22.3072
   lng: 73.1812
-  type: faculty
+  type: both
 
 - city: Rajkot
   state: Gujarat
   lat: 22.3039
   lng: 70.8022
-  type: faculty
+  type: both
 
 - city: Gandhinagar
   state: Gujarat
   lat: 23.2156
   lng: 72.6369
-  type: faculty
+  type: both
 
 - city: Junagadh
   state: Gujarat
@@ -207,7 +377,7 @@
   state: Gujarat
   lat: 21.7645
   lng: 72.1519
-  type: faculty
+  type: both
 
 - city: Anand
   state: Gujarat
@@ -221,24 +391,66 @@
   lng: 70.0577
   type: faculty
 
+- city: Dahod
+  state: Gujarat
+  lat: 22.8344
+  lng: 74.2599
+  type: faculty
+
+- city: Valsad
+  state: Gujarat
+  lat: 20.5992
+  lng: 72.9342
+  type: faculty
+
+- city: Kheda
+  state: Gujarat
+  lat: 22.7507
+  lng: 72.6847
+  type: faculty
+
+- city: Mahisagar
+  state: Gujarat
+  lat: 23.1912
+  lng: 73.6644
+  type: faculty
+
+- city: Bharuch
+  state: Gujarat
+  lat: 21.7080
+  lng: 72.9957
+  type: faculty
+
+- city: Mehsana
+  state: Gujarat
+  lat: 23.6060
+  lng: 72.4045
+  type: faculty
+
+- city: Porbandar
+  state: Gujarat
+  lat: 21.6409
+  lng: 69.6110
+  type: faculty
+
 # ── Haryana ──
 - city: Gurugram
   state: Haryana
   lat: 28.4595
   lng: 77.0266
-  type: faculty
+  type: both
 
 - city: Faridabad
   state: Haryana
   lat: 28.4089
   lng: 77.3178
-  type: faculty
+  type: both
 
 - city: Hisar
   state: Haryana
   lat: 29.1492
   lng: 75.7217
-  type: faculty
+  type: both
 
 - city: Ambala
   state: Haryana
@@ -250,13 +462,13 @@
   state: Haryana
   lat: 29.3909
   lng: 76.9635
-  type: faculty
+  type: both
 
 - city: Sonipat
   state: Haryana
   lat: 28.9288
   lng: 77.0210
-  type: faculty
+  type: both
 
 - city: Panchkula
   state: Haryana
@@ -288,12 +500,36 @@
   lng: 77.2674
   type: faculty
 
+- city: Karnal
+  state: Haryana
+  lat: 29.6857
+  lng: 76.9905
+  type: student
+
+- city: Rohtak
+  state: Haryana
+  lat: 28.8955
+  lng: 76.6066
+  type: faculty
+
+- city: Jhajjar
+  state: Haryana
+  lat: 28.5964
+  lng: 76.6505
+  type: faculty
+
+- city: Palwal
+  state: Haryana
+  lat: 28.1406
+  lng: 77.3260
+  type: faculty
+
 # ── Himachal Pradesh ──
 - city: Shimla
   state: Himachal Pradesh
   lat: 31.1048
   lng: 77.1734
-  type: faculty
+  type: both
 
 - city: Mandi
   state: Himachal Pradesh
@@ -331,18 +567,30 @@
   lng: 76.5361
   type: faculty
 
+- city: Solan
+  state: Himachal Pradesh
+  lat: 30.9045
+  lng: 77.0967
+  type: student
+
+- city: Kinnaur
+  state: Himachal Pradesh
+  lat: 31.5930
+  lng: 78.3281
+  type: faculty
+
 # ── Jammu & Kashmir ──
 - city: Jammu
   state: Jammu & Kashmir
   lat: 32.7266
   lng: 74.8570
-  type: faculty
+  type: both
 
 - city: Srinagar
   state: Jammu & Kashmir
   lat: 34.0836
   lng: 74.7973
-  type: faculty
+  type: both
 
 - city: Doda
   state: Jammu & Kashmir
@@ -356,12 +604,24 @@
   lng: 74.8984
   type: faculty
 
+- city: Kulgam
+  state: Jammu & Kashmir
+  lat: 33.6400
+  lng: 75.0197
+  type: faculty
+
+- city: Kishtwar
+  state: Jammu & Kashmir
+  lat: 33.3108
+  lng: 75.7694
+  type: faculty
+
 # ── Jharkhand ──
 - city: Ranchi
   state: Jharkhand
   lat: 23.3441
   lng: 85.3096
-  type: faculty
+  type: both
 
 - city: Dumka
   state: Jharkhand
@@ -375,30 +635,66 @@
   lng: 85.3613
   type: faculty
 
+- city: Dhanbad
+  state: Jharkhand
+  lat: 23.7957
+  lng: 86.4304
+  type: student
+
+- city: Ramgarh
+  state: Jharkhand
+  lat: 23.6303
+  lng: 85.5600
+  type: faculty
+
+- city: Latehar
+  state: Jharkhand
+  lat: 23.7442
+  lng: 84.4998
+  type: faculty
+
+- city: East Singhbhum
+  state: Jharkhand
+  lat: 22.6132
+  lng: 86.3819
+  type: faculty
+
+- city: Saraikela Kharsawan
+  state: Jharkhand
+  lat: 22.6996
+  lng: 85.9313
+  type: faculty
+
+- city: Bokaro
+  state: Jharkhand
+  lat: 23.6544
+  lng: 86.1456
+  type: faculty
+
 # ── Karnataka ──
 - city: Bengaluru
   state: Karnataka
   lat: 12.9716
   lng: 77.5946
-  type: faculty
+  type: both
 
 - city: Mysuru
   state: Karnataka
   lat: 12.2958
   lng: 76.6394
-  type: faculty
+  type: both
 
 - city: Hubballi
   state: Karnataka
   lat: 15.3647
   lng: 75.1240
-  type: faculty
+  type: both
 
 - city: Mangaluru
   state: Karnataka
   lat: 12.9141
   lng: 74.8560
-  type: faculty
+  type: both
 
 - city: Belagavi
   state: Karnataka
@@ -410,13 +706,13 @@
   state: Karnataka
   lat: 14.4644
   lng: 75.9218
-  type: faculty
+  type: both
 
 - city: Kalaburagi
   state: Karnataka
   lat: 17.3297
   lng: 76.8343
-  type: faculty
+  type: both
 
 - city: Ballari
   state: Karnataka
@@ -428,7 +724,7 @@
   state: Karnataka
   lat: 13.3409
   lng: 74.7421
-  type: faculty
+  type: both
 
 - city: Hassan
   state: Karnataka
@@ -472,36 +768,96 @@
   lng: 78.1290
   type: faculty
 
+- city: Manipal
+  state: Karnataka
+  lat: 13.3525
+  lng: 74.7868
+  type: student
+
+- city: Koppal
+  state: Karnataka
+  lat: 15.3547
+  lng: 76.1547
+  type: faculty
+
+- city: Bhatkal
+  state: Karnataka
+  lat: 13.9855
+  lng: 74.5551
+  type: faculty
+
+- city: Bagalkote
+  state: Karnataka
+  lat: 16.1853
+  lng: 75.6968
+  type: faculty
+
+- city: Chikballapur
+  state: Karnataka
+  lat: 13.4274
+  lng: 77.7321
+  type: faculty
+
+- city: Mirle
+  state: Karnataka
+  lat: 12.5406
+  lng: 76.3241
+  type: faculty
+
+- city: Haveri
+  state: Karnataka
+  lat: 14.7180
+  lng: 75.3656
+  type: faculty
+
+- city: Ramanagara
+  state: Karnataka
+  lat: 12.7253
+  lng: 77.2805
+  type: faculty
+
+- city: Uttara Kannada
+  state: Karnataka
+  lat: 14.7254
+  lng: 74.6403
+  type: faculty
+
+- city: Jamkhandi
+  state: Karnataka
+  lat: 16.5548
+  lng: 75.2341
+  type: faculty
+
 # ── Kerala ──
 - city: Thiruvananthapuram
   state: Kerala
   lat: 8.5241
   lng: 76.9366
-  type: faculty
+  type: both
 
 - city: Kochi
   state: Kerala
   lat: 9.9312
   lng: 76.2673
-  type: faculty
+  type: both
 
 - city: Kozhikode
   state: Kerala
   lat: 11.2588
   lng: 75.7804
-  type: faculty
+  type: both
 
 - city: Thrissur
   state: Kerala
   lat: 10.5276
   lng: 76.2144
-  type: faculty
+  type: both
 
 - city: Kollam
   state: Kerala
   lat: 8.8932
   lng: 76.6141
-  type: faculty
+  type: both
 
 - city: Palakkad
   state: Kerala
@@ -531,7 +887,7 @@
   state: Kerala
   lat: 9.5916
   lng: 76.5222
-  type: faculty
+  type: both
 
 - city: Wayanad
   state: Kerala
@@ -539,30 +895,72 @@
   lng: 76.1320
   type: faculty
 
+- city: Ernakulam
+  state: Kerala
+  lat: 9.9816
+  lng: 76.2999
+  type: student
+
+- city: Idukki
+  state: Kerala
+  lat: 9.8155
+  lng: 76.9992
+  type: faculty
+
+- city: Pathanamthitta
+  state: Kerala
+  lat: 9.2655
+  lng: 76.7872
+  type: faculty
+
+- city: Kuttikanam
+  state: Kerala
+  lat: 9.5812
+  lng: 76.9638
+  type: faculty
+
+- city: Angamaly
+  state: Kerala
+  lat: 10.1910
+  lng: 76.3874
+  type: faculty
+
+- city: Kothamangalam
+  state: Kerala
+  lat: 10.0640
+  lng: 76.6218
+  type: faculty
+
+- city: Vavanoor
+  state: Kerala
+  lat: 10.7661
+  lng: 76.1421
+  type: faculty
+
 # ── Madhya Pradesh ──
 - city: Bhopal
   state: Madhya Pradesh
   lat: 23.2599
   lng: 77.4126
-  type: faculty
+  type: both
 
 - city: Indore
   state: Madhya Pradesh
   lat: 22.7196
   lng: 75.8577
-  type: faculty
+  type: both
 
 - city: Jabalpur
   state: Madhya Pradesh
   lat: 23.1815
   lng: 79.9864
-  type: faculty
+  type: both
 
 - city: Gwalior
   state: Madhya Pradesh
   lat: 26.2183
   lng: 78.1828
-  type: faculty
+  type: both
 
 - city: Ujjain
   state: Madhya Pradesh
@@ -582,42 +980,78 @@
   lng: 76.0534
   type: faculty
 
+- city: Hoshangabad
+  state: Madhya Pradesh
+  lat: 22.7524
+  lng: 77.7237
+  type: faculty
+
+- city: Shahdol
+  state: Madhya Pradesh
+  lat: 23.3002
+  lng: 81.3648
+  type: faculty
+
+- city: Sidhi
+  state: Madhya Pradesh
+  lat: 24.2113
+  lng: 81.7000
+  type: faculty
+
+- city: Chhatarpur
+  state: Madhya Pradesh
+  lat: 24.9205
+  lng: 79.5840
+  type: faculty
+
+- city: Tikamgarh
+  state: Madhya Pradesh
+  lat: 24.8552
+  lng: 79.0473
+  type: faculty
+
+- city: Chhindwara
+  state: Madhya Pradesh
+  lat: 22.0578
+  lng: 78.9386
+  type: faculty
+
 # ── Maharashtra ──
 - city: Mumbai
   state: Maharashtra
   lat: 19.0760
   lng: 72.8777
-  type: faculty
+  type: both
 
 - city: Pune
   state: Maharashtra
   lat: 18.5204
   lng: 73.8567
-  type: faculty
+  type: both
 
 - city: Nagpur
   state: Maharashtra
   lat: 21.1458
   lng: 79.0882
-  type: faculty
+  type: both
 
 - city: Nashik
   state: Maharashtra
   lat: 19.9975
   lng: 73.7898
-  type: faculty
+  type: both
 
 - city: Aurangabad
   state: Maharashtra
   lat: 19.8762
   lng: 75.3433
-  type: faculty
+  type: both
 
 - city: Kolhapur
   state: Maharashtra
   lat: 16.7050
   lng: 74.2433
-  type: faculty
+  type: both
 
 - city: Solapur
   state: Maharashtra
@@ -659,7 +1093,7 @@
   state: Maharashtra
   lat: 19.2183
   lng: 72.9781
-  type: faculty
+  type: both
 
 - city: Wardha
   state: Maharashtra
@@ -679,6 +1113,60 @@
   lng: 74.7497
   type: faculty
 
+- city: Satara
+  state: Maharashtra
+  lat: 17.6805
+  lng: 74.0183
+  type: faculty
+
+- city: Karad
+  state: Maharashtra
+  lat: 17.2896
+  lng: 74.1815
+  type: faculty
+
+- city: Akola
+  state: Maharashtra
+  lat: 20.7002
+  lng: 77.0082
+  type: faculty
+
+- city: Palghar
+  state: Maharashtra
+  lat: 19.6967
+  lng: 72.7699
+  type: faculty
+
+- city: Ahilyanagar
+  state: Maharashtra
+  lat: 19.0948
+  lng: 74.7480
+  type: faculty
+
+- city: Dhule
+  state: Maharashtra
+  lat: 20.8980
+  lng: 74.7732
+  type: faculty
+
+- city: Deulgaon Raja
+  state: Maharashtra
+  lat: 20.0152
+  lng: 76.0353
+  type: faculty
+
+- city: Raigad
+  state: Maharashtra
+  lat: 18.4928
+  lng: 73.1381
+  type: faculty
+
+- city: Gadchiroli
+  state: Maharashtra
+  lat: 19.7591
+  lng: 80.1623
+  type: faculty
+
 # ── Manipur ──
 - city: Imphal
   state: Manipur
@@ -690,6 +1178,14 @@
   state: Manipur
   lat: 24.3327
   lng: 93.6794
+  type: faculty
+
+# ── Meghalaya ──
+
+- city: Shillong
+  state: Meghalaya
+  lat: 25.5650
+  lng: 91.8841
   type: faculty
 
 # ── Mizoram ──
@@ -717,13 +1213,13 @@
   state: Odisha
   lat: 20.2961
   lng: 85.8245
-  type: faculty
+  type: both
 
 - city: Cuttack
   state: Odisha
   lat: 20.4625
   lng: 85.8830
-  type: faculty
+  type: both
 
 - city: Sambalpur
   state: Odisha
@@ -743,6 +1239,48 @@
   lng: 84.0285
   type: faculty
 
+- city: Rourkela
+  state: Odisha
+  lat: 22.2604
+  lng: 84.8536
+  type: student
+
+- city: Berhampur
+  state: Odisha
+  lat: 19.3150
+  lng: 84.7941
+  type: student
+
+- city: Boudh
+  state: Odisha
+  lat: 20.8379
+  lng: 84.3288
+  type: faculty
+
+- city: Khordha
+  state: Odisha
+  lat: 20.1728
+  lng: 85.6139
+  type: faculty
+
+- city: Ganjam
+  state: Odisha
+  lat: 19.6090
+  lng: 84.7081
+  type: faculty
+
+- city: Baripada
+  state: Odisha
+  lat: 21.9342
+  lng: 86.7309
+  type: faculty
+
+- city: Jagatsinghapur
+  state: Odisha
+  lat: 20.1801
+  lng: 86.3415
+  type: faculty
+
 # ── Puducherry ──
 - city: Puducherry
   state: Puducherry
@@ -755,31 +1293,31 @@
   state: Punjab
   lat: 31.6340
   lng: 74.8723
-  type: faculty
+  type: both
 
 - city: Ludhiana
   state: Punjab
   lat: 30.9010
   lng: 75.8573
-  type: faculty
+  type: both
 
 - city: Jalandhar
   state: Punjab
   lat: 31.3260
   lng: 75.5762
-  type: faculty
+  type: both
 
 - city: Patiala
   state: Punjab
   lat: 30.3398
   lng: 76.3869
-  type: faculty
+  type: both
 
 - city: Bathinda
   state: Punjab
   lat: 30.2110
   lng: 74.9455
-  type: faculty
+  type: both
 
 - city: Pathankot
   state: Punjab
@@ -797,7 +1335,7 @@
   state: Punjab
   lat: 30.7046
   lng: 76.7179
-  type: faculty
+  type: both
 
 - city: Hoshiarpur
   state: Punjab
@@ -815,7 +1353,7 @@
   state: Punjab
   lat: 31.2241
   lng: 75.7723
-  type: faculty
+  type: both
 
 - city: Rajpura
   state: Punjab
@@ -823,30 +1361,60 @@
   lng: 76.5893
   type: faculty
 
+- city: Sri Muktsar Sahib
+  state: Punjab
+  lat: 30.4762
+  lng: 74.5122
+  type: faculty
+
+- city: Moga
+  state: Punjab
+  lat: 30.8165
+  lng: 75.1717
+  type: faculty
+
+- city: Sangrur
+  state: Punjab
+  lat: 30.2458
+  lng: 75.8421
+  type: faculty
+
+- city: Patran
+  state: Punjab
+  lat: 30.0333
+  lng: 76.1500
+  type: faculty
+
+- city: Sirhind
+  state: Punjab
+  lat: 30.6250
+  lng: 76.3854
+  type: faculty
+
 # ── Rajasthan ──
 - city: Jaipur
   state: Rajasthan
   lat: 26.9124
   lng: 75.7873
-  type: faculty
+  type: both
 
 - city: Kota
   state: Rajasthan
   lat: 25.2138
   lng: 75.8648
-  type: faculty
+  type: both
 
 - city: Ajmer
   state: Rajasthan
   lat: 26.4499
   lng: 74.6399
-  type: faculty
+  type: both
 
 - city: Udaipur
   state: Rajasthan
   lat: 24.5854
   lng: 73.7125
-  type: faculty
+  type: both
 
 - city: Sri Ganganagar
   state: Rajasthan
@@ -860,6 +1428,36 @@
   lng: 75.7888
   type: faculty
 
+- city: Jodhpur
+  state: Rajasthan
+  lat: 26.2389
+  lng: 73.0243
+  type: student
+
+- city: Bikaner
+  state: Rajasthan
+  lat: 28.0229
+  lng: 73.3119
+  type: student
+
+- city: Rajsamand
+  state: Rajasthan
+  lat: 25.2892
+  lng: 73.8241
+  type: faculty
+
+- city: Jhunjhunu
+  state: Rajasthan
+  lat: 28.1288
+  lng: 75.3993
+  type: faculty
+
+- city: Churu
+  state: Rajasthan
+  lat: 28.2983
+  lng: 74.9679
+  type: faculty
+
 # ── Sikkim ──
 - city: Gangtok
   state: Sikkim
@@ -867,60 +1465,66 @@
   lng: 88.6065
   type: faculty
 
+- city: East Sikkim
+  state: Sikkim
+  lat: 27.5858
+  lng: 88.1101
+  type: faculty
+
 # ── Tamil Nadu ──
 - city: Chennai
   state: Tamil Nadu
   lat: 13.0827
   lng: 80.2707
-  type: faculty
+  type: both
 
 - city: Coimbatore
   state: Tamil Nadu
   lat: 11.0168
   lng: 76.9558
-  type: faculty
+  type: both
 
 - city: Madurai
   state: Tamil Nadu
   lat: 9.9252
   lng: 78.1198
-  type: faculty
+  type: both
 
 - city: Tiruchirappalli
   state: Tamil Nadu
   lat: 10.7905
   lng: 78.7047
-  type: faculty
+  type: both
 
 - city: Salem
   state: Tamil Nadu
   lat: 11.6643
   lng: 78.1460
-  type: faculty
+  type: both
 
 - city: Tirunelveli
   state: Tamil Nadu
   lat: 8.7139
   lng: 77.7567
-  type: faculty
+  type: both
 
 - city: Vellore
   state: Tamil Nadu
   lat: 12.9165
   lng: 79.1325
-  type: faculty
+  type: both
 
 - city: Erode
   state: Tamil Nadu
   lat: 11.3410
   lng: 77.7172
-  type: faculty
+  type: both
 
 - city: Thanjavur
   state: Tamil Nadu
   lat: 10.7870
   lng: 79.1378
-  type: faculty
+  type: both
 
 - city: Namakkal
   state: Tamil Nadu
@@ -944,13 +1548,13 @@
   state: Tamil Nadu
   lat: 12.8185
   lng: 79.6947
-  type: faculty
+  type: both
 
 - city: Chengalpattu
   state: Tamil Nadu
   lat: 12.6921
   lng: 79.9768
-  type: faculty
+  type: both
 
 - city: Tiruppur
   state: Tamil Nadu
@@ -970,24 +1574,102 @@
   lng: 80.0421
   type: faculty
 
+- city: Theni
+  state: Tamil Nadu
+  lat: 10.0104
+  lng: 77.4768
+  type: faculty
+
+- city: Koradacherri
+  state: Tamil Nadu
+  lat: 10.8167
+  lng: 79.5167
+  type: faculty
+
+- city: Tiruvallur
+  state: Tamil Nadu
+  lat: 13.1394
+  lng: 79.9071
+  type: faculty
+
+- city: Pudukkottai
+  state: Tamil Nadu
+  lat: 10.2903
+  lng: 78.8174
+  type: faculty
+
+- city: Ariyalur
+  state: Tamil Nadu
+  lat: 11.1358
+  lng: 79.0723
+  type: faculty
+
+- city: Nagapattinam
+  state: Tamil Nadu
+  lat: 10.7648
+  lng: 79.8431
+  type: faculty
+
+- city: Viluppuram
+  state: Tamil Nadu
+  lat: 12.1167
+  lng: 79.5989
+  type: faculty
+
+- city: Gudiyattam
+  state: Tamil Nadu
+  lat: 12.9486
+  lng: 78.8705
+  type: faculty
+
+- city: Kangeyam
+  state: Tamil Nadu
+  lat: 11.0061
+  lng: 77.5607
+  type: faculty
+
+- city: Pollachi
+  state: Tamil Nadu
+  lat: 10.6588
+  lng: 77.0087
+  type: faculty
+
+- city: Tiruvannamalai
+  state: Tamil Nadu
+  lat: 12.2343
+  lng: 79.0762
+  type: faculty
+
+- city: Thoothukudi
+  state: Tamil Nadu
+  lat: 8.8053
+  lng: 78.1453
+  type: faculty
+
+- city: Sivaganga
+  state: Tamil Nadu
+  lat: 9.8487
+  lng: 78.4870
+  type: faculty
+
 # ── Telangana ──
 - city: Hyderabad
   state: Telangana
   lat: 17.3850
   lng: 78.4867
-  type: faculty
+  type: both
 
 - city: Warangal
   state: Telangana
   lat: 17.9784
   lng: 79.5941
-  type: faculty
+  type: both
 
 - city: Karimnagar
   state: Telangana
   lat: 18.4386
   lng: 79.1288
-  type: faculty
+  type: both
 
 - city: Nizamabad
   state: Telangana
@@ -1013,48 +1695,96 @@
   lng: 79.6219
   type: faculty
 
+- city: Jagtial
+  state: Telangana
+  lat: 18.7957
+  lng: 78.9162
+  type: faculty
+
+- city: Jadcherla
+  state: Telangana
+  lat: 16.7699
+  lng: 78.1377
+  type: faculty
+
+- city: Yadadri Bhuvanagiri
+  state: Telangana
+  lat: 17.4282
+  lng: 79.0905
+  type: faculty
+
+- city: Mahabubabad
+  state: Telangana
+  lat: 17.5957
+  lng: 79.9999
+  type: faculty
+
+- city: Bhadradri Kothagudem
+  state: Telangana
+  lat: 17.7167
+  lng: 80.5713
+  type: faculty
+
+- city: Nalgonda
+  state: Telangana
+  lat: 17.0504
+  lng: 79.2669
+  type: faculty
+
+- city: Siddipet
+  state: Telangana
+  lat: 18.1018
+  lng: 78.8520
+  type: faculty
+
+- city: Komaram Bheem Asifabad
+  state: Telangana
+  lat: 19.3338
+  lng: 79.4220
+  type: faculty
+
 # ── Uttar Pradesh ──
 - city: Lucknow
   state: Uttar Pradesh
   lat: 26.8467
   lng: 80.9462
-  type: faculty
+  type: both
 
 - city: Kanpur
   state: Uttar Pradesh
   lat: 26.4499
   lng: 80.3319
-  type: faculty
+  type: both
 
 - city: Varanasi
   state: Uttar Pradesh
   lat: 25.3176
   lng: 82.9739
-  type: faculty
+  type: both
 
 - city: Prayagraj
   state: Uttar Pradesh
   lat: 25.4358
   lng: 81.8463
-  type: faculty
+  type: both
 
 - city: Meerut
   state: Uttar Pradesh
   lat: 28.9845
   lng: 77.7064
-  type: faculty
+  type: both
 
 - city: Aligarh
   state: Uttar Pradesh
   lat: 27.8974
   lng: 78.0880
-  type: faculty
+  type: both
 
 - city: Bareilly
   state: Uttar Pradesh
   lat: 28.3670
   lng: 79.4304
-  type: faculty
+  type: both
 
 - city: Gorakhpur
   state: Uttar Pradesh
@@ -1078,7 +1808,7 @@
   state: Uttar Pradesh
   lat: 27.4924
   lng: 77.6737
-  type: faculty
+  type: both
 
 - city: Sultanpur
   state: Uttar Pradesh
@@ -1092,24 +1822,120 @@
   lng: 77.7758
   type: faculty
 
+- city: Agra
+  state: Uttar Pradesh
+  lat: 27.1767
+  lng: 78.0081
+  type: student
+
+- city: Bagpat
+  state: Uttar Pradesh
+  lat: 28.9448
+  lng: 77.2178
+  type: faculty
+
+- city: Ghazipur
+  state: Uttar Pradesh
+  lat: 25.5880
+  lng: 83.5776
+  type: faculty
+
+- city: Etah
+  state: Uttar Pradesh
+  lat: 27.5580
+  lng: 78.6620
+  type: faculty
+
+- city: Muzaffarnagar
+  state: Uttar Pradesh
+  lat: 29.4727
+  lng: 77.7085
+  type: faculty
+
+- city: Lakhimpur Kheri
+  state: Uttar Pradesh
+  lat: 28.1834
+  lng: 80.7131
+  type: faculty
+
+- city: Bulandshahr
+  state: Uttar Pradesh
+  lat: 28.4057
+  lng: 77.8543
+  type: faculty
+
+- city: Auraiya
+  state: Uttar Pradesh
+  lat: 26.6558
+  lng: 79.5161
+  type: faculty
+
+- city: Gonda
+  state: Uttar Pradesh
+  lat: 27.1335
+  lng: 81.9620
+  type: faculty
+
+- city: Rampur
+  state: Uttar Pradesh
+  lat: 28.8014
+  lng: 79.0284
+  type: faculty
+
+- city: Shamli
+  state: Uttar Pradesh
+  lat: 29.4483
+  lng: 77.3088
+  type: faculty
+
+- city: Raebareli
+  state: Uttar Pradesh
+  lat: 26.2087
+  lng: 81.2186
+  type: faculty
+
+- city: Farrukhabad
+  state: Uttar Pradesh
+  lat: 27.3895
+  lng: 79.5791
+  type: faculty
+
+- city: Pilibhit
+  state: Uttar Pradesh
+  lat: 28.6295
+  lng: 79.8054
+  type: faculty
+
+- city: Ballia
+  state: Uttar Pradesh
+  lat: 25.7557
+  lng: 84.1503
+  type: faculty
+
+- city: Etawah
+  state: Uttar Pradesh
+  lat: 26.7156
+  lng: 79.0917
+  type: faculty
+
 # ── Uttarakhand ──
 - city: Dehradun
   state: Uttarakhand
   lat: 30.3165
   lng: 78.0322
-  type: faculty
+  type: both
 
 - city: Haridwar
   state: Uttarakhand
   lat: 29.9457
   lng: 78.1642
-  type: faculty
+  type: both
 
 - city: Roorkee
   state: Uttarakhand
   lat: 29.8543
   lng: 77.8880
-  type: faculty
+  type: both
 
 - city: Almora
   state: Uttarakhand
@@ -1123,24 +1949,42 @@
   lng: 79.4542
   type: faculty
 
+- city: Pithoragarh
+  state: Uttarakhand
+  lat: 29.5859
+  lng: 80.2152
+  type: faculty
+
+- city: Pauri Garhwal
+  state: Uttarakhand
+  lat: 29.7310
+  lng: 78.5073
+  type: faculty
+
+- city: Udham Singh Nagar
+  state: Uttarakhand
+  lat: 29.0478
+  lng: 79.4326
+  type: faculty
+
 # ── West Bengal ──
 - city: Kolkata
   state: West Bengal
   lat: 22.5726
   lng: 88.3639
-  type: faculty
+  type: both
 
 - city: Howrah
   state: West Bengal
   lat: 22.5958
   lng: 88.2636
-  type: faculty
+  type: both
 
 - city: Asansol
   state: West Bengal
   lat: 23.6889
   lng: 86.9661
-  type: faculty
+  type: both
 
 - city: Kalyani
   state: West Bengal
@@ -1164,4 +2008,58 @@
   state: West Bengal
   lat: 26.3440
   lng: 89.4461
+  type: faculty
+
+- city: Durgapur
+  state: West Bengal
+  lat: 23.5204
+  lng: 87.3119
+  type: student
+
+- city: Barrackpore
+  state: West Bengal
+  lat: 22.7642
+  lng: 88.3777
+  type: faculty
+
+- city: North 24 Parganas
+  state: West Bengal
+  lat: 22.6927
+  lng: 88.6626
+  type: faculty
+
+- city: Purba Medinipur
+  state: West Bengal
+  lat: 22.0648
+  lng: 87.8378
+  type: faculty
+
+- city: Birbhum
+  state: West Bengal
+  lat: 24.0622
+  lng: 87.6983
+  type: faculty
+
+- city: Paschim Medinipur
+  state: West Bengal
+  lat: 22.3600
+  lng: 87.4112
+  type: faculty
+
+- city: Bongaon
+  state: West Bengal
+  lat: 23.0570
+  lng: 88.7814
+  type: faculty
+
+- city: Jhargram
+  state: West Bengal
+  lat: 22.4539
+  lng: 86.9949
+  type: faculty
+
+- city: Purulia
+  state: West Bengal
+  lat: 23.3292
+  lng: 86.3672
   type: faculty
