@@ -17,7 +17,7 @@ A structured assessment and learning platform designed to identify foundational 
 
 ## **About**
 
-<!-- TODO: What FLN is, who it serves (students? teachers? districts?), and what makes it different from existing FLN efforts in India. Reference NEP 2020 / NIPUN Bharat if relevant — but only if Pavani confirms it's accurate framing. -->
+ASER 2024 shows that among Grade 3 government-school children, 27.6% could do a 2-digit subtraction problem, while 23.4% could read at least a Grade 2-level text. The Government's NIPUN Bharat mission explicitly places foundational literacy and numeracy at the highest priority of school education and targets foundational skills by the end of Grade 3. Our broader aim is for every child to develop strong reading, writing and numeracy foundations by the end of Grade 3.
 
 ---
 
