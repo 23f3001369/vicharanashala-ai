@@ -20,14 +20,21 @@ Open courses from Vicharanashala, hosted on the ViBe platform. All courses are f
     <div class="opening-course-meta">Free &nbsp;·&nbsp; Asynchronous &nbsp;·&nbsp; ViBe Platform</div>
     <h3 class="opening-course-title">Fundamentals of AI Using Agriculture Datasets</h3>
     <p class="opening-course-desc">An introductory course on artificial intelligence using real-world agriculture datasets. Learn core machine learning concepts through hands-on, domain-grounded problems. No prior AI experience required.</p>
-    <a href="https://vibe.vicharanashala.ai/student/course-registration/69c268f5d84bfe65c8598e92" target="_blank" rel="noopener" class="opening-btn">Register on ViBe ↗</a>
+    <a href="#register-ai-agri" class="opening-btn">Request to Register</a>
+  </div>
+
+  <div class="opening-course-card">
+    <div class="opening-course-meta">Free &nbsp;·&nbsp; Asynchronous &nbsp;·&nbsp; ViBe Platform</div>
+    <h3 class="opening-course-title">Fundamentals of MERN Stack</h3>
+    <p class="opening-course-desc">A beginner-friendly course covering the full MERN stack — MongoDB, Express, React, and Node.js. Build real web applications from scratch with guided projects.</p>
+    <a href="#register-mern" class="opening-btn">Request to Register</a>
   </div>
 
 </div>
 
 ### Coming Soon
 
-New courses will be announced on this website and the [lab's LinkedIn page](https://www.linkedin.com/company/vicharanashala/posts){:target="_blank"} — follow along there to hear when they open.
+New courses will be announced on this website and the [lab's LinkedIn page](https://www.linkedin.com/company/vicharanashala/posts){:target="_blank"}. Submit your interest below to be notified when they open.
 
 | Course | Audience | Status |
 |---|---|---|
@@ -41,9 +48,9 @@ New courses will be announced on this website and the [lab's LinkedIn page](http
 
 Vicharanashala runs structured internship programs for students at all levels. Our flagship virtual internship — **Summership** — is open to students from institutions across India, including Tier 2 and Tier 3 colleges. The program runs on the Samagama platform with AI-conducted screening, removing the network gatekeeping that typically limits access to research internships.
 
-Applications, screening, and everything that follows happen on the Samagama platform. Register there to see what is currently open and to apply.
+Positions are announced on IIT Ropar's official recruitment portal. If you are a student interested in interning with the lab, submit your interest and we will reach out when a relevant opening is announced.
 
-<a href="https://samagama.in" target="_blank" rel="noopener" class="opening-btn">Apply on Samagama ↗</a>
+<a href="#intern-interest-form" class="opening-btn">Submit Intern Interest</a>
 
 ---
 
@@ -57,6 +64,4 @@ We are a small, high-output team and we hire selectively. We are looking for peo
 
 Positions are also listed on IIT Ropar's official recruitment page.
 
-Write to us with your CV, the kind of role you are looking for, and a few lines on what draws you to this work.
-
-<a href="mailto:dled@iitrpr.ac.in?subject=Interest%20in%20joining%20Vicharanashala" class="opening-btn">Email Us Your CV ↗</a>
+<a href="#open-positions-form" class="opening-btn">Submit Your Interest</a>

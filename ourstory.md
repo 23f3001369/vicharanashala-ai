@@ -34,11 +34,10 @@ quote_author: "Benjamin Franklin"
 <div class="story-reach">
   <p class="story-label"><i class="ph ph-map-pin"></i> Our Reach</p>
   <h2 class="story-section-h">Across India, city by city.</h2>
-  <p class="story-reach-desc">Faculty and students reached through our programmes — {{ site.data.reach_cities | size }} cities across 31 states and union territories.</p>
+  <p class="story-reach-desc">Faculty reached through CBPAI and GuruSetu programs — {{ site.data.reach_cities | size }} cities across 28 states and union territories.</p>
   <div class="story-reach-legend">
     <span class="reach-legend-item"><span class="reach-dot reach-dot-faculty"></span> Faculty</span>
     <span class="reach-legend-item"><span class="reach-dot reach-dot-student"></span> Students</span>
-    <span class="reach-legend-item"><span class="reach-dot reach-dot-both"></span> Both</span>
   </div>
   <div id="reach-map"></div>
 </div>
@@ -53,55 +52,29 @@ var cities = [
   {% endfor %}
 ];
 
-// There is NO basemap here, on purpose. We draw India's outline and nothing
-// else, so a dot near the northern border cannot be misread as sitting in
-// Nepal or Bhutan — those countries are simply not on the page. Everything
-// outside the outline is page background.
-// Do not add a tile layer back in without solving that problem first.
-// zoomSnap: 0 must be set here, at construction. Leaflet otherwise rounds to
-// whole zoom levels, and India needs a fractional one — at zoom 4 the outline
-// sits small in the middle of the box, at zoom 5 it overflows.
 var map = L.map('reach-map', {
-  zoomSnap: 0,
-  zoomControl: false, scrollWheelZoom: false, dragging: false,
-  doubleClickZoom: false, touchZoom: false, boxZoom: false, keyboard: false,
-  attributionControl: false
+  center: [22.5, 82.0],
+  zoom: 5,
+  scrollWheelZoom: false,
+  zoomControl: true
 });
 
-var facultyStyle = { radius: 4, fillColor: '#e07020', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
-var studentStyle = { radius: 4, fillColor: '#3ab7bf', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
-var bothStyle    = { radius: 5, fillColor: '#8a5ab7', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+  subdomains: 'abcd',
+  maxZoom: 19
+}).addTo(map);
 
-function drawCities() {
-  cities.forEach(function(c) {
-    var style = c.type === 'student' ? studentStyle : c.type === 'both' ? bothStyle : facultyStyle;
-    L.circleMarker([c.lat, c.lng], style)
-      .bindTooltip('<strong>' + c.name + '</strong><br>' + c.state, { direction: 'top', offset: [0, -6] })
-      .addTo(map);
-  });
-}
+var facultyStyle = { radius: 4, fillColor: '#e07020', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.85 };
+var studentStyle = { radius: 4, fillColor: '#3ab7bf', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.85 };
+var bothStyle    = { radius: 5, fillColor: '#8a5ab7', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.85 };
 
-fetch('{{ site.baseurl }}/assets/data/india.geojson')
-  .then(function(r) { return r.json(); })
-  .then(function(geo) {
-    var india = L.geoJSON(geo, {
-      style: { fillColor: '#efefec', fillOpacity: 1, color: '#d6d5ce', weight: 1 },
-      interactive: false
-    }).addTo(map);
-
-    // The outline itself defines the view — no hardcoded bounding box to drift
-    // out of date, and it re-fits when the window resizes.
-    function fit() { map.invalidateSize(); map.fitBounds(india.getBounds(), { padding: [6, 6] }); }
-    fit();
-    window.addEventListener('resize', fit);
-
-    drawCities();
-  })
-  .catch(function() {
-    // If the outline cannot load, still show the dots rather than an empty box.
-    map.setView([22.5, 82.0], 4);
-    drawCities();
-  });
+cities.forEach(function(c) {
+  var style = c.type === 'student' ? studentStyle : c.type === 'both' ? bothStyle : facultyStyle;
+  L.circleMarker([c.lat, c.lng], style)
+    .bindTooltip('<strong>' + c.name + '</strong><br>' + c.state, { direction: 'top', offset: [0, -6] })
+    .addTo(map);
+});
 </script>
 
 <div class="story-timeline-intro">
@@ -190,18 +163,11 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
       <div class="tl-desc">The lab's flagship summer internship programme launched with <strong>Samagama</strong> and <strong>Yaksha</strong> — bringing students into the work of education design hands-on.</div>
     </div>
 
-    <div class="tl-item">
-      <div class="tl-icon">🌧️</div>
-      <div class="tl-date">July 2026</div>
-      <div class="tl-title">Monsoonship Begins</div>
-      <div class="tl-desc">From 15 July, a part-time internship track opened alongside the lab's work — students contributing through the semester, not only over the summer.</div>
-    </div>
-
     <div class="tl-item tl-next">
       <div class="tl-icon tl-next-icon"><span class="tl-pulse-ring"></span>→</div>
-      <div class="tl-date">August–September 2026</div>
+      <div class="tl-date">Up Next</div>
       <div class="tl-title">What's Next?</div>
-      <div class="tl-desc">Three things are taking shape — <strong>Guru Vaani</strong>, a faculty development programme reaching educators across the country; <strong>Samagra</strong>, a credited internship; and <strong>Teacharcha</strong>, a community space for teachers. The story is still being written.</div>
+      <div class="tl-desc">The lab keeps growing — new courses, new tools, new partnerships. The story is still being written.</div>
     </div>
 
   </div>
