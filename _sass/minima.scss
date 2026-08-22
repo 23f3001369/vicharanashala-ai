@@ -1334,11 +1334,15 @@ table {
 
 #reach-map {
   width: 100%;
-  height: 480px;
-  border-radius: 6px;
-  border: 1px solid #e2e2de;
-
-  @include media-query($on-palm) { height: 320px; }
+  // Matches India's proportions on a Mercator projection, so the outline fills
+  // the box. No border or background: there is no basemap behind it, so the
+  // shape should read as sitting directly on the page.
+  aspect-ratio: 19 / 20;
+  max-width: 560px;
+  margin: 0 auto;
+  // Leaflet paints .leaflet-container grey by default; this ID selector
+  // outranks it, so the page background shows through instead.
+  background: transparent;
 }
 
 // Hero logo
