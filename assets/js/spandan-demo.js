@@ -10,7 +10,7 @@
     "Which factor determines everything that follows in the implementation?"
   ];
   var rs = [[54,28,12,6],[18,52,24,6],[42,30,20,8]];
-  var scores = [[120,95,85],[215,180,162],[335,265,245]];
+  var scores = [[120,95,85,70],[215,180,162,140],[335,265,245,210]];
 
   var round = 0, lineIdx = 0, charIdx = 0, displayedLines = [], txTimer, stateTimer, didApprove;
 
@@ -64,7 +64,7 @@
         el('sdl-f' + i).style.width = r[i] + '%';
         el('sdl-p' + i).textContent = r[i] + '%';
       }
-      for (var j = 0; j < 3; j++) { el('sdl-sc' + j).textContent = sc[j]; }
+      for (var j = 0; j < 4; j++) { el('sdl-sc' + j).textContent = sc[j]; }
     }, 80);
     stateTimer = setTimeout(nextRound, 5000);
   };

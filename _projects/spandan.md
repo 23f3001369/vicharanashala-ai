@@ -63,9 +63,10 @@ quote_author: "D. Blocher"
           </div>
           <div class="sdl-lb">
             <div class="sdl-lb-title">Leaderboard</div>
-            <div class="sdl-lb-row"><span class="sdl-rank">1</span><span class="sdl-name">Ananya S.</span><span class="sdl-score" id="sdl-sc0"></span></div>
-            <div class="sdl-lb-row"><span class="sdl-rank">2</span><span class="sdl-name">Rohan M.</span><span class="sdl-score" id="sdl-sc1"></span></div>
-            <div class="sdl-lb-row"><span class="sdl-rank">3</span><span class="sdl-name">Priya K.</span><span class="sdl-score" id="sdl-sc2"></span></div>
+            <div class="sdl-lb-row"><span class="sdl-rank">1</span><span class="sdl-name">Rohit Sharma</span><span class="sdl-score" id="sdl-sc0"></span></div>
+            <div class="sdl-lb-row"><span class="sdl-rank">2</span><span class="sdl-name">Sakshi Sharma</span><span class="sdl-score" id="sdl-sc1"></span></div>
+            <div class="sdl-lb-row"><span class="sdl-rank">3</span><span class="sdl-name">Tanvish Desai</span><span class="sdl-score" id="sdl-sc2"></span></div>
+            <div class="sdl-lb-row"><span class="sdl-rank">4</span><span class="sdl-name">Aman Sagar</span><span class="sdl-score" id="sdl-sc3"></span></div>
           </div>
         </div>
       </div>
