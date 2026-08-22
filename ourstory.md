@@ -34,10 +34,11 @@ quote_author: "Benjamin Franklin"
 <div class="story-reach">
   <p class="story-label"><i class="ph ph-map-pin"></i> Our Reach</p>
   <h2 class="story-section-h">Across India, city by city.</h2>
-  <p class="story-reach-desc">Faculty reached through CBPAI and GuruSetu programs — {{ site.data.reach_cities | size }} cities across 28 states and union territories.</p>
+  <p class="story-reach-desc">Faculty and students reached through our programmes — {{ site.data.reach_cities | size }} cities across 31 states and union territories.</p>
   <div class="story-reach-legend">
     <span class="reach-legend-item"><span class="reach-dot reach-dot-faculty"></span> Faculty</span>
     <span class="reach-legend-item"><span class="reach-dot reach-dot-student"></span> Students</span>
+    <span class="reach-legend-item"><span class="reach-dot reach-dot-both"></span> Both</span>
   </div>
   <div id="reach-map"></div>
 </div>
