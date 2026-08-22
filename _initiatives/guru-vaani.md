@@ -8,7 +8,7 @@ permalink: /initiatives/guru-vaani/
   <a href="{{ site.baseurl }}/lab_initiatives/" class="initiative-back"><i class="ph ph-arrow-left"></i> Lab Initiatives</a>
   <p class="story-label"><i class="ph ph-chalkboard-teacher"></i> Lab Initiative</p>
   <h1 class="initiative-page-h">Guru Vaani</h1>
-  <p class="initiative-page-tag">An eight-week faculty development programme, run online by the lab.</p>
+  <p class="initiative-page-tag">An eight-week faculty development programme, run online by Vicharanashala — the Lab for Education Design at IIT Ropar.</p>
 </div>
 
 Most faculty development ends with a certificate and a folder of slides. This one is organised around a different question: **what will you do differently in your classroom next term?**
@@ -17,12 +17,9 @@ Three of the four pillars ask you to produce something and put it in front of a 
 
 <div class="gv-stats">
   <div class="gv-stat"><span class="gv-stat-n">8</span><span class="gv-stat-l">weeks, fully online</span></div>
-  <div class="gv-stat"><span class="gv-stat-n">~4 hrs</span><span class="gv-stat-l">a week, 1.5 of them live</span></div>
-  <div class="gv-stat"><span class="gv-stat-n">30 hrs</span><span class="gv-stat-l">certified — equivalent to one NCRF credit*</span></div>
+  <div class="gv-stat"><span class="gv-stat-n">4</span><span class="gv-stat-l">pillars, all of them required</span></div>
   <div class="gv-stat"><span class="gv-stat-n">Any day</span><span class="gv-stat-l">your eight weeks start when you do</span></div>
 </div>
-
-<p class="gv-footnote">*Guru Vaani certifies 30 notional learning hours — the volume of learning NCRF describes as one credit. Formal credit allotment is still awaiting official confirmation. The certificate records the hours; it does not itself award a credit.</p>
 
 ---
 
@@ -41,7 +38,7 @@ All four have to be met. The certificate issues on completion, not on attendance
     <div class="gv-pillar-icon"><i class="ph ph-video-camera"></i></div>
     <div class="gv-pillar-name">Live Sessions</div>
     <p class="gv-pillar-desc">The synchronous hour with other faculty — discussion, not lecture.</p>
-    <div class="gv-pillar-bar">720 minutes · 12+ sessions</div>
+    <div class="gv-pillar-bar">12+ sessions · polls answered</div>
   </div>
   <div class="gv-pillar">
     <div class="gv-pillar-icon"><i class="ph ph-chats-circle"></i></div>
@@ -133,7 +130,7 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
 
 .gv-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin: 2rem 0;
 }
@@ -154,13 +151,6 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
   color: #666;
   line-height: 1.5;
   margin-top: 0.2rem;
-}
-
-.gv-footnote {
-  font-size: 0.76rem;
-  color: #767676;
-  line-height: 1.6;
-  margin: -0.5rem 0 0 0;
 }
 
 .gv-pillars {
