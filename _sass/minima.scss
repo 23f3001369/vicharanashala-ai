@@ -338,6 +338,89 @@ table {
   i { font-size: 0.9rem; }
 }
 
+// ── Text + video side by side (shorter page) ──
+.split-media {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0 0;
+
+  p { margin-bottom: 0; }
+  .video-card { margin: 0; }
+
+  > * { flex: 1; min-width: 0; }
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+// ── Product screenshot ──
+.shot {
+  margin: 1.4rem 0 1.8rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid $grey-color-light;
+    border-radius: 4px;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    color: $grey-color;
+    text-align: center;
+  }
+}
+
+// ── Product screenshot carousel ──
+.shot-carousel {
+  margin: 1.4rem 0 1.8rem;
+}
+
+.shot-slide {
+  display: none;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid $grey-color-light;
+    border-radius: 4px;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    color: $grey-color;
+    text-align: center;
+  }
+
+  &.active { display: block; }
+}
+
+.shot-carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.shot-carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $grey-color-light;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+
+  &.active { background: $text-color; }
+  &:hover { background: $grey-color; }
+}
+
 // ── Video thumbnail card ──
 .video-card {
   margin: 2rem 0;
@@ -1029,7 +1112,7 @@ table {
 // ── Audience cards (homepage) ──
 .audience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.2rem;
   margin: 2rem 0 0;
 }
