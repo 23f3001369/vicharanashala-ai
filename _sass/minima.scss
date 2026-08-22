@@ -379,6 +379,153 @@ table {
   i { font-size: 0.9rem; }
 }
 
+// ── Text + video side by side (shorter page) ──
+.split-media {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 1rem 0 0;
+
+  p { margin-bottom: 0; }
+  .video-card { margin: 0; }
+
+  > * { flex: 1; min-width: 0; }
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+// ── Contributors ──
+.contributor-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.2rem 0 1.4rem;
+}
+
+.contributor-chip {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $text-color;
+  background: #fff;
+  border: 1px solid $grey-color-light;
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem;
+}
+
+.contributor-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $text-color;
+  text-decoration: underline;
+  text-decoration-color: $grey-color-light;
+  text-underline-offset: 2px;
+
+  &:hover {
+    text-decoration-color: $text-color;
+  }
+}
+
+// ── Product screenshot ──
+.shot {
+  margin: 1.4rem 0 1.8rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid $grey-color-light;
+    border-radius: 4px;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    color: $grey-color;
+    text-align: center;
+  }
+}
+
+// ── Product screenshot carousel ──
+.shot-carousel {
+  margin: 1.4rem 0 1.8rem;
+}
+
+.shot-carousel-viewport {
+  position: relative;
+}
+
+.shot-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.9rem;
+  height: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid $grey-color-light;
+  border-radius: 50%;
+  color: $text-color;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.2s;
+  z-index: 2;
+
+  i { font-size: 0.9rem; }
+
+  &:hover { opacity: 0.85; }
+}
+
+.shot-carousel-prev { left: 0.6rem; }
+.shot-carousel-next { right: 0.6rem; }
+
+.shot-slide {
+  display: none;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid $grey-color-light;
+    border-radius: 4px;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    color: $grey-color;
+    text-align: center;
+  }
+
+  &.active { display: block; }
+}
+
+.shot-carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.shot-carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $grey-color-light;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+
+  &.active { background: $text-color; }
+  &:hover { background: $grey-color; }
+}
+
 // ── Video thumbnail card ──
 .video-card {
   margin: 2rem 0;
@@ -1072,9 +1219,17 @@ table {
 // ── Audience cards (homepage) ──
 .audience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.2rem;
   margin: 2rem 0 0;
+}
+
+.audience-grid--continued {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .audience-card {
@@ -1198,6 +1353,43 @@ table {
   text-decoration: underline;
   text-decoration-color: $grey-color-light;
   text-underline-offset: 2px;
+
+  &:hover {
+    text-decoration-color: $text-color;
+  }
+}
+
+// ── Expandable card grid ──
+.grid-extra-wrap {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.3s ease, margin-top 0.35s ease;
+
+  &.is-expanded {
+    opacity: 1;
+    margin-top: 1.2rem;
+  }
+}
+
+.grid-view-more {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.grid-view-more-btn {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $text-color;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: $grey-color-light;
+  text-underline-offset: 2px;
+  font-family: inherit;
 
   &:hover {
     text-decoration-color: $text-color;
