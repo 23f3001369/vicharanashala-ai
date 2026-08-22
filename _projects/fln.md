@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FLN
-page_title: FLN — [TODO tagline]
+page_title: FLN — Building Strong Foundations in Literacy & Numeracy
 parent: Products
 order: 10
 permalink: /projects/fln/
@@ -9,7 +9,9 @@ permalink: /projects/fln/
 
 <!-- TODO: top couplet (2 italic lines, like ViBe / Samagama) -->
 
-<!-- TODO: 1–2 sentence intro about what FLN is — confirm full name (FLN = Foundational Literacy and Numeracy?) with Pavani -->
+**Building Strong Foundations in Literacy & Numeracy**
+
+A structured assessment and learning platform designed to identify foundational learning gaps and enable targeted support.
 
 ---
 
