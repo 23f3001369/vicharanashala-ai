@@ -18,9 +18,11 @@ Three of the four pillars ask you to produce something and put it in front of a 
 <div class="gv-stats">
   <div class="gv-stat"><span class="gv-stat-n">8</span><span class="gv-stat-l">weeks, fully online</span></div>
   <div class="gv-stat"><span class="gv-stat-n">~4 hrs</span><span class="gv-stat-l">a week, 1.5 of them live</span></div>
-  <div class="gv-stat"><span class="gv-stat-n">30 hrs</span><span class="gv-stat-l">certified — one NCRF credit</span></div>
+  <div class="gv-stat"><span class="gv-stat-n">30 hrs</span><span class="gv-stat-l">certified — equivalent to one NCRF credit*</span></div>
   <div class="gv-stat"><span class="gv-stat-n">Any day</span><span class="gv-stat-l">your eight weeks start when you do</span></div>
 </div>
+
+<p class="gv-footnote">*Guru Vaani certifies 30 notional learning hours — the volume of learning NCRF describes as one credit. Formal credit allotment is still awaiting official confirmation. The certificate records the hours; it does not itself award a credit.</p>
 
 ---
 
@@ -37,8 +39,8 @@ All four have to be met. The certificate issues on completion, not on attendance
   </div>
   <div class="gv-pillar">
     <div class="gv-pillar-icon"><i class="ph ph-video-camera"></i></div>
-    <div class="gv-pillar-name">Standups</div>
-    <p class="gv-pillar-desc">The live hour with other faculty — discussion, not lecture.</p>
+    <div class="gv-pillar-name">Live Sessions</div>
+    <p class="gv-pillar-desc">The synchronous hour with other faculty — discussion, not lecture.</p>
     <div class="gv-pillar-bar">720 minutes · 12+ sessions</div>
   </div>
   <div class="gv-pillar">
@@ -59,30 +61,30 @@ All four have to be met. The certificate issues on completion, not on attendance
 
 ## How a case runs
 
-This is the part least like other FDPs, so it is worth showing. Each case takes about **70 minutes**, in four moves.
+This is the part least like other FDPs, so it is worth showing. Every case runs in the same four moves.
 
 <div class="gv-flow">
   <div class="gv-flow-bar">
-    <div class="gv-seg gv-seg-1" style="flex-grow:4"><span>4m</span></div>
-    <div class="gv-seg gv-seg-2" style="flex-grow:30"><span>30m</span></div>
-    <div class="gv-seg gv-seg-3" style="flex-grow:10"><span>10m</span></div>
-    <div class="gv-seg gv-seg-4" style="flex-grow:28"><span>28m</span></div>
+    <div class="gv-seg gv-seg-1"></div>
+    <div class="gv-seg gv-seg-2"></div>
+    <div class="gv-seg gv-seg-3"></div>
+    <div class="gv-seg gv-seg-4"></div>
   </div>
   <div class="gv-steps">
     <div class="gv-step">
-      <div class="gv-step-head"><i class="ph ph-book-open"></i> Read the case</div>
+      <div class="gv-step-head"><i class="ph ph-book-open"></i> <span class="gv-step-n">1</span> Read the case</div>
       <p>400–650 words. It stands on its own — no clips to rewatch. It gives a teaching practice its full due, states the cost, then walks into a question with no right answer.</p>
     </div>
     <div class="gv-step">
-      <div class="gv-step-head"><i class="ph ph-users-three"></i> Debate it</div>
+      <div class="gv-step-head"><i class="ph ph-users-three"></i> <span class="gv-step-n">2</span> Debate it</div>
       <p>Small mixed groups on Zoom take sides and argue. One rule: before you rebut, restate the other person's point until they agree you got it right.</p>
     </div>
     <div class="gv-step">
-      <div class="gv-step-head"><i class="ph ph-pencil-simple-line"></i> Write your position</div>
+      <div class="gv-step-head"><i class="ph ph-pencil-simple-line"></i> <span class="gv-step-n">3</span> Write your position</div>
       <p>150–200 words: where you landed, the strongest argument <em>against</em> your own view, and one thing you will change in your own class.</p>
     </div>
     <div class="gv-step">
-      <div class="gv-step-head"><i class="ph ph-scales"></i> Judge others'</div>
+      <div class="gv-step-head"><i class="ph ph-scales"></i> <span class="gv-step-n">4</span> Judge others'</div>
       <p>Seven pairs of anonymised responses. For each, pick the one showing the more genuine grasp of the other side. Anonymous throughout, and nothing here is graded.</p>
     </div>
   </div>
@@ -119,8 +121,8 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
 ---
 
 <div class="gv-cta">
-  <div class="gv-cta-t">The opening date will be announced here.</div>
-  <p>Applications will run on <a href="https://samagama.in" target="_blank" rel="noopener">samagama.in</a>. Once open, there is no next intake to wait for — apply in October and your eight weeks begin in October.</p>
+  <div class="gv-cta-t">The programme opens on 5 September 2026.</div>
+  <p>Applications run on <a href="https://samagama.in/guruvaani" target="_blank" rel="noopener">samagama.in</a> — apply now and you will start on the opening date. After that there is no next intake to wait for: your eight weeks run from the day you begin.</p>
 </div>
 
 <style>
@@ -152,6 +154,13 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
   color: #666;
   line-height: 1.5;
   margin-top: 0.2rem;
+}
+
+.gv-footnote {
+  font-size: 0.76rem;
+  color: #767676;
+  line-height: 1.6;
+  margin: -0.5rem 0 0 0;
 }
 
 .gv-pillars {
@@ -201,25 +210,21 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
   padding-top: 0.6rem;
 }
 
-/* The bar segments are sized by flex-grow set inline, so the widths are the
-   actual minutes. Change a minute count in the HTML and the bar redraws. */
+/* A slim rail that colour-indexes the four columns below it. Deliberately
+   carries no timings — per-case duration is not fixed. */
 .gv-flow-bar {
   display: flex;
   gap: 3px;
-  margin: 1.6rem 0 1.2rem 0;
+  margin: 1.6rem 0 1rem 0;
 }
 .gv-seg {
-  height: 42px;
+  flex: 1;
+  height: 8px;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 34px;
 }
-.gv-seg span {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #fff;
+.gv-step-n {
+  color: #767676;
+  font-weight: 500;
 }
 .gv-seg-1 { background: #1a1a1a; }
 .gv-seg-2 { background: #e07020; }
