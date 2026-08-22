@@ -12,6 +12,15 @@ Vicharanashala works at the intersection of pedagogy, technology, and reflective
 
 <div class="initiative-grid">
 
+  <a href="{{ site.baseurl }}/initiatives/guru-vaani/" class="initiative-card">
+    <div class="initiative-card-icon"><i class="ph ph-chalkboard-teacher"></i></div>
+    <div class="initiative-card-body">
+      <div class="initiative-card-title">Guru Vaani</div>
+      <p class="initiative-card-desc">An eight-week online faculty development programme built around one question — what will you do differently in your classroom next term? Certifies 30 notional learning hours, equivalent to one NCRF credit.</p>
+      <span class="initiative-card-link">Explore Guru Vaani →</span>
+    </div>
+  </a>
+
   <a href="{{ site.baseurl }}/initiatives/summership/" class="initiative-card">
     <div class="initiative-card-icon"><i class="ph ph-sun"></i></div>
     <div class="initiative-card-body">
