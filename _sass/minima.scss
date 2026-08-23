@@ -1636,6 +1636,454 @@ table {
   letter-spacing: 0.01em;
 }
 
+// ════════════════════════════════════════════════════════════
+// FLN project page — Foundational Literacy & Numeracy
+// Scoped under .fln-project so rules never leak to other pages
+// ════════════════════════════════════════════════════════════
+$fln-bg:        #faf9f6;   // warm paper
+$fln-ink:       #1a1a1a;   // dark text (matches brand)
+$fln-ink-soft:  #3a3a3a;   // body text
+$fln-mute:      #767676;   // muted text (matches brand grey)
+$fln-rule:      #e2e2de;   // subtle border (matches brand)
+$fln-accent:    #e07020;   // brand orange (single accent)
+
+.fln-project {
+  font-family: $base-font-family;
+  color: $fln-ink-soft;
+  line-height: 1.72;
+  font-size: 17px;
+
+  // ── Page-level tokens ──
+  --fln-bg: #{$fln-bg};
+  --fln-ink: #{$fln-ink};
+  --fln-ink-soft: #{$fln-ink-soft};
+  --fln-mute: #{$fln-mute};
+  --fln-rule: #{$fln-rule};
+  --fln-accent: #{$fln-accent};
+
+  h1, h2, h3, h4 { color: $fln-ink; font-weight: 500; line-height: 1.25; }
+  h1 { font-size: 2.2rem; letter-spacing: -0.01em; margin: 0 0 0.6rem; }
+  h2 { font-size: 1.55rem; margin: 0 0 1rem; }
+  h3 { font-size: 1.15rem; margin: 0 0 0.6rem; }
+  p  { margin: 0 0 1.1rem; }
+  strong { color: $fln-ink; font-weight: 600; }
+
+  a { color: $fln-ink; text-decoration: underline; text-decoration-color: $fln-rule; text-underline-offset: 3px; }
+  a:hover { text-decoration-color: $fln-accent; }
+}
+
+// Section wrapper
+.fln-section {
+  margin: 4rem 0;
+  padding: 0 0.5rem;
+}
+.fln-section--first { margin-top: 2rem; }
+
+// Section eyebrow label (small uppercase above heading)
+.fln-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $fln-mute;
+  margin-bottom: 0.7rem;
+}
+
+// Hero
+.fln-hero {
+  padding: 3rem 0.5rem 2rem;
+  border-bottom: 1px solid $fln-rule;
+}
+.fln-hero h1 {
+  font-size: 2.6rem;
+  max-width: 720px;
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+.fln-hero .fln-lede {
+  font-size: 1.1rem;
+  color: $fln-ink-soft;
+  max-width: 640px;
+  margin-top: 1.2rem;
+  line-height: 1.6;
+}
+.fln-hero .fln-context {
+  font-size: 0.8rem;
+  color: $fln-mute;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.fln-journey {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.8rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed $fln-rule;
+}
+.fln-journey-step {
+  font-size: 0.95rem;
+  color: $fln-ink;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.fln-journey-arrow {
+  color: $fln-mute;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+// Two-column reading grids
+.fln-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.fln-pillar {
+  border: 1px solid $fln-rule;
+  border-radius: 2px;
+  padding: 1.4rem 1.4rem 1rem;
+  background: #fff;
+}
+.fln-pillar-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $fln-mute;
+  margin-bottom: 0.4rem;
+}
+.fln-pillar h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+}
+
+// Problem comparison (Traditional vs FLN view)
+.fln-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.8rem 0;
+}
+.fln-compare-col {
+  border: 1px solid $fln-rule;
+  border-radius: 2px;
+  padding: 1.4rem;
+  background: #fff;
+}
+.fln-compare-col--fln {
+  border-left: 2px solid $fln-accent;
+}
+.fln-compare-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+  margin: 0.6rem 0 0;
+}
+.fln-compare-flow span {
+  font-size: 0.92rem;
+  color: $fln-ink;
+}
+.fln-compare-flow .arrow {
+  color: $fln-mute;
+  font-size: 0.85rem;
+}
+
+// Competency grid (What We Assess)
+.fln-competencies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.fln-competency {
+  border: 1px solid $fln-rule;
+  border-radius: 2px;
+  padding: 1rem 1.2rem;
+  background: #fff;
+}
+.fln-competency-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: $fln-ink;
+  margin-bottom: 0.3rem;
+}
+.fln-competency-list {
+  font-size: 0.88rem;
+  color: $fln-ink-soft;
+  line-height: 1.6;
+  margin: 0;
+}
+
+// Pipeline steps (How The Assessment Works)
+.fln-pipeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin: 1.8rem 0;
+}
+.fln-step {
+  border: 1px solid $fln-rule;
+  background: #fff;
+  padding: 1rem 1.1rem;
+  border-radius: 2px;
+  position: relative;
+}
+.fln-step-num {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: $fln-mute;
+  font-weight: 600;
+}
+.fln-step-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $fln-ink;
+  margin: 0.3rem 0 0.4rem;
+}
+.fln-step-body {
+  font-size: 0.88rem;
+  color: $fln-ink-soft;
+  line-height: 1.55;
+  margin: 0;
+}
+
+// From Answers To Evidence — example block
+.fln-evidence {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid $fln-rule;
+  background: #fff;
+  border-radius: 2px;
+  padding: 1.5rem;
+}
+.fln-evidence-child {
+  text-align: center;
+  padding: 1.2rem;
+  border-right: 1px dashed $fln-rule;
+}
+.fln-evidence-child .response {
+  font-size: 3rem;
+  font-weight: 500;
+  color: $fln-ink;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.fln-evidence-child .label {
+  font-size: 0.78rem;
+  color: $fln-mute;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.fln-evidence-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fln-evidence-list li {
+  font-size: 0.95rem;
+  color: $fln-ink-soft;
+  padding: 0.35rem 0 0.35rem 1.4rem;
+  position: relative;
+  border-bottom: 1px dashed $fln-rule;
+}
+.fln-evidence-list li:last-child { border-bottom: none; }
+.fln-evidence-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: $fln-accent;
+  font-weight: 600;
+}
+
+// Learning-levels pathway
+.fln-pathway {
+  margin: 1.8rem 0;
+}
+.fln-pathway-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border: 1px solid $fln-rule;
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.fln-level {
+  flex: 1 1 0;
+  min-width: 140px;
+  padding: 1rem 1.1rem;
+  border-right: 1px solid $fln-rule;
+  cursor: default;
+  transition: background-color 0.15s ease;
+  position: relative;
+}
+.fln-level:last-child { border-right: none; }
+.fln-level:hover { background: #f5f3ee; }
+.fln-level-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: $fln-ink;
+  margin-bottom: 0.2rem;
+}
+.fln-level-hint {
+  font-size: 0.82rem;
+  color: $fln-mute;
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease, margin 0.2s ease;
+}
+.fln-level:hover .fln-level-hint {
+  max-height: 200px;
+  margin-top: 0.5rem;
+}
+
+// Child's learning journey — list of stages
+.fln-stages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+}
+.fln-stage {
+  border: 1px solid $fln-rule;
+  background: #fff;
+  padding: 1rem 0.9rem;
+  border-radius: 2px;
+  text-align: center;
+}
+.fln-stage-num {
+  font-size: 0.72rem;
+  color: $fln-mute;
+  letter-spacing: 0.08em;
+}
+.fln-stage-name {
+  font-size: 0.95rem;
+  color: $fln-ink;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+// Ecosystem diagram
+.fln-ecosystem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem 1.2rem;
+  margin: 1.8rem 0;
+  padding: 1.5rem;
+  border: 1px solid $fln-rule;
+  background: #fff;
+  border-radius: 2px;
+}
+.fln-eco-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+  color: $fln-ink;
+}
+.fln-eco-icon {
+  width: 44px; height: 44px;
+  border: 1.5px solid $fln-rule;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: $fln-ink;
+}
+.fln-eco-line {
+  flex: 0 0 16px;
+  height: 1px;
+  background: $fln-rule;
+}
+
+// Technology stack list
+.fln-tech {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+.fln-tech-item {
+  border-left: 2px solid $fln-rule;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+.fln-tech-item h4 {
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+}
+.fln-tech-item p {
+  font-size: 0.88rem;
+  color: $fln-ink-soft;
+  line-height: 1.55;
+  margin: 0;
+}
+
+// Source / small notes
+.fln-source {
+  font-size: 0.78rem;
+  color: $fln-mute;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+// Closing statement
+.fln-closing {
+  padding: 2.5rem 0 1rem;
+  border-top: 1px solid $fln-rule;
+  margin-top: 4rem;
+}
+.fln-closing h2 {
+  font-size: 1.7rem;
+  max-width: 640px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 0 1rem;
+}
+.fln-closing p {
+  font-size: 1rem;
+  max-width: 640px;
+  color: $fln-ink-soft;
+  margin: 0;
+}
+
+// Footer callout
+.fln-foot {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $fln-rule;
+  font-size: 0.85rem;
+  color: $fln-mute;
+}
+
+// Hide the page's own <h1> if we use our own hero (layout: page auto-renders title)
+.fln-project > h1:first-child { display: none; }
+
+// Mobile
+@media screen and (max-width: $on-palm) {
+  .fln-project { font-size: 16px; }
+  .fln-hero h1 { font-size: 1.95rem; }
+  .fln-section { margin: 2.6rem 0; }
+  .fln-two-col, .fln-compare, .fln-evidence { grid-template-columns: 1fr; }
+  .fln-evidence-child { border-right: none; border-bottom: 1px dashed $fln-rule; padding-bottom: 1.2rem; margin-bottom: 1rem; }
+  .fln-competencies, .fln-pipeline, .fln-tech { grid-template-columns: 1fr; }
+  .fln-stages { grid-template-columns: repeat(2, 1fr); }
+  .fln-level { min-width: 50%; border-right: none; border-bottom: 1px solid $fln-rule; }
+  .fln-level-hint { max-height: 200px; margin-top: 0.4rem; }
+  .fln-pipeline .fln-step { padding: 0.85rem 0.95rem; }
+}
+
 // ── FLN impact pyramid + stat callouts ──
 .impact-figure {
   margin: 2.5rem 0;
