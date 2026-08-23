@@ -352,7 +352,6 @@ For schools and colleges deciding whether to adopt ViBe:
 })();
 </script>
 
-<!--
 ---
 
 ## **The Impact**
@@ -360,16 +359,15 @@ For schools and colleges deciding whether to adopt ViBe:
 ViBe is already used nationwide as part of the Ministry of Education's Malaviya Mission Teacher Training Programme.
 
 <div class="stat-row">
-  <div class="stat"><span class="stat-number">9,984</span><span class="stat-label">Unique Learners</span></div>
-  <div class="stat"><span class="stat-number">10,959</span><span class="stat-label">Active Enrollments</span></div>
+  <div class="stat"><span class="stat-number">11,509</span><span class="stat-label">Unique Learners</span></div>
+  <div class="stat"><span class="stat-number">5,472</span><span class="stat-label">Active Enrollments</span></div>
   <div class="stat"><span class="stat-number">39</span><span class="stat-label">Courses & Cohorts Live</span></div>
-  <div class="stat"><span class="stat-number">~35%</span><span class="stat-label">Completion Rate</span></div>
+  <div class="stat"><span class="stat-number">~51%</span><span class="stat-label">Completion Rate</span></div>
 </div>
 
-Most self-paced online courses see under 10% of learners finish. ViBe gets 3.5 times that, with real proctoring, at a very low cost per learner.
+Most self-paced online courses see under 10% of learners finish. ViBe gets roughly 5 times that, with real proctoring, at a very low cost per learner.
 
 Built at the VLED Lab, IIT Ropar, with support from UGC.
--->
 
 ---
 
