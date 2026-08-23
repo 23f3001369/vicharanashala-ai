@@ -273,6 +273,21 @@ A look at the real product – swipe through the screens students and teachers a
 
 ---
 
+## **The Impact**
+
+ViBe is already used nationwide as part of the Ministry of Education's Malaviya Mission Teacher Training Programme.
+
+<div class="stat-row">
+  <div class="stat"><span class="stat-number">11,509</span><span class="stat-label">Unique Learners</span></div>
+  <div class="stat"><span class="stat-number">5,472</span><span class="stat-label">Active Enrollments</span></div>
+  <div class="stat"><span class="stat-number">39</span><span class="stat-label">Courses & Cohorts Live</span></div>
+  <div class="stat"><span class="stat-number">~51%</span><span class="stat-label">Completion Rate</span></div>
+</div>
+
+Most self-paced online courses see under 10% of learners finish. ViBe gets roughly 5 times that, with real proctoring, at a very low cost per learner.
+
+---
+
 ## **Built to Scale**
 
 For schools and colleges deciding whether to adopt ViBe:
@@ -351,21 +366,6 @@ For schools and colleges deciding whether to adopt ViBe:
   });
 })();
 </script>
-
----
-
-## **The Impact**
-
-ViBe is already used nationwide as part of the Ministry of Education's Malaviya Mission Teacher Training Programme.
-
-<div class="stat-row">
-  <div class="stat"><span class="stat-number">11,509</span><span class="stat-label">Unique Learners</span></div>
-  <div class="stat"><span class="stat-number">5,472</span><span class="stat-label">Active Enrollments</span></div>
-  <div class="stat"><span class="stat-number">39</span><span class="stat-label">Courses & Cohorts Live</span></div>
-  <div class="stat"><span class="stat-number">~51%</span><span class="stat-label">Completion Rate</span></div>
-</div>
-
-Most self-paced online courses see under 10% of learners finish. ViBe gets roughly 5 times that, with real proctoring, at a very low cost per learner.
 
 Built at the VLED Lab, IIT Ropar, with support from UGC.
 
