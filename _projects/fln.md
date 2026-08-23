@@ -193,25 +193,6 @@ permalink: /projects/fln/
   <p>Each paper is built to teach the next cognitive level, not just test the current one. The progression fails, the practice worksheet reinforces, and the child moves up the skill ladder without anyone needing to be in the room explaining it.</p>
 </section>
 
-<!-- ═══════════ FROM ANSWERS TO EVIDENCE ═══════════ -->
-<section class="fln-section">
-  <div class="fln-eyebrow">From answers to evidence</div>
-  <p>Consider a single response: a child writes "7" in the missing-number box for a sequence that runs 4, 5, _, 7, 8. The right answer reveals more than the score.</p>
-  <div class="fln-evidence">
-    <div class="fln-evidence-child">
-      <div class="response">7</div>
-      <div class="label">Child's response</div>
-    </div>
-    <ul class="fln-evidence-list">
-      <li>Number recognition — the child can read the numeral 7.</li>
-      <li>Counting sequence — they understand the order 4, 5, 6, 7, 8.</li>
-      <li>Pattern completion — they can locate the missing position by surrounding context.</li>
-      <li>Pen-control — they wrote the digit clearly enough to be read back.</li>
-    </ul>
-  </div>
-  <p>The response is not a mark. It is a small piece of evidence about how the child is learning. A wrong answer — "8" or a blank — tells a different but equally useful story, and that story feeds the next step.</p>
-</section>
-
 <!-- ═══════════ LEARNING LEVELS / PROGRESSION ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">Learning levels</div>

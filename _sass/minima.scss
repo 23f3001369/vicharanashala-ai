@@ -1853,57 +1853,6 @@ $fln-accent:    #e07020;   // brand orange (single accent)
   margin: 0;
 }
 
-// From Answers To Evidence — example block
-.fln-evidence {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 1.5rem;
-  margin: 1.5rem 0;
-  border: 1px solid $fln-rule;
-  background: #fff;
-  border-radius: 2px;
-  padding: 1.5rem;
-}
-.fln-evidence-child {
-  text-align: center;
-  padding: 1.2rem;
-  border-right: 1px dashed $fln-rule;
-}
-.fln-evidence-child .response {
-  font-size: 3rem;
-  font-weight: 500;
-  color: $fln-ink;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-.fln-evidence-child .label {
-  font-size: 0.78rem;
-  color: $fln-mute;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.fln-evidence-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.fln-evidence-list li {
-  font-size: 0.95rem;
-  color: $fln-ink-soft;
-  padding: 0.35rem 0 0.35rem 1.4rem;
-  position: relative;
-  border-bottom: 1px dashed $fln-rule;
-}
-.fln-evidence-list li:last-child { border-bottom: none; }
-.fln-evidence-list li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: $fln-accent;
-  font-weight: 600;
-}
-
 // Learning-levels pathway
 .fln-pathway {
   margin: 1.8rem 0;
@@ -2075,8 +2024,7 @@ $fln-accent:    #e07020;   // brand orange (single accent)
   .fln-project { font-size: 16px; }
   .fln-hero h1 { font-size: 1.95rem; }
   .fln-section { margin: 2.6rem 0; }
-  .fln-two-col, .fln-compare, .fln-evidence { grid-template-columns: 1fr; }
-  .fln-evidence-child { border-right: none; border-bottom: 1px dashed $fln-rule; padding-bottom: 1.2rem; margin-bottom: 1rem; }
+  .fln-two-col, .fln-compare { grid-template-columns: 1fr; }
   .fln-competencies, .fln-pipeline, .fln-tech { grid-template-columns: 1fr; }
   .fln-stages { grid-template-columns: repeat(2, 1fr); }
   .fln-level { min-width: 50%; border-right: none; border-bottom: 1px solid $fln-rule; }
