@@ -337,9 +337,9 @@ permalink: /projects/fln/
         <svg class="impact-pyramid-svg" viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three-tier pyramid: low-skilled workforce at top, poor secondary performance in the middle, millions of children with weak foundational literacy and numeracy at the base">
           <!-- Tier 1 (top, narrowest, dark orange) -->
           <polygon points="180,0 240,106.67 120,106.67" fill="#e07020" />
-          <text x="180" y="58" text-anchor="middle" fill="#f9f9f7" font-family="Inter, sans-serif" font-size="13" font-weight="500">
+          <text x="180" y="84" text-anchor="middle" fill="#f9f9f7" font-family="Inter, sans-serif" font-size="11" font-weight="500">
             <tspan x="180" dy="0">Low-skilled</tspan>
-            <tspan x="180" dy="16">workforce</tspan>
+            <tspan x="180" dy="13">workforce</tspan>
           </text>
 
           <!-- Tier 2 (middle) -->
@@ -362,11 +362,11 @@ permalink: /projects/fln/
       </div>
     </div>
     <div class="impact-stat-row">
-      <div class="impact-callout impact-callout-stat">
+      <div class="impact-callout impact-callout-stat impact-callout-stat--lead">
         <span class="stat-detail">Global poverty could fall by 12% if all children achieved basic</span>
       </div>
       <div class="impact-arrow" aria-hidden="true">→</div>
-      <div class="impact-callout impact-callout-stat">
+      <div class="impact-callout impact-callout-stat impact-callout-stat--follow">
         <span class="stat-detail"><strong>12%</strong> if all children achieved basic reading</span>
       </div>
     </div>

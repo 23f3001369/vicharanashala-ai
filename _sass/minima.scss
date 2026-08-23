@@ -2133,8 +2133,10 @@ $fln-accent:    #e07020;   // brand orange (single accent)
 }
 .impact-callout-stat {
   text-align: center;
-  max-width: 320px;
+  flex: 0 1 auto;
 }
+.impact-callout-stat--lead { max-width: 320px; }
+.impact-callout-stat--follow { flex: 1 1 auto; min-width: 0; }
 .impact-callout-stat .stat-detail {
   font-size: 0.95rem;
   color: #1a1a1a;
