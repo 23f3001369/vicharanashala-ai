@@ -196,32 +196,7 @@ permalink: /projects/fln/
 <!-- ═══════════ LEARNING LEVELS / PROGRESSION ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">Learning levels</div>
-  <p>FLN levels are organised by cognitive skill, not by class. Two children in Class 2 can be at very different points on the progression — one might be working on two-digit addition, the other still on counting. The Diagnostic paper places each child at the level their evidence supports. The pathway below shows the rough skill progression; hover over a level to see what it covers.</p>
-  <div class="fln-pathway">
-    <div class="fln-pathway-track">
-      <div class="fln-level">
-        <div class="fln-level-name">Pre-number</div>
-        <div class="fln-level-hint">Shape recognition, matching, basic counting with objects, more/less, halves.</div>
-      </div>
-      <div class="fln-level">
-        <div class="fln-level-name">Number sense</div>
-        <div class="fln-level-hint">Numbers 1–10, recognising numerals, filling missing numbers, before/after/between.</div>
-      </div>
-      <div class="fln-level">
-        <div class="fln-level-name">Comparison &amp; ordering</div>
-        <div class="fln-level-hint">Comparing numbers with &lt;, &gt;, =, comparing objects, ascending/descending order.</div>
-      </div>
-      <div class="fln-level">
-        <div class="fln-level-name">Operations</div>
-        <div class="fln-level-hint">Addition, subtraction, tens and ones, multiplication and division at the primary level.</div>
-      </div>
-      <div class="fln-level">
-        <div class="fln-level-name">Reasoning</div>
-        <div class="fln-level-hint">Patterns, measurement, money, time, data handling, place value, multi-step problems.</div>
-      </div>
-    </div>
-  </div>
-  <p>Class is a rough hint, not a placement. The paper the child sits down with is the one their evidence says they are ready for.</p>
+  <p>FLN levels are organised by cognitive skill, not by class. Two children in Class 2 can be at very different points on the progression — one might be working on two-digit addition, the other still on counting. The Diagnostic paper places each child at the level their evidence supports.</p>
 </section>
 
 <!-- ═══════════ THE CHILD'S LEARNING JOURNEY ═══════════ -->

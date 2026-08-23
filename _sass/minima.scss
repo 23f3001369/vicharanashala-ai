@@ -1853,49 +1853,6 @@ $fln-accent:    #e07020;   // brand orange (single accent)
   margin: 0;
 }
 
-// Learning-levels pathway
-.fln-pathway {
-  margin: 1.8rem 0;
-}
-.fln-pathway-track {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0;
-  border: 1px solid $fln-rule;
-  background: #fff;
-  border-radius: 2px;
-  overflow: hidden;
-}
-.fln-level {
-  flex: 1 1 0;
-  min-width: 140px;
-  padding: 1rem 1.1rem;
-  border-right: 1px solid $fln-rule;
-  cursor: default;
-  transition: background-color 0.15s ease;
-  position: relative;
-}
-.fln-level:last-child { border-right: none; }
-.fln-level:hover { background: #f5f3ee; }
-.fln-level-name {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: $fln-ink;
-  margin-bottom: 0.2rem;
-}
-.fln-level-hint {
-  font-size: 0.82rem;
-  color: $fln-mute;
-  line-height: 1.5;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease, margin 0.2s ease;
-}
-.fln-level:hover .fln-level-hint {
-  max-height: 200px;
-  margin-top: 0.5rem;
-}
-
 // Child's learning journey — list of stages
 .fln-stages {
   display: grid;
@@ -2027,8 +1984,6 @@ $fln-accent:    #e07020;   // brand orange (single accent)
   .fln-two-col, .fln-compare { grid-template-columns: 1fr; }
   .fln-competencies, .fln-pipeline, .fln-tech { grid-template-columns: 1fr; }
   .fln-stages { grid-template-columns: repeat(2, 1fr); }
-  .fln-level { min-width: 50%; border-right: none; border-bottom: 1px solid $fln-rule; }
-  .fln-level-hint { max-height: 200px; margin-top: 0.4rem; }
   .fln-pipeline .fln-step { padding: 0.85rem 0.95rem; }
 }
 
