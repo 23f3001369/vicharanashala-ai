@@ -2088,8 +2088,34 @@ $fln-accent:    #e07020;   // brand orange (single accent)
   text-align: center;
   font-size: 0.78rem;
   color: $grey-color;
-  margin-top: 1.2rem;
   font-style: italic;
+  margin-top: 1.2rem;
+}
+
+// GitHub CTA — callout block at the end of the page
+.fln-github-cta {
+  margin: 2.5rem auto 1.5rem;
+  padding: 1.4rem 1.5rem;
+  max-width: 560px;
+  text-align: center;
+  border: 1.5px solid $fln-accent;
+  border-radius: 2px;
+  background: #fff;
+}
+.fln-github-cta p {
+  margin: 0;
+  font-size: 1rem;
+  color: $fln-ink;
+}
+.fln-github-cta a {
+  color: $fln-ink;
+  text-decoration: underline;
+  text-decoration-color: $fln-accent;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+.fln-github-cta a:hover {
+  text-decoration-color: $fln-ink;
 }
 @media screen and (max-width: $on-palm) {
   .impact-pyramid { width: 100%; }

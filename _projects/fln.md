@@ -328,7 +328,6 @@ permalink: /projects/fln/
       <p>Per-child and per-class reports accumulate over time, so a single assessment is a point on a curve, not the whole story.</p>
     </div>
   </div>
-  <p>Explore the codebase at <a href="https://github.com/vicharanashala/fln" target="_blank" rel="noopener">FLN on GitHub ↗</a>.</p>
 </section>
 
 <!-- ═══════════ RESEARCH / INNOVATION ═══════════ -->
@@ -343,6 +342,11 @@ permalink: /projects/fln/
   <h2>Every child deserves to be FLN certified.</h2>
   <p>Not by their class. Not by their age. By the skills they can show. FLN is a national assessment designed so that every primary student in India can be placed on a learning progression by what they actually know, work through the skills they are missing, and earn certification when they have it. No child is left guessing which level they are on, and no child is held back by a label they never earned.</p>
 </section>
+
+<!-- ═══════════ GITHUB CTA (moved here from Technology) ═══════════ -->
+<div class="fln-github-cta">
+  <p>Explore the codebase at <a href="https://github.com/vicharanashala/fln" target="_blank" rel="noopener">FLN on GitHub ↗</a>.</p>
+</div>
 
 <!-- ═══════════ FOOTER ═══════════ -->
 <div class="fln-foot">
