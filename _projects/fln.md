@@ -342,9 +342,15 @@ permalink: /projects/fln/
         <strong>World Bank:</strong> FLN investments yield the highest return on human capital.
       </div>
     </div>
-    <div class="impact-callout impact-callout-stat">
-      <span class="big-num">12%</span>
-      <span class="stat-detail">if all children achieved basic reading</span>
+    <div class="impact-stat-row">
+      <div class="impact-callout impact-callout-stat">
+        <span class="stat-detail">Global poverty could fall by 12% if all children achieved basic</span>
+      </div>
+      <div class="impact-arrow" aria-hidden="true">→</div>
+      <div class="impact-callout impact-callout-stat">
+        <span class="big-num">12%</span>
+        <span class="stat-detail">if all children achieved basic reading</span>
+      </div>
     </div>
     <small class="impact-source">Source: World Bank Human Capital Project, 2018.</small>
   </figure>
