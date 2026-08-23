@@ -334,9 +334,28 @@ permalink: /projects/fln/
   <figure class="impact-figure">
     <div class="impact-figure-layout">
       <div class="impact-pyramid">
-        <div class="impact-tier impact-tier-1">Low-skilled workforce</div>
-        <div class="impact-tier impact-tier-2">Poor secondary performance</div>
-        <div class="impact-tier impact-tier-3">Millions of children with weak FLN</div>
+        <svg class="impact-pyramid-svg" viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three-tier pyramid: low-skilled workforce at top, poor secondary performance in the middle, millions of children with weak foundational literacy and numeracy at the base">
+          <!-- Tier 1 (top, narrowest, dark orange) -->
+          <polygon points="180,0 240,106.67 120,106.67" fill="#e07020" />
+          <text x="180" y="58" text-anchor="middle" fill="#f9f9f7" font-family="Inter, sans-serif" font-size="13" font-weight="500">
+            <tspan x="180" dy="0">Low-skilled</tspan>
+            <tspan x="180" dy="16">workforce</tspan>
+          </text>
+
+          <!-- Tier 2 (middle) -->
+          <polygon points="120,106.67 240,106.67 300,213.33 60,213.33" fill="#f0a96e" />
+          <text x="180" y="155" text-anchor="middle" fill="#1a1a1a" font-family="Inter, sans-serif" font-size="16" font-weight="500">
+            <tspan x="180" dy="0">Poor secondary</tspan>
+            <tspan x="180" dy="20">performance</tspan>
+          </text>
+
+          <!-- Tier 3 (bottom, widest, lightest) -->
+          <polygon points="60,213.33 300,213.33 360,320 0,320" fill="#f6c896" />
+          <text x="180" y="262" text-anchor="middle" fill="#1a1a1a" font-family="Inter, sans-serif" font-size="17" font-weight="500">
+            <tspan x="180" dy="0">Millions of children</tspan>
+            <tspan x="180" dy="22">with weak FLN</tspan>
+          </text>
+        </svg>
       </div>
       <div class="impact-callout impact-callout-wb">
         <strong>World Bank:</strong> FLN investments yield the highest return on human capital.
@@ -348,8 +367,7 @@ permalink: /projects/fln/
       </div>
       <div class="impact-arrow" aria-hidden="true">→</div>
       <div class="impact-callout impact-callout-stat">
-        <span class="big-num">12%</span>
-        <span class="stat-detail">if all children achieved basic reading</span>
+        <span class="stat-detail"><strong>12%</strong> if all children achieved basic reading</span>
       </div>
     </div>
     <small class="impact-source">Source: World Bank Human Capital Project, 2018.</small>

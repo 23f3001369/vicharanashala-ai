@@ -2096,53 +2096,17 @@ $fln-accent:    #e07020;   // brand orange (single accent)
   justify-content: center;
   flex-wrap: wrap;
 }
+// SVG pyramid — single triangle composed of 3 trapezoid polygons
+// (defined inline in the markdown so the angled sides align exactly)
 .impact-pyramid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
   width: 360px;
   max-width: 100%;
   flex-shrink: 0;
-  position: relative;
 }
-// Tiers are TRAPEZOIDS so they stack to form a single pointed pyramid,
-// matching the reference image (#4). The narrow top tier makes the
-// pyramid sharp; the wide bottom tier forms the base.
-.impact-tier {
-  text-align: center;
-  color: #1a1a1a;
-  font-weight: 500;
-  padding: 1.2rem 0.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.25;
-}
-// Tier 1 (top, narrow, dark) — small, points up
-.impact-tier-1 {
-  background: #e07020;
-  color: #f9f9f7;
-  width: 30%;
-  font-size: 0.92rem;
-  clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0% 100%, 0% 30%);
-  padding: 1.6rem 0.4rem 0.8rem;
-}
-// Tier 2 (middle)
-.impact-tier-2 {
-  background: #f0a96e;
-  color: #1a1a1a;
-  width: 70%;
-  font-size: 1rem;
-  clip-path: polygon(21% 0%, 79% 0%, 100% 100%, 0% 100%);
-}
-// Tier 3 (bottom, widest, lightest)
-.impact-tier-3 {
-  background: #f6c896;
-  color: #1a1a1a;
+.impact-pyramid-svg {
+  display: block;
   width: 100%;
-  font-size: 1.08rem;
-  clip-path: polygon(7% 0%, 93% 0%, 100% 100%, 0% 100%);
+  height: auto;
 }
 .impact-callout {
   background: #fff;
@@ -2171,18 +2135,13 @@ $fln-accent:    #e07020;   // brand orange (single accent)
   text-align: center;
   max-width: 320px;
 }
-.impact-callout-stat .big-num {
-  display: block;
-  font-size: 2.6rem;
-  font-weight: 600;
-  color: #e07020;
-  line-height: 1.05;
-  margin-bottom: 0.4rem;
-}
 .impact-callout-stat .stat-detail {
-  font-size: 0.92rem;
-  color: #444;
-  line-height: 1.45;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+.impact-callout-stat .stat-detail strong {
+  font-weight: 600;
 }
 .impact-arrow {
   width: 36px;
