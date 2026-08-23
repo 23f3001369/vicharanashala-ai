@@ -12,17 +12,17 @@ permalink: /projects/fln/
 <!-- ═══════════ HERO ═══════════ -->
 <section class="fln-hero fln-section fln-section--first">
   <div class="fln-context">Vicharanashala · Foundational Literacy &amp; Numeracy</div>
-  <p class="fln-lede">FLN goes beyond measuring answers. It looks at what a child knows, what they can do, where they struggle, and what comes next — so that foundational learning becomes visible, traceable, and actionable.</p>
-  <div class="fln-journey" aria-label="The FLN journey">
-    <span class="fln-journey-step">Child</span>
+  <p class="fln-lede">FLN assessment places every primary child on a learning progression by their actual skill — not by class, not by age. A Diagnostic paper is given when a child is first registered, then Baseline, Midline and Endline papers track how their mathematical skills grow across the year. Each paper is personalised to the child's cognitive level, so a child who is still learning to count is not given an addition paper.</p>
+  <div class="fln-journey" aria-label="The three FLN assessment cycles">
+    <span class="fln-journey-step">Diagnostic</span>
     <span class="fln-journey-arrow">→</span>
-    <span class="fln-journey-step">Observe</span>
+    <span class="fln-journey-step">Baseline</span>
     <span class="fln-journey-arrow">→</span>
-    <span class="fln-journey-step">Assess</span>
+    <span class="fln-journey-step">Midline</span>
     <span class="fln-journey-arrow">→</span>
-    <span class="fln-journey-step">Understand</span>
+    <span class="fln-journey-step">Endline</span>
     <span class="fln-journey-arrow">→</span>
-    <span class="fln-journey-step">Progress</span>
+    <span class="fln-journey-step">FLN certified</span>
   </div>
 </section>
 
@@ -117,39 +117,40 @@ permalink: /projects/fln/
 <!-- ═══════════ HOW THE ASSESSMENT WORKS ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">How the assessment works</div>
-  <p>FLN is not a single test. It is a structured workflow — from the moment a question is designed, to the moment a teacher sees what a child has learned.</p>
+  <p>FLN is a cycle, not a single test. Each cycle generates a paper that is personalised to the cognitive level of the child sitting in front of it — so two children in the same class can receive very different papers.</p>
   <div class="fln-pipeline">
     <div class="fln-step">
       <div class="fln-step-num">01</div>
-      <div class="fln-step-title">Design</div>
-      <p class="fln-step-body">Competency-based questions are generated from the syllabus, with the answer key produced in the same pass.</p>
+      <div class="fln-step-title">Diagnostic</div>
+      <p class="fln-step-body">The first time a child is registered with FLN, they take a Diagnostic paper. This establishes which skills the child already knows and where they stand on the progression — the starting point for everything that follows.</p>
     </div>
     <div class="fln-step">
       <div class="fln-step-num">02</div>
-      <div class="fln-step-title">Assess</div>
-      <p class="fln-step-body">The child attempts the paper — in print, on a worksheet, or at a level appropriate to their current understanding.</p>
+      <div class="fln-step-title">Baseline</div>
+      <p class="fln-step-body">At the start of the school year, the child takes a Baseline paper built around the skills they are ready to work on. This sets the reference against which progress will be measured.</p>
     </div>
     <div class="fln-step">
       <div class="fln-step-num">03</div>
-      <div class="fln-step-title">Capture</div>
-      <p class="fln-step-body">The completed paper is scanned or photographed. Multi-page scans are processed page by page.</p>
+      <div class="fln-step-title">Midline</div>
+      <p class="fln-step-body">Halfway through the year, the Midline paper tests the next cognitive levels the child should reach. The paper itself is built to teach — through failure and progression — the skills the child is now ready for.</p>
     </div>
     <div class="fln-step">
       <div class="fln-step-num">04</div>
-      <div class="fln-step-title">Analyse</div>
-      <p class="fln-step-body">Handwritten responses are read by an OCR pipeline, with answer shapes resolved per question type (digits, symbols, matching, multi-field).</p>
+      <div class="fln-step-title">Endline</div>
+      <p class="fln-step-body">At year end, the Endline paper measures growth from Baseline. If the child has reached the FLN threshold across the assessed skills, they become FLN certified.</p>
     </div>
     <div class="fln-step">
       <div class="fln-step-num">05</div>
-      <div class="fln-step-title">Understand</div>
-      <p class="fln-step-body">Each response is mapped to the competency it tests, making gaps and patterns visible — both per child and per group.</p>
+      <div class="fln-step-title">Practise</div>
+      <p class="fln-step-body">After every paper, a personalised practice worksheet is generated for each child — built around the skills they just struggled with. The paper does the teaching; the practice worksheet reinforces it.</p>
     </div>
     <div class="fln-step">
       <div class="fln-step-num">06</div>
-      <div class="fln-step-title">Track</div>
-      <p class="fln-step-body">Reports accumulate over time, so a child's trajectory — and a class's progress — can be monitored, not just measured once.</p>
+      <div class="fln-step-title">Progress</div>
+      <p class="fln-step-body">Reports accumulate over time, so a child's trajectory across cycles is visible — and so is a class's or a school's trajectory across the cohort.</p>
     </div>
   </div>
+  <p>Each paper is built to teach the next cognitive level, not just test the current one. The progression fails, the practice worksheet reinforces, and the child moves up the skill ladder without anyone needing to be in the room explaining it.</p>
 </section>
 
 <!-- ═══════════ FROM ANSWERS TO EVIDENCE ═══════════ -->
@@ -174,47 +175,47 @@ permalink: /projects/fln/
 <!-- ═══════════ LEARNING LEVELS / PROGRESSION ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">Learning levels</div>
-  <p>The FLN curriculum is structured as a progression of levels, beginning in preschool and continuing through primary school. The pathway below shows how the levels relate; hover over a level to see what it covers.</p>
+  <p>FLN levels are organised by cognitive skill, not by class. Two children in Class 2 can be at very different points on the progression — one might be working on two-digit addition, the other still on counting. The Diagnostic paper places each child at the level their evidence supports. The pathway below shows the rough skill progression; hover over a level to see what it covers.</p>
   <div class="fln-pathway">
     <div class="fln-pathway-track">
       <div class="fln-level">
-        <div class="fln-level-name">Preschool</div>
-        <div class="fln-level-hint">Pre-number concepts, shape recognition, matching, basic counting with objects.</div>
+        <div class="fln-level-name">Pre-number</div>
+        <div class="fln-level-hint">Shape recognition, matching, basic counting with objects, more/less, halves.</div>
       </div>
       <div class="fln-level">
-        <div class="fln-level-name">Class 1</div>
-        <div class="fln-level-hint">Numbers 1–10, more/less, comparing, halves, basic addition and subtraction with zero.</div>
+        <div class="fln-level-name">Number sense</div>
+        <div class="fln-level-hint">Numbers 1–10, recognising numerals, filling missing numbers, before/after/between.</div>
       </div>
       <div class="fln-level">
-        <div class="fln-level-name">Class 2</div>
-        <div class="fln-level-hint">Numbers 1–50, before/after/between, comparison, ordering, addition, subtraction, tens and ones.</div>
+        <div class="fln-level-name">Comparison &amp; ordering</div>
+        <div class="fln-level-hint">Comparing numbers with &lt;, &gt;, =, comparing objects, ascending/descending order.</div>
       </div>
       <div class="fln-level">
-        <div class="fln-level-name">Class 3</div>
-        <div class="fln-level-hint">Numbers to 100, patterns, measurement, time, money, data handling, multiplication, division.</div>
+        <div class="fln-level-name">Operations</div>
+        <div class="fln-level-hint">Addition, subtraction, tens and ones, multiplication and division at the primary level.</div>
       </div>
       <div class="fln-level">
-        <div class="fln-level-name">Class 4</div>
-        <div class="fln-level-hint">Three-digit numbers, regrouping, fractions, geometry, symmetry, maps and directions, data.</div>
+        <div class="fln-level-name">Reasoning</div>
+        <div class="fln-level-hint">Patterns, measurement, money, time, data handling, place value, multi-step problems.</div>
       </div>
     </div>
   </div>
-  <p>Each level has its own worksheet set and its own competency map. A child is placed at the level their evidence supports, not by age or grade alone.</p>
+  <p>Class is a rough hint, not a placement. The paper the child sits down with is the one their evidence says they are ready for.</p>
 </section>
 
 <!-- ═══════════ THE CHILD'S LEARNING JOURNEY ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">The child's learning journey</div>
-  <p>Every response gives us another opportunity to understand how a child is learning.</p>
+  <p>The paper is the teacher. Each cycle, the child sits with a paper that is built around exactly the skills they are ready to work on. They attempt, they fail on the harder parts, a practice worksheet is generated, and the next paper starts one rung up. The teaching happens through the progression itself — without anyone having to explain.</p>
   <div class="fln-stages">
-    <div class="fln-stage"><div class="fln-stage-num">01</div><div class="fln-stage-name">Try</div></div>
-    <div class="fln-stage"><div class="fln-stage-num">02</div><div class="fln-stage-name">Explore</div></div>
-    <div class="fln-stage"><div class="fln-stage-num">03</div><div class="fln-stage-name">Make mistakes</div></div>
-    <div class="fln-stage"><div class="fln-stage-num">04</div><div class="fln-stage-name">Understand</div></div>
-    <div class="fln-stage"><div class="fln-stage-num">05</div><div class="fln-stage-name">Practise</div></div>
-    <div class="fln-stage"><div class="fln-stage-num">06</div><div class="fln-stage-name">Improve</div></div>
-    <div class="fln-stage"><div class="fln-stage-num">07</div><div class="fln-stage-name">Grow</div></div>
-    <div class="fln-stage"><div class="fln-stage-num">08</div><div class="fln-stage-name">Progress</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">01</div><div class="fln-stage-name">Diagnostic</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">02</div><div class="fln-stage-name">Place at level</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">03</div><div class="fln-stage-name">Attempt paper</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">04</div><div class="fln-stage-name">Practise</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">05</div><div class="fln-stage-name">Next level</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">06</div><div class="fln-stage-name">Re-assess</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">07</div><div class="fln-stage-name">Track progress</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">08</div><div class="fln-stage-name">FLN certified</div></div>
   </div>
 </section>
 
@@ -358,8 +359,8 @@ permalink: /projects/fln/
 
 <!-- ═══════════ VISION (preserved) ═══════════ -->
 <section class="fln-section fln-closing">
-  <h2>Every child deserves the opportunity to build strong foundations.</h2>
-  <p>By understanding where children are in their learning journey, FLN can help make foundational learning more visible, measurable, and actionable. Our vision is to contribute to a learning system where no child's difficulty goes unnoticed — where every answer provides evidence, every difficulty leads to the right next step, and every child gets the opportunity to build strong foundations in literacy and numeracy.</p>
+  <h2>Every child deserves to be FLN certified.</h2>
+  <p>Not by their class. Not by their age. By the skills they can show. FLN is a national assessment designed so that every primary student in India can be placed on a learning progression by what they actually know, work through the skills they are missing, and earn certification when they have it. No child is left guessing which level they are on, and no child is held back by a label they never earned.</p>
 </section>
 
 <!-- ═══════════ FOOTER ═══════════ -->
