@@ -31,7 +31,8 @@ permalink: /projects/fln/
 <section class="fln-section">
   <div class="fln-eyebrow">Why foundational literacy &amp; numeracy</div>
   <h2>Why FLN?</h2>
-  <p>Foundational literacy and numeracy are the bedrock of all later learning. A child who cannot read with meaning or work confidently with numbers by the end of Grade 3 will struggle to learn almost anything else in school. The Government of India's NIPUN Bharat mission places foundational skills at the highest priority of school education and targets universal proficiency by the end of Grade 3.</p>
+  <p>The National Education Policy 2020 places foundational learning at the top of India's school agenda. It recognises that children — especially in the early years — are natural absorbers of knowledge who learn best through play and sensory experience. The goal at this stage is not just academic, but the cognitive, intellectual, social, and emotional development of the child.</p>
+  <p>The NIPUN Bharat mission gives this national shape: every child acquiring basic reading and mathematical skills by the end of Grade 3, in every state. Foundational literacy and numeracy are the bedrock of all later learning — a child who cannot read with meaning or work confidently with numbers by Grade 3 will struggle to learn almost anything else in school.</p>
   <div class="fln-two-col">
     <div class="fln-pillar">
       <div class="fln-pillar-label">Foundational literacy</div>
@@ -361,14 +362,8 @@ permalink: /projects/fln/
         <strong>World Bank:</strong> FLN investments yield the highest return on human capital.
       </div>
     </div>
-    <div class="impact-stat-row">
-      <div class="impact-callout impact-callout-stat impact-callout-stat--lead">
-        <span class="stat-detail">Global poverty could fall by 12% if all children achieved basic</span>
-      </div>
-      <div class="impact-arrow" aria-hidden="true">→</div>
-      <div class="impact-callout impact-callout-stat impact-callout-stat--follow">
-        <span class="stat-detail"><strong>12%</strong> if all children achieved basic reading</span>
-      </div>
+    <div class="impact-callout impact-callout-stat">
+      <span class="stat-detail">Global poverty could fall by 12% if all children achieved basic reading.</span>
     </div>
     <small class="impact-source">Source: World Bank Human Capital Project, 2018.</small>
   </figure>

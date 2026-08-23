@@ -2122,21 +2122,11 @@ $fln-accent:    #e07020;   // brand orange (single accent)
   align-self: flex-start;
   margin-top: 0;
 }
-// Two side-by-side callouts with an arrow between them
-.impact-stat-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1.5rem auto 0;
-  flex-wrap: wrap;
-}
 .impact-callout-stat {
   text-align: center;
-  flex: 0 1 auto;
+  max-width: 480px;
+  margin: 1.5rem auto 0;
 }
-.impact-callout-stat--lead { max-width: 320px; }
-.impact-callout-stat--follow { flex: 1 1 auto; min-width: 0; }
 .impact-callout-stat .stat-detail {
   font-size: 0.95rem;
   color: #1a1a1a;
@@ -2144,19 +2134,6 @@ $fln-accent:    #e07020;   // brand orange (single accent)
 }
 .impact-callout-stat .stat-detail strong {
   font-weight: 600;
-}
-.impact-arrow {
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid #e07020;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #e07020;
-  font-size: 1.4rem;
-  line-height: 1;
-  border-radius: 2px;
-  flex-shrink: 0;
 }
 .impact-source {
   display: block;
