@@ -44,7 +44,7 @@ quote_author: "Arthur C. Clarke"
     <div class="product-card-name">Spandan</div>
     <div class="product-card-desc">Real-time classroom engagement. Listens to live lectures, auto-generates contextual questions.</div>
     <div class="product-card-bottom">
-      <span class="product-card-tag">Pilot</span>
+      <span class="product-card-tag">Deployed</span>
       <div class="product-card-links">
         <a href="https://spandanam.vicharanashala.ai" target="_blank" rel="noopener" class="product-ext-link">Visit Platform ↗</a>
         <a href="https://github.com/vicharanashala/spandan" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
@@ -74,8 +74,11 @@ quote_author: "Arthur C. Clarke"
     <div class="product-card-name">Spurti</div>
     <div class="product-card-desc">Gamified progress tracking for self-regulated learning. Builds learner accountability over time.</div>
     <div class="product-card-bottom">
-      <span class="product-card-tag">Pilot</span>
-      <a href="https://github.com/vicharanashala/spurti" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
+      <span class="product-card-tag">Deployed</span>
+      <div class="product-card-links">
+        <a href="https://samagama.in/spurti/" target="_blank" rel="noopener" class="product-ext-link">Visit Platform ↗</a>
+        <a href="https://github.com/vicharanashala/spurti" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
+      </div>
     </div>
   </div>
 
@@ -91,9 +94,9 @@ quote_author: "Arthur C. Clarke"
     <a href="{{ site.baseurl }}/projects/pybe/" class="product-card-stretch" aria-label="Learn more about PyBe"></a>
     <div class="product-card-icon-wrap"><i class="ph ph-code product-card-icon"></i></div>
     <div class="product-card-name">PyBe</div>
-    <div class="product-card-desc">A case study oriented Python tutor that helps you talk to machines, in human language.</div>
+    <div class="product-card-desc">A scenario-driven Python tutor — learners reason their way to the problem before they reach for the syntax.</div>
     <div class="product-card-bottom">
-      <span class="product-card-tag">Coming Soon</span>
+      <span class="product-card-tag">In Development</span>
       <a href="https://github.com/vicharanashala/pybe" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
     </div>
   </div>
