@@ -46,6 +46,46 @@ permalink: /projects/fln/
   <p>ASER 2024 shows the gap: among Grade 3 government-school children, only 27.6% can do a 2-digit subtraction problem, and only 23.4% can read at least a Grade 2-level text. The opportunity is large, and time-bound.</p>
 </section>
 
+<!-- ═══════════ WHY THIS MATTERS (moved up — was at end) ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">Why this matters</div>
+  <figure class="impact-figure">
+    <div class="impact-figure-layout">
+      <div class="impact-pyramid">
+        <svg class="impact-pyramid-svg" viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three-tier pyramid: low-skilled workforce at top, poor secondary performance in the middle, millions of children with weak foundational literacy and numeracy at the base">
+          <!-- Tier 1 (top, narrowest, dark orange) -->
+          <polygon points="180,0 240,106.67 120,106.67" fill="#e07020" />
+          <text x="180" y="84" text-anchor="middle" fill="#f9f9f7" font-family="Inter, sans-serif" font-size="11" font-weight="500">
+            <tspan x="180" dy="0">Low-skilled</tspan>
+            <tspan x="180" dy="13">workforce</tspan>
+          </text>
+
+          <!-- Tier 2 (middle) -->
+          <polygon points="120,106.67 240,106.67 300,213.33 60,213.33" fill="#f0a96e" />
+          <text x="180" y="155" text-anchor="middle" fill="#1a1a1a" font-family="Inter, sans-serif" font-size="16" font-weight="500">
+            <tspan x="180" dy="0">Poor secondary</tspan>
+            <tspan x="180" dy="20">performance</tspan>
+          </text>
+
+          <!-- Tier 3 (bottom, widest, lightest) -->
+          <polygon points="60,213.33 300,213.33 360,320 0,320" fill="#f6c896" />
+          <text x="180" y="262" text-anchor="middle" fill="#1a1a1a" font-family="Inter, sans-serif" font-size="17" font-weight="500">
+            <tspan x="180" dy="0">Millions of children</tspan>
+            <tspan x="180" dy="22">with weak FLN</tspan>
+          </text>
+        </svg>
+      </div>
+      <div class="impact-callout impact-callout-wb">
+        <strong>World Bank:</strong> FLN investments yield the highest return on human capital.
+      </div>
+    </div>
+    <div class="impact-callout impact-callout-stat">
+      <span class="stat-detail">Global poverty could fall by 12% if all children achieved basic reading.</span>
+    </div>
+    <small class="impact-source">Source: World Bank Human Capital Project, 2018.</small>
+  </figure>
+</section>
+
 <!-- ═══════════ THE PROBLEM ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">The problem</div>
@@ -315,46 +355,6 @@ permalink: /projects/fln/
   <div class="fln-eyebrow">Research &amp; innovation</div>
   <p>FLN is part of a broader programme of work at Vicharanashala on competency-based assessment, structured learning evidence, and data-informed education at scale. The questions we are working on include: how do competencies build on each other across grades; how can a single response reveal more than a score; what does a useful progress curve look like; and how does assessment evidence change what gets taught next.</p>
   <p>The work connects to India's NIPUN Bharat mission and is informed by NCERT curricular expectations. It is exploratory, open-source, and intended to be useful in classrooms — not just on dashboards.</p>
-</section>
-
-<!-- ═══════════ IMPACT (preserved) ═══════════ -->
-<section class="fln-section">
-  <div class="fln-eyebrow">Why this matters</div>
-  <figure class="impact-figure">
-    <div class="impact-figure-layout">
-      <div class="impact-pyramid">
-        <svg class="impact-pyramid-svg" viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three-tier pyramid: low-skilled workforce at top, poor secondary performance in the middle, millions of children with weak foundational literacy and numeracy at the base">
-          <!-- Tier 1 (top, narrowest, dark orange) -->
-          <polygon points="180,0 240,106.67 120,106.67" fill="#e07020" />
-          <text x="180" y="84" text-anchor="middle" fill="#f9f9f7" font-family="Inter, sans-serif" font-size="11" font-weight="500">
-            <tspan x="180" dy="0">Low-skilled</tspan>
-            <tspan x="180" dy="13">workforce</tspan>
-          </text>
-
-          <!-- Tier 2 (middle) -->
-          <polygon points="120,106.67 240,106.67 300,213.33 60,213.33" fill="#f0a96e" />
-          <text x="180" y="155" text-anchor="middle" fill="#1a1a1a" font-family="Inter, sans-serif" font-size="16" font-weight="500">
-            <tspan x="180" dy="0">Poor secondary</tspan>
-            <tspan x="180" dy="20">performance</tspan>
-          </text>
-
-          <!-- Tier 3 (bottom, widest, lightest) -->
-          <polygon points="60,213.33 300,213.33 360,320 0,320" fill="#f6c896" />
-          <text x="180" y="262" text-anchor="middle" fill="#1a1a1a" font-family="Inter, sans-serif" font-size="17" font-weight="500">
-            <tspan x="180" dy="0">Millions of children</tspan>
-            <tspan x="180" dy="22">with weak FLN</tspan>
-          </text>
-        </svg>
-      </div>
-      <div class="impact-callout impact-callout-wb">
-        <strong>World Bank:</strong> FLN investments yield the highest return on human capital.
-      </div>
-    </div>
-    <div class="impact-callout impact-callout-stat">
-      <span class="stat-detail">Global poverty could fall by 12% if all children achieved basic reading.</span>
-    </div>
-    <small class="impact-source">Source: World Bank Human Capital Project, 2018.</small>
-  </figure>
 </section>
 
 <!-- ═══════════ VISION (preserved) ═══════════ -->
