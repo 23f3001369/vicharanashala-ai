@@ -304,12 +304,8 @@ permalink: /projects/fln/
       <p>Each question type — fill-in-blank, comparison symbol, matching, multi-field — has a defined answer shape the system knows how to read.</p>
     </div>
     <div class="fln-tech-item">
-      <h4>Blue-ink filter</h4>
-      <p>Scanned papers are pre-processed to isolate the blue pen marks from the printed question and any background.</p>
-    </div>
-    <div class="fln-tech-item">
       <h4>Handwriting recognition</h4>
-      <p>Handwritten digits, symbols, and words are read from the filtered scan, with shape-specific normalisation for symbols that are routinely misread.</p>
+      <p>Handwritten digits, symbols, and words are read from the scanned paper using a vision-language model, with shape-specific normalisation for symbols that are routinely misread.</p>
     </div>
     <div class="fln-tech-item">
       <h4>Competency mapping</h4>
