@@ -44,7 +44,7 @@ quote_author: "Arthur C. Clarke"
     <div class="product-card-name">Spandan</div>
     <div class="product-card-desc">Real-time classroom engagement. Listens to live lectures, auto-generates contextual questions.</div>
     <div class="product-card-bottom">
-      <span class="product-card-tag">Pilot</span>
+      <span class="product-card-tag">Deployed</span>
       <div class="product-card-links">
         <a href="https://spandanam.vicharanashala.ai" target="_blank" rel="noopener" class="product-ext-link">Visit Platform ↗</a>
         <a href="https://github.com/vicharanashala/spandan" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>

@@ -76,19 +76,92 @@ quote_author: "D. Blocher"
 
 <div class="product-page-section">
   <h2>In the Room</h2>
-  <p>Spandan works best in large rooms where one person is teaching many. University lectures, faculty development programmes, structured workshops. In those settings the bigger the group, the quieter the feedback loop. A session ends and the teacher often walks out with no real read on how much of it landed.</p>
-  <p>For the teacher, the benefit is live signal during class while there is still time to act on it. The leaderboard adds to that: students see how the room answered collectively, not just their own choice, and that shared view changes the dynamic of the session.</p>
-  <p>Each session generates a record of what was asked, when, and how the room responded. Over time this builds into a picture of which parts of a lecture tend to lose people and which explanations hold. The record is about the teaching, not a report on the students.</p>
+  <p>Spandan works best in large rooms where one person is teaching many — the settings where the gap between teaching and feedback is widest.</p>
+
+  <div class="scenario-tabs">
+    <div class="scenario-tab-bar">
+      <button class="scenario-tab active" onclick="showScenario('lectures', this)">University Lectures</button>
+      <button class="scenario-tab" onclick="showScenario('fdp', this)">Faculty Development</button>
+      <button class="scenario-tab" onclick="showScenario('workshops', this)">Workshops</button>
+    </div>
+
+    <div class="scenario-panel active" id="scenario-lectures">
+      <div class="scenario-panel-head">
+        <i class="ph ph-graduation-cap scenario-icon"></i>
+        <span class="scenario-title">University Lectures</span>
+      </div>
+      <p>In large lecture halls, a session can end and the teacher walks out with no real read on how much of it landed. The bigger the group, the quieter the feedback loop. Spandan closes that gap — live signal during class, while there's still time to re-explain, pause, or pivot.</p>
+      <p>The leaderboard adds a layer students notice: they see how the room answered collectively, not just their own choice. That shared view changes the energy of the session.</p>
+      <span class="scenario-stat"><i class="ph ph-users"></i> Works at any class size</span>
+    </div>
+
+    <div class="scenario-panel" id="scenario-fdp">
+      <div class="scenario-panel-head">
+        <i class="ph ph-chalkboard-teacher scenario-icon"></i>
+        <span class="scenario-title">Faculty Development Programmes</span>
+      </div>
+      <p>FDPs bring together faculty from multiple institutions for intensive, structured learning. The audience is expert, the content is dense, and the stakes of losing the room are high. Spandan lets the facilitator take the temperature of the group without slowing down.</p>
+      <p>Questions grounded in what was just said test whether participants are tracking the argument — not general subject knowledge they arrived with.</p>
+      <span class="scenario-stat"><i class="ph ph-buildings"></i> Used across CBPAI cohorts</span>
+    </div>
+
+    <div class="scenario-panel" id="scenario-workshops">
+      <div class="scenario-panel-head">
+        <i class="ph ph-lightning scenario-icon"></i>
+        <span class="scenario-title">Structured Workshops</span>
+      </div>
+      <p>Workshops often have mixed audiences — some participants following closely, others less so. Spandan surfaces that spread without singling anyone out. The session record shows which explanations held and which ones didn't, across the whole room.</p>
+      <p>Each session builds a record of what was asked, when, and how the room responded. Over time this becomes a picture of the teaching — not a report on individual students.</p>
+      <span class="scenario-stat"><i class="ph ph-chart-bar"></i> Session analytics included</span>
+    </div>
+  </div>
 </div>
 
 <div class="product-page-section">
   <h2>Where It's Going</h2>
-  <p>The harder design problem in question generation is specificity. A question drawn from what the teacher said in that session is more useful than one drawn from the general topic. The next version is built to work at the level of claims, finding specific statements the teacher made and writing from those. The approval step stays — what changes is that what reaches that screen is more targeted.</p>
-  <p>The next feature on the roadmap is co-hosting. Right now a session has one teacher and one stream. Co-hosting will let multiple instructors run a session together, each contributing to the question pool — relevant for panel sessions, team-taught courses, and faculty development programmes where more than one expert is in the room.</p>
-  <p>Underlying both is a research effort the lab is actively running. What makes a question genuinely useful in a live classroom — novel enough to reward attention, precise enough to be tied to this session, difficult enough that it matters whether you were there — is the question the lab is building Spandan around.</p>
+  <p>The live demo above is what exists today. Here's what the lab is actively building toward.</p>
+
+  <div class="roadmap">
+    <div class="roadmap-item">
+      <div class="roadmap-status"><span class="rm-badge rm-live">Live</span></div>
+      <div class="roadmap-body">
+        <div class="roadmap-title">Speech-to-question, live</div>
+        <div class="roadmap-desc">Listens to the instructor's speech, transcribes it in real time, and generates contextual MCQs. Teacher approves before anything reaches students.</div>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="roadmap-status"><span class="rm-badge rm-progress">In Progress</span></div>
+      <div class="roadmap-body">
+        <div class="roadmap-title">Claim-level question generation</div>
+        <div class="roadmap-desc">The next version works at the level of specific claims — finding exact statements the teacher made and writing questions that point directly at those, not the general topic.</div>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="roadmap-status"><span class="rm-badge rm-upcoming">Upcoming</span></div>
+      <div class="roadmap-body">
+        <div class="roadmap-title">Co-hosting</div>
+        <div class="roadmap-desc">Multiple instructors sharing a single session, each contributing to the question pool. Relevant for panel sessions, team-taught courses, and FDPs where more than one expert is in the room.</div>
+      </div>
+    </div>
+    <div class="roadmap-item">
+      <div class="roadmap-status"><span class="rm-badge rm-upcoming">Research</span></div>
+      <div class="roadmap-body">
+        <div class="roadmap-title">Question quality research</div>
+        <div class="roadmap-desc">What makes a question genuinely useful in a live classroom — novel enough to reward attention, precise enough to be tied to this session? Every session contributes to the dataset.</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/spandan-demo.js"></script>
+<script>
+function showScenario(id, btn) {
+  document.querySelectorAll('.scenario-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.querySelectorAll('.scenario-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.getElementById('scenario-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
 
 <a href="https://github.com/vicharanashala/spandan" target="_blank" rel="noopener" class="product-github-card">
   <i class="ph ph-github-logo"></i>

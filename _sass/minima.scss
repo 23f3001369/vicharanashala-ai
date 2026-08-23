@@ -1717,10 +1717,11 @@ table {
 
 .sdl-cols {
   display: flex;
-  min-height: 260px;
+  height: 340px;
 
   @include media-query($on-palm) {
     flex-direction: column;
+    height: auto;
   }
 }
 
@@ -1738,7 +1739,7 @@ table {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #222;
-    min-height: 130px;
+    height: 160px;
   }
 }
 
@@ -1956,6 +1957,46 @@ table {
 .sdl-rank { font-size: 0.63rem; color: #767676; width: 0.9rem; flex-shrink: 0; }
 .sdl-name { flex: 1; color: #1a1a1a; font-weight: 500; }
 .sdl-score { color: #3ab7bf; font-weight: 600; font-size: 0.78rem; }
+
+// ── Spandan scenario tabs ──
+.scenario-tabs { margin: 1.5rem 0 0; border: 1px solid #e2e2de; border-radius: 10px; overflow: hidden; }
+.scenario-tab-bar { display: flex; border-bottom: 1px solid #e2e2de; background: #efefec; }
+.scenario-tab {
+  flex: 1; padding: 0.65rem 1rem; font-size: 0.8rem; font-weight: 500; font-family: inherit;
+  background: transparent; border: none; border-right: 1px solid #e2e2de; color: #767676;
+  cursor: pointer; transition: background 0.15s, color 0.15s; text-align: center;
+  &:last-child { border-right: none; }
+  &.active { background: #fff; color: #1a1a1a; }
+}
+.scenario-panel { display: none; padding: 1.5rem 1.4rem; background: #fff; &.active { display: block; } }
+.scenario-panel-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+.scenario-icon { font-size: 1.3rem; color: #e07020; }
+.scenario-title { font-size: 0.95rem; font-weight: 600; color: #1a1a1a; }
+.scenario-panel p { font-size: 0.88rem; color: #444; line-height: 1.65; margin-bottom: 0.65rem; &:last-of-type { margin-bottom: 0; } }
+.scenario-stat {
+  display: inline-flex; align-items: center; gap: 0.4rem; background: #efefec;
+  border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.75rem; font-weight: 500;
+  color: #1a1a1a; margin-top: 0.5rem;
+  i { color: #3ab7bf; }
+}
+
+// ── Spandan roadmap ──
+.roadmap { margin: 1.5rem 0 0; border: 1px solid #e2e2de; border-radius: 10px; overflow: hidden; }
+.roadmap-item {
+  display: flex; gap: 1rem; padding: 1.1rem 1.3rem; border-bottom: 1px solid #e2e2de; align-items: flex-start;
+  &:last-child { border-bottom: none; }
+}
+.roadmap-status { flex-shrink: 0; width: 7rem; margin-top: 0.2em; }
+.rm-badge {
+  display: inline-block; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 0.18rem 0.5rem; border-radius: 4px; white-space: nowrap;
+}
+.rm-live { background: #e7f7ee; color: #1a7a40; }
+.rm-progress { background: #fff3e0; color: #b85a00; }
+.rm-upcoming { background: #efefec; color: #767676; }
+.roadmap-body { flex: 1; }
+.roadmap-title { font-size: 0.9rem; font-weight: 600; color: #1a1a1a; margin-bottom: 0.3rem; }
+.roadmap-desc { font-size: 0.82rem; color: #767676; line-height: 1.6; }
 
 // Footer affiliation bar
 .footer-affiliation {
