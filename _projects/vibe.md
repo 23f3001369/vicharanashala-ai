@@ -277,12 +277,61 @@ A look at the real product – swipe through the screens students and teachers a
 
 ViBe is already used nationwide as part of the Ministry of Education's Malaviya Mission Teacher Training Programme.
 
-<div class="stat-row">
+<div class="stat-row will-animate" id="impact-stat-row">
   <div class="stat"><span class="stat-number">11,509</span><span class="stat-label">Unique Learners</span></div>
   <div class="stat"><span class="stat-number">5,472</span><span class="stat-label">Active Enrollments</span></div>
   <div class="stat"><span class="stat-number">39</span><span class="stat-label">Courses & Cohorts Live</span></div>
   <div class="stat"><span class="stat-number">~51%</span><span class="stat-label">Completion Rate</span></div>
 </div>
+
+<script>
+(function() {
+  var row = document.getElementById('impact-stat-row');
+  if (!row) return;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function countUp(el) {
+    var text = el.textContent.trim();
+    var match = text.match(/^(\D*)([\d,]+)(\D*)$/);
+    if (!match) return;
+    var prefix = match[1], target = parseInt(match[2].replace(/,/g, ''), 10), suffix = match[3];
+    if (isNaN(target)) return;
+    var duration = 900, start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = prefix + Math.round(target * eased).toLocaleString('en-US') + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = prefix + target.toLocaleString('en-US') + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+
+  function reveal() {
+    row.classList.add('in-view');
+    if (!reduceMotion) {
+      row.querySelectorAll('.stat-number').forEach(countUp);
+    }
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    reveal();
+    return;
+  }
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        reveal();
+        observer.unobserve(row);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(row);
+})();
+</script>
 
 Most self-paced online courses see under 10% of learners finish. ViBe gets roughly 5 times that, with real proctoring, at a very low cost per learner.
 
