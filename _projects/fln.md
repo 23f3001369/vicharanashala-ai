@@ -12,7 +12,6 @@ permalink: /projects/fln/
 <!-- ═══════════ HERO ═══════════ -->
 <section class="fln-hero fln-section fln-section--first">
   <div class="fln-context">Vicharanashala · Foundational Literacy &amp; Numeracy</div>
-  <h1>Understanding how every child learns.</h1>
   <p class="fln-lede">FLN goes beyond measuring answers. It looks at what a child knows, what they can do, where they struggle, and what comes next — so that foundational learning becomes visible, traceable, and actionable.</p>
   <div class="fln-journey" aria-label="The FLN journey">
     <span class="fln-journey-step">Child</span>
@@ -30,7 +29,6 @@ permalink: /projects/fln/
 <!-- ═══════════ WHY FLN ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">Why foundational literacy &amp; numeracy</div>
-  <h2>Why FLN?</h2>
   <p>The National Education Policy 2020 places foundational learning at the top of India's school agenda. It recognises that children — especially in the early years — are natural absorbers of knowledge who learn best through play and sensory experience. The goal at this stage is not just academic, but the cognitive, intellectual, social, and emotional development of the child.</p>
   <p>The NIPUN Bharat mission gives this national shape: every child acquiring basic reading and mathematical skills by the end of Grade 3, in every state. Foundational literacy and numeracy are the bedrock of all later learning — a child who cannot read with meaning or work confidently with numbers by Grade 3 will struggle to learn almost anything else in school.</p>
   <div class="fln-two-col">
@@ -51,8 +49,7 @@ permalink: /projects/fln/
 <!-- ═══════════ THE PROBLEM ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">The problem</div>
-  <h2>A correct answer tells us what happened. It does not always tell us why.</h2>
-  <p>Most assessments stop at the score. A right or wrong mark records the outcome but says little about the learning underneath it. Two children can both write "7" — and mean very different things by it.</p>
+  <p>A correct answer tells us what happened. It does not always tell us why.</p>
   <div class="fln-compare">
     <div class="fln-compare-col">
       <div class="fln-pillar-label">Traditional view</div>
@@ -88,7 +85,6 @@ permalink: /projects/fln/
 <!-- ═══════════ WHAT WE ASSESS ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">What we assess</div>
-  <h2>Competencies drawn from the classroom, organised for clarity.</h2>
   <p>FLN assessment covers the foundational competencies children are expected to develop across preschool and primary school. Below are the competency families currently supported by the FLN worksheet pipeline — each one grounded in what children actually do in early-grade mathematics and language.</p>
   <div class="fln-competencies">
     <div class="fln-competency">
@@ -121,7 +117,6 @@ permalink: /projects/fln/
 <!-- ═══════════ HOW THE ASSESSMENT WORKS ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">How the assessment works</div>
-  <h2>Six steps from question to insight.</h2>
   <p>FLN is not a single test. It is a structured workflow — from the moment a question is designed, to the moment a teacher sees what a child has learned.</p>
   <div class="fln-pipeline">
     <div class="fln-step">
@@ -160,7 +155,6 @@ permalink: /projects/fln/
 <!-- ═══════════ FROM ANSWERS TO EVIDENCE ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">From answers to evidence</div>
-  <h2>What does a response actually tell us?</h2>
   <p>Consider a single response: a child writes "7" in the missing-number box for a sequence that runs 4, 5, _, 7, 8. The right answer reveals more than the score.</p>
   <div class="fln-evidence">
     <div class="fln-evidence-child">
@@ -180,7 +174,6 @@ permalink: /projects/fln/
 <!-- ═══════════ LEARNING LEVELS / PROGRESSION ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">Learning levels</div>
-  <h2>From early preschool to Grade 3 proficiency.</h2>
   <p>The FLN curriculum is structured as a progression of levels, beginning in preschool and continuing through primary school. The pathway below shows how the levels relate; hover over a level to see what it covers.</p>
   <div class="fln-pathway">
     <div class="fln-pathway-track">
@@ -212,8 +205,7 @@ permalink: /projects/fln/
 <!-- ═══════════ THE CHILD'S LEARNING JOURNEY ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">The child's learning journey</div>
-  <h2>Every response gives us another opportunity to understand how a child is learning.</h2>
-  <p>FLN is built around the child's experience, not the test's. Mistakes are part of the journey, not the end of it.</p>
+  <p>Every response gives us another opportunity to understand how a child is learning.</p>
   <div class="fln-stages">
     <div class="fln-stage"><div class="fln-stage-num">01</div><div class="fln-stage-name">Try</div></div>
     <div class="fln-stage"><div class="fln-stage-num">02</div><div class="fln-stage-name">Explore</div></div>
@@ -229,7 +221,6 @@ permalink: /projects/fln/
 <!-- ═══════════ FOR EDUCATORS ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">For educators</div>
-  <h2>What FLN gives the people who teach.</h2>
   <p>For teachers and school leaders, the value of FLN is not in any single score but in the patterns that emerge across many children.</p>
   <ul>
     <li><strong>Identify learning gaps.</strong> A wrong answer points to a specific competency — and so does a right one.</li>
@@ -243,7 +234,6 @@ permalink: /projects/fln/
 <!-- ═══════════ ECOSYSTEM ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">Ecosystem</div>
-  <h2>Who FLN serves, and how they connect.</h2>
   <p>FLN is part of a wider system. The child is at the centre, and the surrounding stakeholders make the loop close.</p>
   <div class="fln-ecosystem">
     <div class="fln-eco-node">
@@ -293,7 +283,6 @@ permalink: /projects/fln/
 <!-- ═══════════ TECHNOLOGY ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">Technology</div>
-  <h2>Technology as enabler, not headline.</h2>
   <p>The tools exist to make the educational purpose possible. Each component in the FLN pipeline has a clear role; nothing here is decorative.</p>
   <div class="fln-tech">
     <div class="fln-tech-item">
@@ -323,7 +312,6 @@ permalink: /projects/fln/
 <!-- ═══════════ RESEARCH / INNOVATION ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">Research &amp; innovation</div>
-  <h2>A research initiative, not a product launch.</h2>
   <p>FLN is part of a broader programme of work at Vicharanashala on competency-based assessment, structured learning evidence, and data-informed education at scale. The questions we are working on include: how do competencies build on each other across grades; how can a single response reveal more than a score; what does a useful progress curve look like; and how does assessment evidence change what gets taught next.</p>
   <p>The work connects to India's NIPUN Bharat mission and is informed by NCERT curricular expectations. It is exploratory, open-source, and intended to be useful in classrooms — not just on dashboards.</p>
 </section>
@@ -331,7 +319,6 @@ permalink: /projects/fln/
 <!-- ═══════════ IMPACT (preserved) ═══════════ -->
 <section class="fln-section">
   <div class="fln-eyebrow">Why this matters</div>
-  <h2>The cost of weak foundations is large — and so is the return on getting them right.</h2>
   <figure class="impact-figure">
     <div class="impact-figure-layout">
       <div class="impact-pyramid">
