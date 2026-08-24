@@ -14,6 +14,8 @@ quote_author: "D. Blocher"
   <h1 class="initiative-page-h">Spandan</h1>
 </div>
 
+{% include page-quote.html %}
+
 <div class="product-page-meta">
   <span class="product-page-status">Deployed</span>
   <a href="https://spandan.fun/spandan" target="_blank" rel="noopener" class="product-try-link">Try it now ↗</a>

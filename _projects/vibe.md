@@ -12,6 +12,8 @@ order: 1
   <h1 class="initiative-page-h">ViBe</h1>
 </div>
 
+{% include page-quote.html %}
+
 
 <style>
   /* Scoped to this page, mobile only — tighter rhythm to cut scroll length on phones */

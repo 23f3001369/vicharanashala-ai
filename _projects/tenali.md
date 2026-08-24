@@ -12,6 +12,8 @@ order: 9
   <h1 class="initiative-page-h">Tenali</h1>
 </div>
 
+{% include page-quote.html %}
+
 
 *Where numbers lose their menace and algebra becomes a game,*
 *Tenali finds the fun that makes learning feel the same.*

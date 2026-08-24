@@ -14,6 +14,8 @@ permalink: /projects/fln/
   <h1 class="initiative-page-h">FLN</h1>
 </div>
 
+{% include page-quote.html %}
+
 <!-- ═══════════ HERO ═══════════ -->
 <section class="fln-hero fln-section fln-section--first">
   <div class="fln-context">Vicharanashala · Foundational Literacy &amp; Numeracy</div>

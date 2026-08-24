@@ -6,9 +6,13 @@ parent: Products
 order: 7
 ---
 
-<div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
-<p class="product-page-label"><i class="ph ph-cube"></i> Products</p>
-<h1 class="initiative-page-h">Vi-Sakha</h1>
+<div class="initiative-page-hero">
+  <a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a>
+  <p class="story-label"><i class="ph ph-chats-circle"></i> Products</p>
+  <h1 class="initiative-page-h">Vi-Sakha</h1>
+</div>
+
+{% include page-quote.html %}
 
 
 

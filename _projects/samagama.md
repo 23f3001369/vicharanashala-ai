@@ -13,6 +13,8 @@ permalink: /projects/samagama/
   <h1 class="initiative-page-h">Samagama + Yaksha</h1>
 </div>
 
+{% include page-quote.html %}
+
 
 *What 20–30 coordinators would do — run by four people and one AI.*
 

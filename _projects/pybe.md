@@ -12,6 +12,8 @@ order: 8
   <h1 class="initiative-page-h">PyBe</h1>
 </div>
 
+{% include page-quote.html %}
+
 <div class="product-page-meta">
   <span class="product-page-status">In Development</span>
 </div>

@@ -12,6 +12,8 @@ permalink: /projects/vi-slides/
   <h1 class="initiative-page-h">Vi-Slides</h1>
 </div>
 
+{% include page-quote.html %}
+
 <div class="product-page-meta">
   <span class="product-page-status">Research Stage</span>
 </div>

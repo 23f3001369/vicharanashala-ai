@@ -12,6 +12,8 @@ permalink: /projects/vi-notes/
   <h1 class="initiative-page-h">Vi-Notes</h1>
 </div>
 
+{% include page-quote.html %}
+
 <div class="product-page-meta">
   <span class="product-page-status">In Development</span>
 </div>
