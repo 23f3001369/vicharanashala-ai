@@ -335,6 +335,47 @@ ViBe is already used nationwide as part of the Ministry of Education's Malaviya 
 
 Most self-paced online courses see under 10% of learners finish. ViBe gets roughly 5 times that, with real proctoring, at a very low cost per learner.
 
+<div class="grid-extra-wrap" id="impact-methodology-wrap">
+  <ul class="impact-methodology">
+    <li><strong>Unique Learners</strong> — distinct users with any student enrollment.</li>
+    <li><strong>Active Enrollments</strong> — completed enrollments (5,324) plus enrollments with activity in the last 7 days (148).</li>
+    <li><strong>Courses & Cohorts Live</strong> — courses with 20 or more learners.</li>
+    <li><strong>Completion Rate</strong> — completed ÷ started (over 1% progress): 5,332 of 10,537 enrollments. At the per-learner level it's 48% (3,525 of 7,292 learners); the figure above is per enrollment.</li>
+  </ul>
+</div>
+
+<div class="grid-view-more">
+  <button class="grid-view-more-btn" id="impact-methodology-toggle">View methodology ↓</button>
+</div>
+
+<script>
+(function() {
+  var btn = document.getElementById('impact-methodology-toggle');
+  var wrap = document.getElementById('impact-methodology-wrap');
+  if (!btn || !wrap) return;
+  var inner = wrap.firstElementChild;
+  var expanded = false;
+
+  function expand() {
+    wrap.classList.add('is-expanded');
+    wrap.style.maxHeight = inner.scrollHeight + 'px';
+  }
+
+  function collapse() {
+    wrap.style.maxHeight = inner.scrollHeight + 'px';
+    void wrap.offsetHeight;
+    wrap.classList.remove('is-expanded');
+    wrap.style.maxHeight = '0px';
+  }
+
+  btn.addEventListener('click', function() {
+    expanded = !expanded;
+    if (expanded) { expand(); } else { collapse(); }
+    btn.textContent = expanded ? 'Hide methodology ↑' : 'View methodology ↓';
+  });
+})();
+</script>
+
 ---
 
 ## **Built to Scale**

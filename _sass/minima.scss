@@ -1394,6 +1394,23 @@ table {
   margin-top: 1.2rem;
 }
 
+.impact-methodology {
+  list-style: none;
+  margin: 0 0 1.2rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: $grey-color;
+  line-height: 1.6;
+
+  strong {
+    color: $text-color;
+    font-weight: 600;
+  }
+}
+
 .grid-view-more-btn {
   font-size: 0.85rem;
   font-weight: 500;
