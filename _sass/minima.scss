@@ -1678,6 +1678,18 @@ table {
   margin-bottom: 1.2rem;
 }
 .initiative-back:hover { color: #1a1a1a; text-decoration: none; }
+.product-page-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $grey-color;
+  margin: 0 0 0.4rem;
+}
+.product-page-label + .initiative-page-h { margin-top: 0; }
 .initiative-page-h {
   font-size: 2rem;
   font-weight: 700;

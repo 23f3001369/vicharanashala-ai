@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Vi-Notes
 parent: Products
 order: 6
@@ -7,6 +7,8 @@ permalink: /projects/vi-notes/
 ---
 
 <div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
+<p class="product-page-label"><i class="ph ph-cube"></i> Products</p>
+<h1 class="initiative-page-h">Vi-Notes</h1>
 
 <div class="product-page-meta">
   <span class="product-page-status">In Development</span>

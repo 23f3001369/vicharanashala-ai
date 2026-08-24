@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Spurti
 page_title: Spurti - Gamified Engagement Tracking
 parent: Products
@@ -10,6 +10,8 @@ quote_author: "Aristotle"
 ---
 
 <div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
+<p class="product-page-label"><i class="ph ph-cube"></i> Products</p>
+<h1 class="initiative-page-h">Spurti</h1>
 
 <div class="product-page-meta">
   <span class="product-page-status">Deployed</span>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Vi-Sakha
 page_title: Vi-Sakha — Reimagining Academic Support with AI  
 parent: Products
@@ -7,6 +7,8 @@ order: 7
 ---
 
 <div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
+<p class="product-page-label"><i class="ph ph-cube"></i> Products</p>
+<h1 class="initiative-page-h">Vi-Sakha</h1>
 
 
 

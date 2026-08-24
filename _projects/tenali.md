@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Tenali
 page_title: Tenali — Learning Numeracy Through Play
 parent: Products
@@ -7,6 +7,8 @@ order: 9
 ---
 
 <div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
+<p class="product-page-label"><i class="ph ph-cube"></i> Products</p>
+<h1 class="initiative-page-h">Tenali</h1>
 
 
 *Where numbers lose their menace and algebra becomes a game,*
