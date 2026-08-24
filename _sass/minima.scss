@@ -143,6 +143,12 @@ $on-laptop:     860px !default;
     &:hover { color: $text-color; text-decoration: none; }
   }
 
+  .dropbtn {
+    padding: 5px 8px;
+    margin-left: -8px;
+    border-radius: 4px;
+  }
+
   .dropdown-content {
     top: 100%;
     left: auto;
@@ -163,9 +169,6 @@ $on-laptop:     860px !default;
   .dropdown:hover .dropbtn {
     color: $text-color;
     background-color: rgba(0,0,0,0.05);
-    border-radius: 4px;
-    padding: 5px 8px;
-    margin-left: -8px;
   }
 
   .nav-active {
@@ -475,6 +478,8 @@ table {
 
 .shot-carousel-viewport {
   position: relative;
+  min-height: 380px;
+  background: $background-color;
 }
 
 .shot-carousel-arrow {
@@ -509,7 +514,9 @@ table {
   img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 360px;
+    object-fit: contain;
+    object-position: center top;
     border: 1px solid $grey-color-light;
     border-radius: 4px;
   }
@@ -1859,12 +1866,12 @@ table {
 .product-page-section {
   margin-bottom: 2rem;
   h2 {
-    font-size: 0.72rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: $grey-color;
-    margin-bottom: 0.7rem;
+    color: #5a5a5a;
+    margin-bottom: 0.8rem;
     border: none;
     padding: 0;
   }
@@ -1896,6 +1903,84 @@ table {
     text-decoration: none;
     color: #1a1a1a;
   }
+}
+
+// ── Screenshot carousel (ViBe "See It In Action") ──
+.screenshot-carousel {
+  margin: 1.5rem 0;
+}
+.sc-track {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: $grey-color-light;
+  border: 1px solid $grey-color-light;
+}
+.sc-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+
+  img {
+    width: 100%;
+    height: 370px;
+    object-fit: contain;
+    padding: 1rem 1rem 0;
+    display: block;
+  }
+
+  .sc-caption {
+    font-size: 0.8rem;
+    color: $grey-color;
+    text-align: center;
+    padding: 0.4rem 1rem;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+.sc-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+.sc-prev, .sc-next {
+  background: none;
+  border: 1px solid $grey-color-light;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: $text-color;
+  line-height: 1;
+  &:hover { background: #efefec; border-color: #ccc; }
+}
+.sc-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.sc-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $grey-color-light;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  &.active { background: $text-color; }
 }
 
 // ── Spandan live session demo ──
