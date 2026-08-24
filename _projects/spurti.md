@@ -5,8 +5,8 @@ page_title: Spurti - Gamified Engagement Tracking
 parent: Products
 order: 5
 permalink: /projects/spurti/
-quote: "Small disciplines repeated with consistency every day lead to great achievements gained slowly over time."
-quote_author: "John Maxwell"
+quote: "We are what we repeatedly do."
+quote_author: "Aristotle"
 ---
 
 <div class="product-page-meta">
