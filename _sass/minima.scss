@@ -1682,13 +1682,15 @@ table {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: $grey-color;
   margin: 0.6rem 0 0.8rem;
 }
+.product-page-label .product-card-icon-wrap { width: 64px; height: 64px; }
+.product-page-label .product-card-icon { font-size: 2rem; }
 .product-page-label + .initiative-page-h { margin-top: 0; }
 .initiative-page-h {
   font-size: 2rem;
