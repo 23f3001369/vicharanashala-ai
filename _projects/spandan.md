@@ -90,8 +90,8 @@ quote_author: "D. Blocher"
         <i class="ph ph-graduation-cap scenario-icon"></i>
         <span class="scenario-title">Samagama Online Internship</span>
       </div>
-      <p>Spandan was deployed in the Samagama online internship programme — a cohort of over 2,000 learners attending live sessions remotely. In a fully online setting, the gap between teaching and feedback is even wider: there are no raised hands, no visible faces, no ambient read of the room.</p>
-      <p>Spandan filled that gap. Sessions with live question generation and a real-time leaderboard turned passive watching into active participation — and gave coordinators a real signal on whether the content was landing, while the session was still running.</p>
+      <p>Spandan was used in the Samagama online internship, a cohort of over 2,000 learners attending live sessions remotely. In a fully online setting, the gap between teaching and feedback is even wider. No raised hands, no visible faces, no ambient read of the room.</p>
+      <p>Spandan filled that gap. Sessions with live question generation and a real-time leaderboard turned passive watching into active participation, and gave coordinators a clear signal on whether the content was landing while the session was still running.</p>
       <span class="scenario-stat"><i class="ph ph-users"></i> 2,000+ learners across Samagama cohorts</span>
     </div>
 
@@ -126,14 +126,14 @@ quote_author: "D. Blocher"
       <div class="roadmap-status"><span class="rm-badge rm-live">Live</span></div>
       <div class="roadmap-body">
         <div class="roadmap-title">Live classroom listening and engagement</div>
-        <div class="roadmap-desc">A system that listens to the teacher in a live classroom environment and generates a variety of questions from the running transcript — testing engagement while the session is still in progress. Teacher approves before anything reaches students.</div>
+        <div class="roadmap-desc">Listens to the teacher in a live classroom and generates a variety of questions from the running transcript. Engagement is tested while the session is still going. Teacher approves before anything reaches students.</div>
       </div>
     </div>
     <div class="roadmap-item">
       <div class="roadmap-status"><span class="rm-badge rm-progress">In Progress</span></div>
       <div class="roadmap-body">
         <div class="roadmap-title">Offline classroom experiments</div>
-        <div class="roadmap-desc">Experiments in physical, offline classrooms for initial deployment — adapting Spandan to environments without reliable internet, where the listening and question generation must work differently.</div>
+        <div class="roadmap-desc">Running experiments in physical, offline classrooms for initial deployment. Settings without reliable internet need Spandan to work differently at the listening and question generation layer.</div>
       </div>
     </div>
     <div class="roadmap-item">
