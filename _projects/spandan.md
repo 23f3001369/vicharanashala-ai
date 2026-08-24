@@ -9,7 +9,7 @@ quote_author: "D. Blocher"
 ---
 
 <div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
-<p class="product-page-label"><i class="ph ph-cube"></i> Products</p>
+<div class="product-page-label"><span class="product-card-icon-wrap"><i class="ph ph-pulse product-card-icon"></i></span><span>Products</span></div>
 <h1 class="initiative-page-h">Spandan</h1>
 
 <div class="product-page-meta">
