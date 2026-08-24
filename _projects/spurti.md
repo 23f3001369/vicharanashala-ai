@@ -9,9 +9,11 @@ quote: "We are what we repeatedly do."
 quote_author: "Aristotle"
 ---
 
-<div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
-<div class="product-page-label"><span class="product-card-icon-wrap"><i class="ph ph-stairs product-card-icon"></i></span><span>Products</span></div>
-<h1 class="initiative-page-h">Spurti</h1>
+<div class="initiative-page-hero">
+  <a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a>
+  <p class="story-label"><i class="ph ph-stairs"></i> Products</p>
+  <h1 class="initiative-page-h">Spurti</h1>
+</div>
 
 <div class="product-page-meta">
   <span class="product-page-status">Deployed</span>

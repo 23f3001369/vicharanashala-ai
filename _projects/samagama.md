@@ -7,9 +7,11 @@ order: 2
 permalink: /projects/samagama/
 ---
 
-<div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
-<div class="product-page-label"><span class="product-card-icon-wrap"><i class="ph ph-door-open product-card-icon"></i></span><span>Products</span></div>
-<h1 class="initiative-page-h">Samagama + Yaksha</h1>
+<div class="initiative-page-hero">
+  <a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a>
+  <p class="story-label"><i class="ph ph-door-open"></i> Products</p>
+  <h1 class="initiative-page-h">Samagama + Yaksha</h1>
+</div>
 
 
 *What 20–30 coordinators would do — run by four people and one AI.*

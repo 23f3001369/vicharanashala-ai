@@ -6,9 +6,11 @@ order: 4
 permalink: /projects/pes/
 ---
 
-<div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
-<div class="product-page-label"><span class="product-card-icon-wrap"><i class="ph ph-scales product-card-icon"></i></span><span>Products</span></div>
-<h1 class="initiative-page-h">PES</h1>
+<div class="initiative-page-hero">
+  <a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a>
+  <p class="story-label"><i class="ph ph-scales"></i> Products</p>
+  <h1 class="initiative-page-h">PES</h1>
+</div>
 
 <div class="product-page-meta">
   <span class="product-page-status">In Development</span>
