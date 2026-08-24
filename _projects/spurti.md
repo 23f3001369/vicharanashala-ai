@@ -41,9 +41,9 @@ quote_author: "Aristotle"
   <img src="{{ site.baseurl }}/assets/images/spurti/Leaderboard.png" alt="Live leaderboard showing student rankings" loading="lazy" style="max-width:100%; max-height:260px; width:auto; border-radius:6px; margin-top:1rem; margin-bottom:1.5rem; display:block;">
   <p><strong>Levels and Trophy Leagues.</strong> Students level up based on their highest-ever SP and move through trophy leagues as their current balance changes. Both update automatically on every scoring run.</p>
   <p><strong>Shareable Achievement Cards.</strong> Permanent, verifiable credentials for leaderboard podium placements and milestones (highest-ever SP, Level thresholds, attendance goals). Each card carries a unique code and QR linking to a public verification page. Cards render as PNGs with LinkedIn-optimised metadata.</p>
-  <div style="display:flex; gap:2%; margin-top:1rem; margin-bottom:1.5rem;">
-    <img src="{{ site.baseurl }}/assets/images/spurti/achievement-card1.png" alt="Shareable achievement card example" loading="lazy" style="width:49%; border-radius:6px;">
-    <img src="{{ site.baseurl }}/assets/images/spurti/achievement-card2.png" alt="Achievement card with verification QR" loading="lazy" style="width:49%; border-radius:6px;">
+  <div style="display:flex; gap:2%; margin-top:1rem; margin-bottom:1.5rem; justify-content:center;">
+    <img src="{{ site.baseurl }}/assets/images/spurti/achievement-card1.png" alt="Shareable achievement card example" loading="lazy" style="width:40%; border-radius:6px;">
+    <img src="{{ site.baseurl }}/assets/images/spurti/achievement-card2.png" alt="Achievement card with verification QR" loading="lazy" style="width:40%; border-radius:6px;">
   </div>
   <p><strong>Certificate Verification.</strong> Every achievement card links to a public page showing the student's name, what was earned, and when. No login required. Designed for sharing on LinkedIn and other platforms.</p>
   <p><strong>SP Trajectory.</strong> Students see their own SP over time compared to their cohort average and onboarding group. Visualises progress, not just current standing.</p>
