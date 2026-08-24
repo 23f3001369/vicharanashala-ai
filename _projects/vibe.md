@@ -273,6 +273,111 @@ A look at the real product – swipe through the screens students and teachers a
 
 ---
 
+## **The Impact**
+
+ViBe is already used nationwide as part of the Ministry of Education's Malaviya Mission Teacher Training Programme.
+
+<div class="stat-row will-animate" id="impact-stat-row">
+  <div class="stat"><span class="stat-number">11,509</span><span class="stat-label">Unique Learners</span></div>
+  <div class="stat"><span class="stat-number">5,472</span><span class="stat-label">Active Enrollments</span></div>
+  <div class="stat"><span class="stat-number">39</span><span class="stat-label">Courses & Cohorts Live</span></div>
+  <div class="stat"><span class="stat-number">~51%</span><span class="stat-label">Completion Rate</span></div>
+</div>
+
+<script>
+(function() {
+  var row = document.getElementById('impact-stat-row');
+  if (!row) return;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function countUp(el) {
+    var text = el.textContent.trim();
+    var match = text.match(/^(\D*)([\d,]+)(\D*)$/);
+    if (!match) return;
+    var prefix = match[1], target = parseInt(match[2].replace(/,/g, ''), 10), suffix = match[3];
+    if (isNaN(target)) return;
+    var duration = 900, start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = prefix + Math.round(target * eased).toLocaleString('en-US') + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = prefix + target.toLocaleString('en-US') + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+
+  function reveal() {
+    row.classList.add('in-view');
+    if (!reduceMotion) {
+      row.querySelectorAll('.stat-number').forEach(countUp);
+    }
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    reveal();
+    return;
+  }
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        reveal();
+        observer.unobserve(row);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(row);
+})();
+</script>
+
+Most self-paced online courses see under 10% of learners finish. ViBe gets roughly 5 times that, with real proctoring, at a very low cost per learner.
+
+<div class="grid-extra-wrap" id="impact-methodology-wrap">
+  <ul class="impact-methodology">
+    <li><strong>Unique Learners</strong> — distinct users with any student enrollment.</li>
+    <li><strong>Active Enrollments</strong> — completed enrollments (5,324) plus enrollments with activity in the last 7 days (148).</li>
+    <li><strong>Courses & Cohorts Live</strong> — courses with 20 or more learners.</li>
+    <li><strong>Completion Rate</strong> — completed ÷ started (over 1% progress): 5,332 of 10,537 enrollments. At the per-learner level it's 48% (3,525 of 7,292 learners); the figure above is per enrollment.</li>
+  </ul>
+</div>
+
+<div class="grid-view-more">
+  <button class="grid-view-more-btn" id="impact-methodology-toggle">View methodology ↓</button>
+</div>
+
+<script>
+(function() {
+  var btn = document.getElementById('impact-methodology-toggle');
+  var wrap = document.getElementById('impact-methodology-wrap');
+  if (!btn || !wrap) return;
+  var inner = wrap.firstElementChild;
+  var expanded = false;
+
+  function expand() {
+    wrap.classList.add('is-expanded');
+    wrap.style.maxHeight = inner.scrollHeight + 'px';
+  }
+
+  function collapse() {
+    wrap.style.maxHeight = inner.scrollHeight + 'px';
+    void wrap.offsetHeight;
+    wrap.classList.remove('is-expanded');
+    wrap.style.maxHeight = '0px';
+  }
+
+  btn.addEventListener('click', function() {
+    expanded = !expanded;
+    if (expanded) { expand(); } else { collapse(); }
+    btn.textContent = expanded ? 'Hide methodology ↑' : 'View methodology ↓';
+  });
+})();
+</script>
+
+---
+
 ## **Built to Scale**
 
 For schools and colleges deciding whether to adopt ViBe:
@@ -352,24 +457,7 @@ For schools and colleges deciding whether to adopt ViBe:
 })();
 </script>
 
-<!--
----
-
-## **The Impact**
-
-ViBe is already used nationwide as part of the Ministry of Education's Malaviya Mission Teacher Training Programme.
-
-<div class="stat-row">
-  <div class="stat"><span class="stat-number">9,984</span><span class="stat-label">Unique Learners</span></div>
-  <div class="stat"><span class="stat-number">10,959</span><span class="stat-label">Active Enrollments</span></div>
-  <div class="stat"><span class="stat-number">39</span><span class="stat-label">Courses & Cohorts Live</span></div>
-  <div class="stat"><span class="stat-number">~35%</span><span class="stat-label">Completion Rate</span></div>
-</div>
-
-Most self-paced online courses see under 10% of learners finish. ViBe gets 3.5 times that, with real proctoring, at a very low cost per learner.
-
 Built at the VLED Lab, IIT Ropar, with support from UGC.
--->
 
 ---
 
