@@ -8,6 +8,8 @@ quote: "Learning is not a spectator sport."
 quote_author: "D. Blocher"
 ---
 
+<div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
+
 <div class="product-page-meta">
   <span class="product-page-status">Deployed</span>
   <a href="https://spandan.fun/spandan" target="_blank" rel="noopener" class="product-try-link">Try it now ↗</a>

@@ -6,6 +6,9 @@ parent: Products
 order: 1
 ---
 
+<div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
+
+
 <style>
   /* Scoped to this page, mobile only — tighter rhythm to cut scroll length on phones */
   @media (max-width: 600px) {

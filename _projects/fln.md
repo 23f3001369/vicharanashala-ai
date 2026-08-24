@@ -8,6 +8,7 @@ permalink: /projects/fln/
 ---
 
 <div class="fln-project">
+<div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
 
 <!-- ═══════════ HERO ═══════════ -->
 <section class="fln-hero fln-section fln-section--first">

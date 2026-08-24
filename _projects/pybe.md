@@ -6,6 +6,8 @@ parent: Products
 order: 8
 ---
 
+<div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
+
 <div class="product-page-meta">
   <span class="product-page-status">In Development</span>
 </div>

@@ -6,6 +6,9 @@ parent: Products
 order: 9
 ---
 
+<div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
+
+
 *Where numbers lose their menace and algebra becomes a game,*
 *Tenali finds the fun that makes learning feel the same.*
 

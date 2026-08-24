@@ -7,6 +7,9 @@ order: 2
 permalink: /projects/samagama/
 ---
 
+<div><a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a></div>
+
+
 *What 20–30 coordinators would do — run by four people and one AI.*
 
 Samagama is an end-to-end internship management platform built to solve a structural problem in Indian higher education: access to high-quality research internship experiences has historically been gatekept by networks, coordination capacity, and institutional privilege. Yaksha is the AI layer at its core — conducting interviews, handling student queries, issuing offer letters, and managing engagement at a scale no human team could sustain.
