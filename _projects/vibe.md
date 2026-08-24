@@ -56,117 +56,11 @@ ViBe launched on 29th July 2025, when Education Minister Shri Dharmendra Pradhan
 
 ---
 
-## **The Challenge**
-
-Online courses are easy to access but hard to finish. Most self-paced video courses see only 10 to 15 percent of learners complete them. Most platforms just show the video and hope learning happens. Without a teacher watching, students often let the video play without really following it. The challenge is building a system that keeps learners accountable without making them feel watched or anxious.
-
----
-
-## **The Platform**
-
-ViBe takes its name from the old tale of Vikram and Betaal, where a wrong answer means going back and trying again. ViBe works the same way: it checks how well you understand something as you go, and asks you to revisit anything you missed.
-
-{% include video-thumb.html id="8ytNdYlK-BU" title="ViBe – Interactive Demo" %}
-
-<div class="audience-grid">
-  <div class="audience-card">
-    <i class="ph ph-scissors audience-card-icon"></i>
-    <div class="audience-card-title">Micro-Learning</div>
-    <p class="audience-card-desc">Long lectures are automatically split into short parts, one idea at a time, so you're never overwhelmed.</p>
-  </div>
-  <div class="audience-card">
-    <i class="ph ph-target audience-card-icon"></i>
-    <div class="audience-card-title">Smart Assessments</div>
-    <p class="audience-card-desc">Quizzes pop up during the video, not after it, so you're tested while it's still fresh, not days later.</p>
-  </div>
-  <div class="audience-card">
-    <i class="ph ph-shield-check audience-card-icon"></i>
-    <div class="audience-card-title">Active Verification</div>
-    <p class="audience-card-desc">AI watches for signs you've lost focus, like switching tabs or looking away, without making it feel like it's spying on you.</p>
-  </div>
-</div>
-
-<div class="grid-extra-wrap" id="platform-extra-wrap">
-  <div class="audience-grid">
-    <div class="audience-card">
-      <i class="ph ph-users-three audience-card-icon"></i>
-      <div class="audience-card-title">ViBeCrowd</div>
-      <p class="audience-card-desc">Learners help write and check quiz questions together, so the question bank keeps getting better.</p>
-    </div>
-    <div class="audience-card">
-      <i class="ph ph-magic-wand audience-card-icon"></i>
-      <div class="audience-card-title">AI Course Generation</div>
-      <p class="audience-card-desc">Give ViBe a video or playlist and it builds a course from it: splitting it into parts, writing a transcript, and drafting quiz questions. The teacher checks and approves each step. Or just share one video and see who watched it.</p>
-    </div>
-    <div class="audience-card">
-      <i class="ph ph-trophy audience-card-icon"></i>
-      <div class="audience-card-title">Community & Recognition</div>
-      <p class="audience-card-desc">Earn points, see how you rank against classmates, ask questions right on the video, and share how you're feeling about each lesson.</p>
-    </div>
-  </div>
-</div>
-
-<div class="grid-view-more">
-  <button class="grid-view-more-btn" id="platform-view-more">View more ↓</button>
-</div>
-
-<script>
-(function() {
-  var btn = document.getElementById('platform-view-more');
-  var wrap = document.getElementById('platform-extra-wrap');
-  if (!btn || !wrap) return;
-  var inner = wrap.firstElementChild;
-  var expanded = false;
-
-  function expand() {
-    wrap.classList.add('is-expanded');
-    wrap.style.maxHeight = inner.scrollHeight + 'px';
-  }
-
-  function collapse() {
-    wrap.style.maxHeight = inner.scrollHeight + 'px';
-    void wrap.offsetHeight;
-    wrap.classList.remove('is-expanded');
-    wrap.style.maxHeight = '0px';
-  }
-
-  btn.addEventListener('click', function() {
-    expanded = !expanded;
-    if (expanded) { expand(); } else { collapse(); }
-    btn.textContent = expanded ? 'View less ↑' : 'View more ↓';
-  });
-})();
-</script>
-
----
-
 ## **See It In Action**
 
 A look at the real product – swipe through the screens students and teachers actually use.
 
 <div class="shot-carousel" id="vibe-shot-carousel">
-  <!-- Previous slides (our own captured screenshots) — commented out, not deleted, to make reverting easy
-  <div class="shot-slide">
-    <img src="{{ site.baseurl }}/assets/images/vibe/student-dashboard.jpg" alt="ViBe student dashboard showing enrolled and completed courses">
-    <figcaption>Student dashboard – courses, progress, and what to pick up next.</figcaption>
-  </div>
-  <div class="shot-slide">
-    <img src="{{ site.baseurl }}/assets/images/vibe/student-analytics.jpg" alt="ViBe learning analytics dashboard showing progress, quiz performance, and content completion">
-    <figcaption>Learning Analytics – every learner sees their own progress, pace, and quiz performance.</figcaption>
-  </div>
-  <div class="shot-slide">
-    <img src="{{ site.baseurl }}/assets/images/vibe/student-leaderboard.jpg" alt="ViBe cohort leaderboard ranking learners by completion speed and weekly effort">
-    <figcaption>Cohort leaderboard – ranked by completion speed and this week's effort.</figcaption>
-  </div>
-  <div class="shot-slide">
-    <img src="{{ site.baseurl }}/assets/images/vibe/teacher-share-video.jpg" alt="ViBe Share a Video screen for sending a watch-tracked video link">
-    <figcaption>Share a video – a watch-tracked link, no full course required.</figcaption>
-  </div>
-  <div class="shot-slide">
-    <img src="{{ site.baseurl }}/assets/images/vibe/teacher-course-management.jpg" alt="ViBe course version management panel with flags, enrollments, registrations, and ejection policy controls">
-    <figcaption>Per-course controls – flags, enrollments, registrations, and ejection policy, in one place.</figcaption>
-  </div>
-  -->
   <div class="shot-carousel-viewport">
   <div class="shot-slide active">
     <img src="{{ site.baseurl }}/assets/images/vibe/vibe-sign-in.png" alt="ViBe sign-in screen">
@@ -273,6 +167,90 @@ A look at the real product – swipe through the screens students and teachers a
 
 ---
 
+## **The Challenge**
+
+Online courses are easy to access but hard to finish. Most self-paced video courses see only 10 to 15 percent of learners complete them. Most platforms just show the video and hope learning happens. Without a teacher watching, students often let the video play without really following it. The challenge is building a system that keeps learners accountable without making them feel watched or anxious.
+
+---
+
+## **The Platform**
+
+ViBe takes its name from the old tale of Vikram and Betaal, where a wrong answer means going back and trying again. ViBe works the same way: it checks how well you understand something as you go, and asks you to revisit anything you missed.
+
+{% include video-thumb.html id="8ytNdYlK-BU" title="ViBe – Interactive Demo" %}
+
+<div class="audience-grid">
+  <div class="audience-card">
+    <i class="ph ph-scissors audience-card-icon"></i>
+    <div class="audience-card-title">Micro-Learning</div>
+    <p class="audience-card-desc">Long lectures are automatically split into short parts, one idea at a time, so you're never overwhelmed.</p>
+  </div>
+  <div class="audience-card">
+    <i class="ph ph-target audience-card-icon"></i>
+    <div class="audience-card-title">Smart Assessments</div>
+    <p class="audience-card-desc">Quizzes pop up during the video, not after it, so you're tested while it's still fresh, not days later.</p>
+  </div>
+  <div class="audience-card">
+    <i class="ph ph-shield-check audience-card-icon"></i>
+    <div class="audience-card-title">Active Verification</div>
+    <p class="audience-card-desc">AI watches for signs you've lost focus, like switching tabs or looking away, without making it feel like it's spying on you.</p>
+  </div>
+</div>
+
+<div class="grid-extra-wrap" id="platform-extra-wrap">
+  <div class="audience-grid">
+    <div class="audience-card">
+      <i class="ph ph-users-three audience-card-icon"></i>
+      <div class="audience-card-title">ViBeCrowd</div>
+      <p class="audience-card-desc">Learners help write and check quiz questions together, so the question bank keeps getting better.</p>
+    </div>
+    <div class="audience-card">
+      <i class="ph ph-magic-wand audience-card-icon"></i>
+      <div class="audience-card-title">AI Course Generation</div>
+      <p class="audience-card-desc">Give ViBe a video or playlist and it builds a course from it: splitting it into parts, writing a transcript, and drafting quiz questions. The teacher checks and approves each step. Or just share one video and see who watched it.</p>
+    </div>
+    <div class="audience-card">
+      <i class="ph ph-trophy audience-card-icon"></i>
+      <div class="audience-card-title">Community & Recognition</div>
+      <p class="audience-card-desc">Earn points, see how you rank against classmates, ask questions right on the video, and share how you're feeling about each lesson.</p>
+    </div>
+  </div>
+</div>
+
+<div class="grid-view-more">
+  <button class="grid-view-more-btn" id="platform-view-more">View more ↓</button>
+</div>
+
+<script>
+(function() {
+  var btn = document.getElementById('platform-view-more');
+  var wrap = document.getElementById('platform-extra-wrap');
+  if (!btn || !wrap) return;
+  var inner = wrap.firstElementChild;
+  var expanded = false;
+
+  function expand() {
+    wrap.classList.add('is-expanded');
+    wrap.style.maxHeight = inner.scrollHeight + 'px';
+  }
+
+  function collapse() {
+    wrap.style.maxHeight = inner.scrollHeight + 'px';
+    void wrap.offsetHeight;
+    wrap.classList.remove('is-expanded');
+    wrap.style.maxHeight = '0px';
+  }
+
+  btn.addEventListener('click', function() {
+    expanded = !expanded;
+    if (expanded) { expand(); } else { collapse(); }
+    btn.textContent = expanded ? 'View less ↑' : 'View more ↓';
+  });
+})();
+</script>
+
+---
+
 ## **Built to Scale**
 
 For schools and colleges deciding whether to adopt ViBe:
@@ -351,25 +329,6 @@ For schools and colleges deciding whether to adopt ViBe:
   });
 })();
 </script>
-
-<!--
----
-
-## **The Impact**
-
-ViBe is already used nationwide as part of the Ministry of Education's Malaviya Mission Teacher Training Programme.
-
-<div class="stat-row">
-  <div class="stat"><span class="stat-number">9,984</span><span class="stat-label">Unique Learners</span></div>
-  <div class="stat"><span class="stat-number">10,959</span><span class="stat-label">Active Enrollments</span></div>
-  <div class="stat"><span class="stat-number">39</span><span class="stat-label">Courses & Cohorts Live</span></div>
-  <div class="stat"><span class="stat-number">~35%</span><span class="stat-label">Completion Rate</span></div>
-</div>
-
-Most self-paced online courses see under 10% of learners finish. ViBe gets 3.5 times that, with real proctoring, at a very low cost per learner.
-
-Built at the VLED Lab, IIT Ropar, with support from UGC.
--->
 
 ---
 
