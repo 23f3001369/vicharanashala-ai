@@ -6,7 +6,7 @@ parent: Products
 order: 7
 ---
 
-<div class="initiative-page-hero">
+<div class="initiative-page-hero product-page-hero">
   <a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a>
   <p class="story-label"><i class="ph ph-chats-circle"></i> Products</p>
   <h1 class="initiative-page-h">Vi-Sakha</h1>

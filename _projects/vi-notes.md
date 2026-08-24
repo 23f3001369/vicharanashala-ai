@@ -6,7 +6,7 @@ order: 6
 permalink: /projects/vi-notes/
 ---
 
-<div class="initiative-page-hero">
+<div class="initiative-page-hero product-page-hero">
   <a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a>
   <p class="story-label"><i class="ph ph-fingerprint"></i> Products</p>
   <h1 class="initiative-page-h">Vi-Notes</h1>
