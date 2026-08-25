@@ -92,7 +92,7 @@ $on-laptop:     860px !default;
 }
 
 .header-brand-icon {
-  height: 60px;
+  height: 68px;
   width: auto;
   display: block;
   flex-shrink: 0;
@@ -121,7 +121,7 @@ $on-laptop:     860px !default;
 
 @include media-query($on-palm) {
   .header-logo-iit { height: 52px; }
-  .header-brand-icon { height: 44px; }
+  .header-brand-icon { height: 52px; }
   .header-brand-name { font-size: 0.75rem; }
   .header-brand-tagline { font-size: 0.55rem; }
 }
