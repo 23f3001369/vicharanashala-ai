@@ -79,7 +79,7 @@ $on-laptop:     860px !default;
 }
 
 .header-logo-iit {
-  height: 52px;
+  height: 68px;
   width: auto;
   display: block;
 }
@@ -120,7 +120,7 @@ $on-laptop:     860px !default;
 }
 
 @include media-query($on-palm) {
-  .header-logo-iit { height: 40px; }
+  .header-logo-iit { height: 52px; }
   .header-brand-icon { height: 44px; }
   .header-brand-name { font-size: 0.75rem; }
   .header-brand-tagline { font-size: 0.55rem; }
@@ -2351,7 +2351,7 @@ table {
   border-top: 1px solid $grey-color-light;
 }
 .footer-iit-logo {
-  height: 60px;
+  height: 76px;
   width: auto;
 }
 .footer-affil-text {
