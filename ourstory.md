@@ -233,7 +233,6 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
   width: 2px;
   height: 0;
   background: #e07020;
-  z-index: 1;
   pointer-events: none;
 }
 
