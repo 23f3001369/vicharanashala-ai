@@ -68,6 +68,9 @@
     cursor: pointer;
     font-size: inherit;
     font-family: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 
     &:not(:last-child) {
       margin-right: 20px;
