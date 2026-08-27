@@ -361,14 +361,14 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
 
 <style>
 .story-intro {
-  padding: 1rem 0 2rem;
+  padding: 0 0 1.5rem;
   border-bottom: 1px solid #e2e2de;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 600px) {
   .story-intro {
-    padding: 0.5rem 0 1rem;
+    padding: 0 0 1rem;
     margin-bottom: 1rem;
   }
 }
