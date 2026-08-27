@@ -132,15 +132,17 @@ quote_author: "Arthur C. Clarke"
 <!-- TODO: update "nine" → "ten" in intro above once FLN card copy is finalised -->
 
 <style>
+.post-header { margin-bottom: 0.5rem; }
+.page-quote { margin: 0 0 0.5rem; }
 .products-intro {
-  margin: 0 0 2.5rem;
+  margin: 0 0 1rem;
   max-width: 680px;
 }
 .products-intro p {
   font-size: 1rem;
   line-height: 1.78;
   color: #444;
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
 }
 .products-intro p:last-child { margin-bottom: 0; }
 </style>
