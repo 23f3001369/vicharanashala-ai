@@ -201,13 +201,6 @@ $on-laptop:     860px !default;
     border-bottom: 2px solid $text-color;
     padding-bottom: 1px;
   }
-
-  @include media-query($on-palm) {
-    input ~ .trigger { display: none; }
-    input:checked ~ .trigger {
-      display: block;
-    }
-  }
 }
 
 // ── Links ──
