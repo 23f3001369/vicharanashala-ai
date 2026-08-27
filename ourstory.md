@@ -325,7 +325,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
   .tl { padding-left: 52px; }
   .tl::before { left: 18px; }
   .tl-fill { left: 18px; }
-  .tl-icon { left: -38px; width: 28px; height: 28px; font-size: 14px; }
+  .tl-icon { left: -47px; width: 28px; height: 28px; font-size: 14px; }
   .tl-title { font-size: 1.05rem; }
 }
 </style>
