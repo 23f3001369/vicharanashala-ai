@@ -186,7 +186,6 @@
       margin-right: 0;
       cursor: pointer;
       border-radius: 6px;
-      transition: background-color 0.2s ease;
 
       &:not(:last-child) {
         margin-right: 0;
@@ -212,7 +211,6 @@
         margin-right: 0;
         text-align: right;
         border-radius: 4px;
-        transition: background-color 0.15s ease;
 
         &:hover {
           background-color: $grey-color-light;

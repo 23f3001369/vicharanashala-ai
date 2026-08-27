@@ -219,10 +219,6 @@ $on-laptop:     860px !default;
       margin-left: 0;
       margin-right: 0;
       border-radius: 6px;
-      transition: background-color 0.2s ease, color 0.2s ease;
-      width: 100%;
-      text-align: right;
-      box-sizing: border-box;
 
       &:active {
         background-color: rgba(0,0,0,0.06);
@@ -243,7 +239,6 @@ $on-laptop:     860px !default;
         text-align: right;
         border-radius: 4px;
         margin-top: 2px;
-        transition: background-color 0.15s ease;
       }
     }
   }
