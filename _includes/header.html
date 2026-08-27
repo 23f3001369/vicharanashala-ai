@@ -64,3 +64,17 @@
 
   </div>
 </header>
+
+<script>
+document.querySelectorAll('.dropdown .dropbtn').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    if (window.innerWidth <= 600) {
+      e.preventDefault();
+      var checkbox = this.previousElementSibling;
+      if (checkbox && checkbox.classList.contains('dropdown-trigger')) {
+        checkbox.checked = !checkbox.checked;
+      }
+    }
+  });
+});
+</script>
