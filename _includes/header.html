@@ -27,7 +27,7 @@
       <div class="trigger">
 
         <div class="dropdown">
-          <a href="#" class="dropbtn">About</a>
+          <a href="#" class="dropbtn{% if page.url contains 'ourstory' or page.url contains 'team' %} nav-active{% endif %}">About</a>
           <div class="dropdown-content">
             <a href="{{ '/ourstory/' | relative_url }}"{% if page.url contains 'ourstory' %} class="nav-active"{% endif %}>Our Story</a>
             <a href="{{ '/team-members/' | relative_url }}"{% if page.url contains 'team' %} class="nav-active"{% endif %}>Team</a>
@@ -35,7 +35,7 @@
         </div>
 
         <div class="dropdown">
-          <a href="#" class="dropbtn">Work</a>
+          <a href="#" class="dropbtn{% if page.url contains 'products' or page.url contains 'research' or page.url contains 'lab_initiatives' or page.url contains 'national' %} nav-active{% endif %}">Work</a>
           <div class="dropdown-content">
             <a href="{{ '/products/' | relative_url }}"{% if page.url contains 'products' %} class="nav-active"{% endif %}>Products</a>
             <a href="{{ '/research/' | relative_url }}"{% if page.url contains 'research' %} class="nav-active"{% endif %}>Research</a>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="dropdown">
-          <a href="#" class="dropbtn">Programmes</a>
+          <a href="#" class="dropbtn{% if page.url contains 'events' or page.url contains 'openings' or page.url contains 'vichara' or page.url contains 'vled-in-action' %} nav-active{% endif %}">Programmes</a>
           <div class="dropdown-content">
             <a href="{{ '/events/' | relative_url }}"{% if page.url contains 'events' %} class="nav-active"{% endif %}>Events</a>
             <a href="{{ '/openings/' | relative_url }}"{% if page.url contains 'openings' %} class="nav-active"{% endif %}>Openings</a>
