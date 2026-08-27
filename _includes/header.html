@@ -72,7 +72,12 @@ document.querySelectorAll('.dropdown .dropbtn').forEach(function(btn) {
       e.preventDefault();
       var checkbox = this.previousElementSibling;
       if (checkbox && checkbox.classList.contains('dropdown-trigger')) {
-        checkbox.checked = !checkbox.checked;
+        var wasChecked = checkbox.checked;
+        // Close all other dropdowns
+        document.querySelectorAll('.dropdown-trigger').forEach(function(cb) {
+          if (cb !== checkbox) cb.checked = false;
+        });
+        checkbox.checked = !wasChecked;
       }
     }
   });
