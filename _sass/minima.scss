@@ -205,56 +205,7 @@ $on-laptop:     860px !default;
   @include media-query($on-palm) {
     input ~ .trigger { display: none; }
     input:checked ~ .trigger {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 0;
-      padding: 8px 0;
-    }
-    .dropdown { flex-direction: column; align-items: flex-end; }
-
-    .dropbtn {
-      padding: 8px 12px;
-      margin-left: 0;
-      margin-right: 0;
-      border-radius: 6px;
-      text-align: right;
-
-      &:active {
-        background-color: rgba(0,0,0,0.06);
-      }
-    }
-
-    .dropdown-trigger:checked ~ .dropbtn {
-      color: $text-color;
-      font-weight: 600;
-      background-color: rgba(0,0,0,0.04);
-    }
-
-    .dropdown-content {
-      position: static;
-      box-shadow: none;
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 2px;
-      padding: 4px 0;
-
-      a {
-        padding: 6px 12px;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: right;
-        border-radius: 4px;
-        margin-top: 2px;
-      }
-    }
-
-    .dropdown-trigger:checked ~ .dropdown-content {
       display: block;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: none;
     }
   }
 }
