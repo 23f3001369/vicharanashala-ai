@@ -196,11 +196,20 @@
       box-shadow: none;
       margin-left: 0;
       margin-top: 0;
+      padding: 4px 0;
+      border-top: 1px solid $grey-color-light;
 
       a {
-        padding: 5px 10px;
+        padding: 6px 12px;
         margin-left: 20px;
         text-align: right;
+        font-size: 0.82rem;
+        border-radius: 4px;
+        margin-right: 10px;
+
+        &:hover {
+          background-color: $grey-color-light;
+        }
       }
     }
 
