@@ -138,68 +138,70 @@ $on-laptop:     860px !default;
   &, &:visited { color: $text-color; }
 }
 
-.site-nav {
-  float: none;
-  line-height: 1;
-  margin-left: auto;
+@media (min-width: 601px) {
+  .site-nav {
+    float: none;
+    line-height: 1;
+    margin-left: auto;
 
-  .trigger {
-    clear: none;
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-  }
+    .trigger {
+      clear: none;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
 
-  .dropdown {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
+    .dropdown {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
 
-  .page-link,
-  .dropbtn {
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $grey-color;
+    .page-link,
+    .dropbtn {
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $grey-color;
 
-    &:hover { color: $text-color; text-decoration: none; }
-  }
+      &:hover { color: $text-color; text-decoration: none; }
+    }
 
-  .dropbtn {
-    padding: 5px 8px;
-    margin-left: -8px;
-    border-radius: 4px;
-  }
+    .dropbtn {
+      padding: 5px 8px;
+      margin-left: -8px;
+      border-radius: 4px;
+    }
 
-  .dropdown-content {
-    top: 100%;
-    left: auto;
-    right: 0;
-    z-index: 1000;
-    background-color: $background-color;
-  }
+    .dropdown-content {
+      top: 100%;
+      left: auto;
+      right: 0;
+      z-index: 1000;
+      background-color: $background-color;
+    }
 
-  .dropdown-content a {
-    font-size: 0.82rem;
-    letter-spacing: 0.02em;
-    text-transform: none;
-    color: $text-color;
+    .dropdown-content a {
+      font-size: 0.82rem;
+      letter-spacing: 0.02em;
+      text-transform: none;
+      color: $text-color;
 
-    &:hover { background: $grey-color-light; }
-  }
+      &:hover { background: $grey-color-light; }
+    }
 
-  .dropdown:hover .dropbtn {
-    color: $text-color;
-    background-color: rgba(0,0,0,0.05);
-  }
+    .dropdown:hover .dropbtn {
+      color: $text-color;
+      background-color: rgba(0,0,0,0.05);
+    }
 
-  .nav-active {
-    color: $text-color !important;
-    font-weight: 600;
-    border-bottom: 2px solid $text-color;
-    padding-bottom: 1px;
+    .nav-active {
+      color: $text-color !important;
+      font-weight: 600;
+      border-bottom: 2px solid $text-color;
+      padding-bottom: 1px;
+    }
   }
 }
 
