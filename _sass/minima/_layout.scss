@@ -60,10 +60,6 @@
     display: inline-block;
   }
 
-  .dropdown-trigger {
-    display: none;
-  }
-
   .dropbtn {
     color: $text-color;
     line-height: $base-line-height;
@@ -110,11 +106,13 @@
     }
   }
 
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content,
+  .dropdown.is-open .dropdown-content {
     display: block;
   }
 
-  .dropdown:hover .dropbtn {
+  .dropdown:hover .dropbtn,
+  .dropdown.is-open .dropbtn {
     color: $brand-color;
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 4px;
@@ -197,7 +195,7 @@
       }
     }
 
-    .dropdown-trigger:checked ~ .dropbtn {
+    .dropdown.is-open .dropbtn {
       color: $text-color;
       font-weight: 600;
       background-color: rgba(0,0,0,0.04);
@@ -229,7 +227,7 @@
       display: none;
     }
 
-    .dropdown-trigger:checked ~ .dropdown-content {
+    .dropdown.is-open .dropdown-content {
       display: block;
     }
   }
