@@ -225,12 +225,12 @@
       }
     }
 
-    .dropdown-trigger:checked ~ .dropdown-content {
-      display: block;
-    }
-
     .dropdown:hover .dropdown-content {
       display: none;
+    }
+
+    .dropdown-trigger:checked ~ .dropdown-content {
+      display: block;
     }
   }
 }
